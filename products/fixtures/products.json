@@ -6,7 +6,7 @@
             "name": "ABC Hard Candy", 
             "description": "ABC Hard Candy Alphabet Shapes",
             "price": "0.99",
-            "image": "/workspace/sweetsntreats/media/abc-candy.jpeg"
+            "image": "../media/abc-candy.jpeg"
             }
     }
 ]
