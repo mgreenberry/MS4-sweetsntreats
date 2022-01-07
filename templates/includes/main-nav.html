@@ -1,50 +1,38 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="pic-n-mix-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pic 'N' Mix
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="pic-n-mix-link">
-                <a href="" class="dropdown-item">Fizzy Sweets</a>
-                <a href="" class="dropdown-item">Jelly & Foam Sweets</a>
-                <a href="" class="dropdown-item">Chocolate & Toffee Sweets</a>
-                <a href="" class="dropdown-item">Traditional Sweets</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Sweets</a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?category=fizzy_sweets" class="dropdown-item">Fizzy Sweets</a>
+                <a href="{% url 'products' %}?category=jelly_and_foam" class="dropdown-item ">Jelly and Foam Sweets</a>
+                <a href="{% url 'products' %}?category=chocolate_toffee" class="dropdown-item ">Chocolate and Toffee Sweets</a>
+                <a href="{% url 'products' %}?category=traditional_sweets" class="dropdown-item ">Traditional Sweets</a>
+                <a href="{% url 'products' %}?category=pic_n_mix" class="dropdown-item ">Other Sweets</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="confectionary-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Snacks 'N' Treats
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href="" class="dropdown-item">Chocolate</a>
+                <a href="" class="dropdown-item">Retro</a>
+                <a href="" class="dropdown-item">Snacks</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Confectionary
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="confectionary-link">
-                <a href="{% url 'products' %}?category=chocolate" class="dropdown-item">Chocolate</a>
-                <a href="{% url 'products' %}?category=retro" class="dropdown-item">Retro</a>
-                <a href="{% url 'products' %}?category=fudge" class="dropdown-item">Fudge</a>
-                <a href="{% url 'products' %}?category=chocolate,retro,fudge" class="dropdown-item">All Confectionary</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="snacks-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Snacks and More
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="snacks-link">
-                <a href="{% url 'products' %}?category=snacks" class="dropdown-item">Snacks</a>
-                <a href="{% url 'products' %}?category=gift_boxes,gift_baskets" class="dropdown-item">Gift Boxes & Baskets</a>
-                <a href="{% url 'products' %}?category=sweet_hampers" class="dropdown-item">Sweet Hampers</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+                <a href="" class="dropdown-item">Celebrations & Special Occasions</a>
+                <a href="" class="dropdown-item">Hampers and Baskets</a>
+                <a href="" class="dropdown-item">Other Offers</a>
             </div>
         </li>
     </ul>

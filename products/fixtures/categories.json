@@ -1,7 +1,0 @@
-[
-    {"pk": 1, "model": "products.category", "fields": {"name": "pic_n_mix", "friendly_name": "Pic 'N' Mix"}}, 
-    {"pk": 2, "model": "products.category", "fields": {"name": "sweets", "friendly_name": "Sweets"}}, 
-    {"pk": 3, "model": "products.category", "fields": {"name": "confectionary", "friendly_name": "Confectionary"}}, 
-    {"pk": 4, "model": "products.category", "fields": {"name": "deals", "friendly_name": "Deals"}}, 
-    {"pk": 5, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}}
-]
