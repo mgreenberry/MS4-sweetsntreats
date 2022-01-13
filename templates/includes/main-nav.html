@@ -2,26 +2,27 @@
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pic 'N' Mix
+                All Sweets 'N' Treats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=fizzy_sweets" class="dropdown-item">Fizzy Sweets</a>
-                <a href="{% url 'products' %}?category=jelly_and_foam" class="dropdown-item ">Jelly and Foam Sweets</a>
-                <a href="{% url 'products' %}?category=chocolate_toffee" class="dropdown-item ">Chocolate and Toffee Sweets</a>
-                <a href="{% url 'products' %}?category=traditional_sweets" class="dropdown-item ">Traditional Sweets</a>
-                <a href="{% url 'products' %}?category=pic_n_mix" class="dropdown-item ">Other Sweets</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item ">Name</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Snacks 'N' Treats
+                Pick 'N' Mix
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Chocolate</a>
-                <a href="" class="dropdown-item">Retro</a>
-                <a href="" class="dropdown-item">Snacks</a>
+                <a href="{% url 'products' %}?category=fizzy_sweets" class="dropdown-item">Fizzy Sweets</a>
+                <a href="{% url 'products' %}?category=jelly_and_foam" class="dropdown-item">Jelly and Foam Sweets</a>
+                <a href="{% url 'products' %}?category=chocolate_toffee" class="dropdown-item">Chocolate and Toffee Sweets</a>
+                <a href="{% url 'products' %}?category=traditional_sweets" class="dropdown-item ">Traditional Sweets</a>
+                <a href="{% url 'products' %}?category=other_sweets" class="dropdown-item">Other Sweets</a>
+                <a href="{% url 'products' %}?category=fizzy_sweets,jelly_and_foam,chocolate_toffee,traditional_sweets,other_sweets" class="dropdown-item">All Products</a>
             </div>
         </li>
 
