@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    # user created apps - based on Boutique Ado
     'home',
     'products',
     'basket',
