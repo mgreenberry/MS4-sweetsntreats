@@ -2,8 +2,8 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-
+<head>
+    <!-- meta tags -->
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
@@ -32,27 +32,22 @@
 
     {% block corejs %}
         <script src="https://kit.fontawesome.com/24de4a11f0.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     {% endblock %}
 
     {% block extra_js %}
     {% endblock %}
-
-    <title>Sweets N Treats {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
+ 
+    <title>Sweets 'N' Treats {% block extra_title %}{% endblock %}</title>
+</head>
+<body>
     <header class="container-fluid fixed-top">
         <nav id="topnav" class="row bg-info pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link text-black">
-                    <h2 class="logo-font my-0"><strong>Sweets 'N' Treats</strong></h2>
-                </a>
-            </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
+                <form method="GET" action="">
+                    <div class="input-group w-75">
                         <input class="form-control rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control bg-warning btn border" type="submit">
@@ -64,33 +59,38 @@
                     </div>
                 </form>
             </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link text-black">
+                    <h2 class="logo-font my-0"><strong>Sweets 'N' Treats</strong></h2>
+                </a>
+            </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
+                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center text-black">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <p class="text-black my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu bg-info border-0" aria-labelledby="user-options">
+                        <div class="text-black bg-info dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="" class="dropdown-item text-black ">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <a href="" class="dropdown-item text-black">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="text-black dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="text-black dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="text-black dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
-                            <div class="text-black text-center">
-                                <div><i class="fas fa-shopping-basket fa-lg"></i></div>
-                                <p class="my-0">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-basket fa-lg text-black"></i></div>
+                                <p class="text-black my-0">
                                     {% if grand_total %}
                                         £{{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -102,7 +102,7 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav>   
         <div class="row bg-info">
             {% include 'includes/mobile-nav.html' %}
             <nav class="navbar navbar-expand-lg navbar-light w-100">
@@ -112,26 +112,31 @@
                 {% include 'includes/menu-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
+        <div id="" class="row text-center">
             <div class="col bg-warning text-black">
-                <h4 class="text-black logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
-            </div>
+                <h4 class="text-black logo-font my-1"><strong>Free delivery on orders over £{{ free_delivery_threshold }}!</strong></h4>                
+            </div>            
         </div>
     </header>
-    
-    {% if messages %}
-    <div class="message-container">
-    </div>
-    {% endif %}
 
+    {% if messages %}
+        <div class="message-container">
+        </div>
+    {% endif %}
+    
     {% block page_header %}
     {% endblock %}
 
     {% block content %}
     {% endblock %}
 
-    {% block postloadjs %}
-    {% endblock %}
+    <footer>
+        <nav>
+        </nav>
+    </footer>
 
-  </body>
+    {% block postloadjs %}
+
+    {% endblock %}
+</body>
 </html>
