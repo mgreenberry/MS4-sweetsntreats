@@ -11,12 +11,12 @@
                 <p class="my-0">Search</p>
             </div>
         </a>
-        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+        <div class="dropdown-menu border-0 w-100 bg-info p-3 rounded-0 my-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search for your treat">
                     <div class="input-group-append">
-                        <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                        <button class="form-control form-control btn btn-black bg-warning border border-black rounded-0" type="submit">
                             <span class="icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -33,7 +33,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
-        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+        <div class="dropdown-menu border-0 bg-info" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                     <a href="" class="dropdown-item">Product Management</a>

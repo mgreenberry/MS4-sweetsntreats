@@ -24,8 +24,13 @@ body {
     text-transform: uppercase;
 }
 
-.main-logo-link {
+/* .main-logo-link {
     width: fit-content;
+} */
+
+ul {
+    margin: auto;
+    padding-inline-start: 0%;
 }
 
 .shop-now-button {
@@ -285,7 +290,7 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 250px;;
     }
 
     body {
