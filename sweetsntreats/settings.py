@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'home',
     'products',
     'basket',
-    'checkout'
+    'checkout',
+    # other apps based on Boutique Ado
+    'crispy_forms',
     # Other created apps
 ]
 
@@ -81,6 +83,10 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'basket.contexts.basket_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
