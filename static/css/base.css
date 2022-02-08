@@ -24,13 +24,8 @@ body {
     text-transform: uppercase;
 }
 
-/* .main-logo-link {
+.main-logo-link {
     width: fit-content;
-} */
-
-ul {
-    margin: auto;
-    padding-inline-start: 0%;
 }
 
 .shop-now-button {
@@ -174,7 +169,7 @@ input[name='q']::placeholder {
     border-bottom-color: #343a40 !important;
 }
 
-.basket-notification-wrapper {
+.bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -283,14 +278,14 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 200px;
+        padding-top: 164px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 250px;;
+        padding-top: 116px;
     }
 
     body {

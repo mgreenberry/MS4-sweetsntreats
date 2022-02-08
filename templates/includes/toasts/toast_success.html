@@ -14,24 +14,19 @@
                 <hr class="mt-1 mb-3">
             </div>
         </div>
-        {% if grand_total and not on_profile_page %}
-            <p class="logo-font bg-white text-black py-1">Your Basket ({{ product_count }})</p>
-            <div class="basket-notification-wrapper">
+        {% if grand_total %}
+            <p class="logo-font bg-white text-black py-1">Your Basket {{ product.count}}</p>
+            <div class="bag-notification-wrapper">
                 {% for item in basket_items %}
-                    <div class="row">
-                        <div class="col-3 my-1">
-                            {% if item.product.image %}
-                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                            {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                            {% endif %}
-                        </div>
-                        <div class="col-9">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">{% if item.product.has_sizes %}Size: {{ item.size|upper }}% endif %}</p>
-                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
-                        </div>
+                <div class="row">
+                    <div class="col-3 my-1">
+                        <img class="w-100" src="{{ item.product.image.url }}">
                     </div>
+                    <div class="col-9">
+                        <p class="my-0 small text-muted"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
+                    </div>
+                </div>
                 {% endfor %}
             </div>
             <div class="row">
@@ -56,3 +51,4 @@
         {% endif %}
     </div>
 </div>
+        
