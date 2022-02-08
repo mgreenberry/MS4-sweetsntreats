@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load basket_tools %}
 
 {% block page_header %}
     <div class='container header-container'>
@@ -31,6 +32,7 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
+                                    <th scope="col">Update Quantity</th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thread>
@@ -84,7 +86,7 @@
                                             data-product_size="{{ item.size }}"><small>Remove</small></button>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">£</p>
+                                        <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
