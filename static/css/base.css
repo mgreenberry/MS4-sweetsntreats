@@ -10,7 +10,6 @@ body {
     font-family: 'Lato';
 }
 
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -24,8 +23,17 @@ body {
     text-transform: uppercase;
 }
 
-.main-logo-link {
+/*.main-logo-link {
     width: fit-content;
+}*/
+.center-me {
+    align-items: center !important;
+    padding-left: 1rem;
+}
+
+ul {
+    margin: auto;
+    padding-inline: 0;
 }
 
 .shop-now-button {
@@ -278,14 +286,14 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 200px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 250px;
     }
 
     body {
