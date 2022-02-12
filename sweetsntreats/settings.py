@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'products',
     'basket',
     'checkout',
+    'profiles',
     # other apps based on Boutique Ado
     'crispy_forms',
     # Other created apps
