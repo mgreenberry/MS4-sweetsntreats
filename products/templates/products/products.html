@@ -82,6 +82,14 @@
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% endif %}
+
+                                            {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit Product</a>
+                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete Product</a>
+                                                </small>
+                                            {% endif %}
+                                            
                                         </div>
                                     </div>
                                 </div>
