@@ -17,16 +17,19 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='has_sizes',
-            field=models.BooleanField(blank=True, default=False, null=True),
+            field=models.BooleanField(
+                blank=True, default=False, null=True),
         ),
         migrations.AddField(
             model_name='product',
             name='rating',
-            field=models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True),
+            field=models.DecimalField(
+                blank=True, decimal_places=2, max_digits=6, null=True),
         ),
         migrations.AddField(
             model_name='product',
             name='sku',
-            field=models.CharField(blank=True, max_length=254, null=True),
+            field=models.CharField(
+                blank=True, max_length=254, null=True),
         ),
     ]

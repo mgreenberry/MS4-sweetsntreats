@@ -10,7 +10,7 @@ body {
     font-family: 'Lato';
 }
 
-/* from Bulma */
+/* from Bulma - copied from Boutique Ado*/
 .icon {
     align-items: center;
     display: inline-flex;
@@ -23,9 +23,6 @@ body {
     text-transform: uppercase;
 }
 
-/*.main-logo-link {
-    width: fit-content;
-}*/
 .center-me {
     align-items: center !important;
     padding-left: 1rem;
@@ -286,14 +283,14 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 200px;
+        padding-top: 164px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 250px;
+        padding-top: 116px;
     }
 
     body {
