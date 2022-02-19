@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     # other apps based on Boutique Ado
     'crispy_forms',
     'storages',
-    # Other created apps
+    # User Created Apps
 ]
 
 MIDDLEWARE = [

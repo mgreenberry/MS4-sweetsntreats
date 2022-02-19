@@ -5,9 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import ProductForm
-
-# Create your views here.
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -68,9 +66,24 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    form = ReviewForm
+    reviews = product.reviews.filter(active=True) # doesn't allow drafts
+    new_review = None
+
+    if request.method == 'POST':
+        form = ReviewForm(data=request.POST)
+        if form.is_valid():
+            new_review = form.save(commit=True)
+            new_review.product = product
+            new_review.save()
+        else:
+            form = ReviewForm()
 
     context = {
         'product': product,
+        'form': form,
+        'reviews': reviews,
+        'new_review': new_review,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -146,3 +159,30 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+    """ Add a review of a product """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                review = form.save(commit=False)
+                review.product = product
+                review.author = request.user
+                review.save()
+                messages.success(
+                    request, 'Thank you for your review. \
+                        This will now be added to this product')
+                return redirect(reverse('product_detail', args=[product.id]))
+            else:
+                messages.error(
+                    request,
+                    'Sorry your review failed. Please try again')
+    context = {
+        'form': form
+    }
+
+    return render(request, context)
