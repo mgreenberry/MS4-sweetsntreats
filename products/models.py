@@ -35,9 +35,6 @@ class Product(models.Model):
 
 class Reviews(models.Model):
 
-    class Meta:
-        verbose_name_plural = 'Reviews'
-
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE,
         related_name="reviews"
@@ -50,6 +47,7 @@ class Reviews(models.Model):
     active = models.BooleanField(default=True)
 
     class Meta:
+        verbose_name_plural = 'Reviews'
         ordering = ['-date_added']
 
     def __str__(self):

@@ -67,7 +67,7 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     form = ReviewForm
-    reviews = product.reviews.filter(active=True) # doesn't allow drafts
+    reviews = product.reviews.filter(active=True)  # doesn't allow drafts
     new_review = None
 
     if request.method == 'POST':
@@ -163,10 +163,7 @@ def delete_product(request, product_id):
 
 @login_required
 def add_review(request, product_id):
-    """ 
-    Add a review of a product
-    With help from Suzy Bee
-    """
+    """ Add a review of a product - With help from Suzy Bee """
     product = get_object_or_404(Product, pk=product_id)
     if request.user.is_authenticated:
         if request.method == 'POST':
@@ -197,8 +194,8 @@ def edit_review(request, product_id, review_id):
     product = get_object_or_404(Product, pk=product_id)
     review = get_object_or_404(Reviews, pk=review_id)
     if not request.user == review.author:
-         messages.error(request, 'Sorry you are not allowed to do this')
-         return redirect(reverse('product_detail', args=[product_id]))
+        messages.error(request, 'Sorry you are not allowed to do this')
+        return redirect(reverse('product_detail', args=[product_id]))
     if request.method == 'POST':
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
