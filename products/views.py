@@ -196,6 +196,9 @@ def edit_review(request, product_id, review_id):
     """ Add a review and rating to the product """
     product = get_object_or_404(Product, pk=product_id)
     review = get_object_or_404(Reviews, pk=review_id)
+    if not request.user == review.author:
+         messages.error(request, 'Sorry you are not allowed to do this')
+         return redirect(reverse('product_detail', args=[product_id]))
     if request.method == 'POST':
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
@@ -222,21 +225,19 @@ def edit_review(request, product_id, review_id):
 
 
 @login_required
-def delete_review(request, review_title, product_id):
+def delete_review(request, product_id, review_id):
     """
     Delete a review from the store
     """
-    # review = get_object_or_404(Reviews, review_title)
-    review = Reviews.objects.get(review_title=review_title)
-    user = request.user
-    if review.author == user:
+    review = Reviews.objects.get(id=review_id)
+    if review.author == request.user:
         review.delete()
         messages.success(
             request,
-            f'You have deleted your review - {review_title}')
+            f'You have deleted your review {review.review_title}')
         return redirect(reverse('product_detail', args=[product_id]))
 
     else:
         messages.error(request, "You are not allowed to do that.")
 
-    return render(request)
+    return redirect(reverse('product_detail', args=[product_id]))

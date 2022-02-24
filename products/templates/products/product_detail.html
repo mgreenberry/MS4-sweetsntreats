@@ -105,7 +105,8 @@
                         </div>
                         {% if user == review.author %}
                         <a href="{% url 'edit_review' product.id review.id %}">Edit Review</a>
-                        <form action="{% url 'delete_review' review.review_title  product.id %}" method="POST">
+                        
+                        <form action="{% url 'delete_review' product.id review.id %}" method="POST">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-6">
