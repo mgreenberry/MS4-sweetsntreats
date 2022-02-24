@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'edit_review' product.id review.id %}" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col">
+            {{ form|crispy }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 ">
+            <button type="reset" class="btn bg-danger">
+                Reset Form <i class="fas fa-undo ml-2"></i>
+            </button>
+        </div>
+        <div class="col-6">
+            <button class="button bg-info" type="submit">Edit Review <i class="fas fa-plus ml-2"></i></button>
+        </div>
+    </div>
+</form>
+{% endblock %}

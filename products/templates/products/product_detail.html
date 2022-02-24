@@ -103,6 +103,8 @@
                             <p>{{ review.author }}</p>
                             <p>{{ review.date_added }}</p>
                         </div>
+                        {% if user == review.author %}
+                        <a href="{% url 'edit_review' product.id review.id %}">Edit Review</a>
                         <form action="{% url 'delete_review' review.review_title  product.id %}" method="POST">
                             {% csrf_token %}
                             <div class="row">
@@ -111,14 +113,7 @@
                                 </div>
                             </div>
                         </form>
-                        <form action="{% url 'edit_review' review.id  product.id %}" method="POST">
-                            {% csrf_token %}
-                            <div class="row">
-                                <div class="col-6">
-                                    <button class="button bg-info" type="submit">Edit Review <i class="fas fa-plus ml-2"></i></button>
-                                </div>
-                            </div>
-                        </form>
+                        {% endif %}
                     {% endfor %}
                 {% else %}
                         <div class="col">
@@ -133,7 +128,7 @@
         <div class="row">
             <div class="col-4">
                 <h5 class="">Add your review here</h5>
-                <form action="{% url 'add_review' product.id %}#reviews" method="POST">
+                <form action="{% url 'add_review' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="row">
                         <div class="col">
