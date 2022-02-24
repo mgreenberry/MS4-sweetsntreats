@@ -10,3 +10,4 @@ cloudinary_python.txt
 *.sqlite3
 *.pyc 
 env.py
+db.sqlite3
