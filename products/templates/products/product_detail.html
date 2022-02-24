@@ -90,63 +90,81 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <h3>Reviews</h3>
+                {% if reviews %}
+                    {% for review in product.reviews.all %}
+                        <div class="col-6">
+                            <h4>{{ review.review_title }}</h4>
+                        </div>
+                        <div class="card">
+                            <p>{{ review.review_body }}</p>
+                            <p>{{ review.author }}</p>
+                            <p>{{ review.date_added }}</p>
+                        </div>
+                        <form action="{% url 'delete_review' review.review_title  product.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="button bg-warning" type="submit">Delete Review <i class="fas fa-plus ml-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="{% url 'edit_review' review.id  product.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="button bg-info" type="submit">Edit Review <i class="fas fa-plus ml-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    {% endfor %}
+                {% else %}
+                        <div class="col">
+                            <h4 class="">There are no reviews for {{ product.name }} yet.</h4>
+                            <h5 class="">Why don't you add one?</h5>
+                        </div>
+                {% endif %}
+            </div>
+        </div>
+    
+        {% if user.is_authenticated %}
+        <div class="row">
+            <div class="col-4">
+                <h5 class="">Add your review here</h5>
+                <form action="{% url 'add_review' product.id %}#reviews" method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col">
+                            {{ form|crispy }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 ">
+                            <button type="reset" class="btn bg-danger">
+                                Reset Form <i class="fas fa-undo ml-2"></i>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button class="button bg-info" type="submit">Add Review <i class="fas fa-plus ml-2"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        {% else %}
+        <div class="rows">
+            <div class="col-6">
+                <h6 class="">
+                    Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
+            </div>
+        </div>
+        {% endif %}
     </div>
 
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-            <h3>Reviews</h3>
-            {% if reviews %}
-                {% for review in product.reviews.all %}
-                    <div class="col-6">
-                        <h4>{{ review.review_title }}</h4>
-                    </div>
-                    <div class="card">
-                        <p>{{ review.review_body }}</p>
-                        <p>{{ review.author }}</p>
-                        <p>{{ review.date_added }}</p>
-                    </div>
-                {% endfor %}
-            {% else %}
-                    <div class="column">
-                        <h4 class="title-heading-small">There are no reviews for {{ product.name }} yet.</h4>
-                        <h5 class="title-heading-small">Why don't you add one?</h5>
-                    </div>
-            {% endif %}
-        </div>
-    </div>
-
-    {% if user.is_authenticated %}
-    <div class="row my-4">
-        <div class="col my-4">
-            <h5 class="">Add your review here</h5>
-            <form action="{% url 'add_review' product.id %}#reviews" method="POST">
-                {% csrf_token %}
-                <div class="row">
-                    <div class="col">
-                        {{ form|crispy }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 ">
-                        <button type="reset" class="btn bg-danger">
-                            Reset Form <i class="fas fa-undo ml-2"></i>
-                        </button>
-                    </div>
-                    <div class="col-6">
-                        <button class="button bg-info" type="submit">Add Review <i class="fas fa-plus ml-2"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    {% else %}
-    <div class="rows">
-        <div class="col">
-            <h6 class="">
-                Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
-        </div>
-    </div>
-    {% endif %}
+    
 {% endblock %}
 
 {% block postloadjs %}
