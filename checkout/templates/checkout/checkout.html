@@ -70,6 +70,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill in the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -111,7 +112,7 @@
                         <!-- Pass the client secret to the view so we can get the payment intent id -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
-                    
+ 
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a href="{% url 'view_basket' %}" class="btn btn-outline-black rounded-0">
 							<span class="icon">

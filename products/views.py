@@ -238,3 +238,27 @@ def delete_review(request, product_id, review_id):
         messages.error(request, "You are not allowed to do that.")
 
     return redirect(reverse('product_detail', args=[product_id]))
+
+
+@login_required
+def add_favourite(request, product_id):
+    item = get_object_or_404(Product, pk=product_id)
+    try:
+        if item.is_favourite:
+            item.is_favourite = False
+            messages.success(
+                request,
+                "This item has been deleted from your favourites")
+        else:
+            item.is_favourite = True
+            messages.success(
+                request,
+                "This item has been added to your favourites")
+        item.save()
+    except (KeyError, Product.DoesNotExist):
+        messages.error(
+            request,
+            'This product does not exist')
+        return redirect(reverse('product_detail', args=[product_id]))
+
+    return redirect(reverse('product_detail', args=[product_id]))

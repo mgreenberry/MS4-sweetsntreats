@@ -79,9 +79,10 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
-                                            {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                            {% endif %}
+                                          
+                                            <td>
+                                                <a href="{% url 'add_favourite' product.id %}" class="btn-favorite"><span><i class="fa-solid fa-heart {% if product.is_favourite %} active {% else %} fa-light fa-heart {% endif %}"></i></span></a>
+                                            </td>
 
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
