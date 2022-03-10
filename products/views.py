@@ -266,23 +266,3 @@ def remove_favourite(request, user_id, product_id):
     Favourite.objects.filter(product=product, user_profile=user).delete()
 
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-
-
-# @login_required
-# def favourite_list(request):
-
-#     favourites = None
-#     try:
-#         favourites = Favourite.objects.get(username=request.user)
-#         print(favourites)
-
-#         favourites_search = Favourite.objects.filter(user_profile=request.user)
-#         favourites = [favourite.product.name for favourite in favourites_search]
-#     except Favourite.DoesNotExist:
-#         pass
-
-#     template = 'products/products.html'
-#     context = {
-#         'favourite_list': favourites,
-#     }
-#     return render(request, template, context)
