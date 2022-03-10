@@ -19,6 +19,9 @@ urlpatterns = [
         'edit_review/<int:product_id>/<review_id>/',
         views.edit_review, name='edit_review'),
     path(
-        'add_favourite/<product_id>/',
+        'add_favourite/<int:product_id>/<user_id>/',
         views.add_favourite, name='add_favourite'),
+    path(
+        'remove_favourite/<int:product_id>/<user_id>/',
+        views.remove_favourite, name='remove_favourite'),
 ]

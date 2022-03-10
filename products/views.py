@@ -4,8 +4,12 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Reviews
+from django.http import HttpResponseRedirect
+
+from .models import Product, Category, Reviews, Favourite
 from .forms import ProductForm, ReviewForm
+
+from django.contrib.auth.models import User
 
 
 def all_products(request):
@@ -16,6 +20,8 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    favourites_search = Favourite.objects.filter(user_profile=request.user)
+    favourites = [favourite.product.name for favourite in favourites_search]
 
     if request.GET:
         if 'sort' in request.GET:
@@ -57,6 +63,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'favourites': favourites,
     }
 
     return render(request, 'products/products.html', context)
@@ -241,24 +248,41 @@ def delete_review(request, product_id, review_id):
 
 
 @login_required
-def add_favourite(request, product_id):
-    item = get_object_or_404(Product, pk=product_id)
-    try:
-        if item.is_favourite:
-            item.is_favourite = False
-            messages.success(
-                request,
-                "This item has been deleted from your favourites")
-        else:
-            item.is_favourite = True
-            messages.success(
-                request,
-                "This item has been added to your favourites")
-        item.save()
-    except (KeyError, Product.DoesNotExist):
-        messages.error(
-            request,
-            'This product does not exist')
-        return redirect(reverse('product_detail', args=[product_id]))
+def add_favourite(request, user_id, product_id):
+    user = get_object_or_404(User, pk=user_id)
+    product = get_object_or_404(Product, pk=product_id)
 
-    return redirect(reverse('product_detail', args=[product_id]))
+    Favourite.objects.create(user_profile=user, product=product)
+
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def remove_favourite(request, user_id, product_id):
+
+    user = get_object_or_404(User, username=request.user)
+    product = get_object_or_404(Product, pk=product_id)
+
+    Favourite.objects.filter(product=product, user_profile=user).delete()
+
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+# @login_required
+# def favourite_list(request):
+
+#     favourites = None
+#     try:
+#         favourites = Favourite.objects.get(username=request.user)
+#         print(favourites)
+
+#         favourites_search = Favourite.objects.filter(user_profile=request.user)
+#         favourites = [favourite.product.name for favourite in favourites_search]
+#     except Favourite.DoesNotExist:
+#         pass
+
+#     template = 'products/products.html'
+#     context = {
+#         'favourite_list': favourites,
+#     }
+#     return render(request, template, context)

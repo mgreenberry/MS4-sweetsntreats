@@ -79,10 +79,17 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
-                                          
-                                            <td>
-                                                <a href="{% url 'add_favourite' product.id %}" class="btn-favorite"><span><i class="fa-solid fa-heart {% if product.is_favourite %} active {% else %} fa-light fa-heart {% endif %}"></i></span></a>
-                                            </td>
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    
+                                                    {% if product.name in favourites %}
+                                                        <a href="{% url 'remove_favourite' product.id user.id %}"><span><i class="fas fa-heart"></i></span></a>
+                                                    {% else %}
+                                                        <a href="{% url 'add_favourite' product.id user.id %}"><span><i class="far fa-heart"></i></span></a>
+                                                    {% endif %}
+                                                  
+                                                </div>
+                                            </div>
 
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
