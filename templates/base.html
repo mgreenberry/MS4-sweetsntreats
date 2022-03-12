@@ -51,9 +51,9 @@
 <body>
     <header class="container-fluid fixed-top">
         <nav id="topnav" class="row bg-info pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <form class="center-me" method="GET" action="{% url 'products' %}">
-                    <div class="center-me text-center input-group w-75">
+                    <div class="input-group w-100">
                         <input class="form-control rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control bg-warning btn border" type="submit">
@@ -65,12 +65,12 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
+            <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link text-black">
                     <h2 class="logo-font my-0"><strong>Sweets 'N' Treats</strong></h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,17 +111,12 @@
         </nav>   
         <div class="row bg-info">
             {% include 'includes/mobile-nav.html' %}
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-end w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/menu-nav.html' %}
             </nav>
-        </div>
-        <div id="" class="row text-center">
-            <div class="col bg-warning text-black">
-                <h4 class="text-black logo-font my-1"><strong>Free delivery on orders over £{{ free_delivery_threshold }}!</strong></h4>                
-            </div>            
         </div>
     </header>
 

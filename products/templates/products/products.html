@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+                <h2 class="text-black">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mt-3 text-center text-md-left">
+                        <p class="text-black mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                             {% endif %}
@@ -66,36 +66,26 @@
                                     </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0">{{ product.name }}
+                                        <span class="favourite-heart">
+                                            {% if product.name in favourites %}
+                                                <a href="{% url 'remove_favourite' product.id user.id %}"><i class="fas fa-heart fa-2x"></i></a>
+                                            {% else %}
+                                                <a href="{% url 'add_favourite' product.id user.id %}"><i class="far fa-heart fa-2x"></i></a>
+                                            {% endif %}
+                                        </span>
+                                    </p>
+                                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                             {% if product.category %}
                                                 <p class="small mt-1 mb-0">
-                                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
                                                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                     </a>
                                                 </p>
-                                            {% endif %}
-                                            <div class="row">
-                                                <div class="col-12 col-md-6 col-lg-4">
-                                                    
-                                                    {% if product.name in favourites %}
-                                                        <a href="{% url 'remove_favourite' product.id user.id %}"><span><i class="fas fa-heart"></i></span></a>
-                                                    {% else %}
-                                                        <a href="{% url 'add_favourite' product.id user.id %}"><span><i class="far fa-heart"></i></span></a>
-                                                    {% endif %}
-                                                  
-                                                </div>
-                                            </div>
-
-                                            {% if request.user.is_superuser %}
-                                                <small class="ml-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit Product</a>
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete Product</a>
-                                                </small>
                                             {% endif %}
                                             
                                         </div>
@@ -137,6 +127,33 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>    
     <script type="text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
