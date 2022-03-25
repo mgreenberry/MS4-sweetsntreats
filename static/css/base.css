@@ -60,8 +60,8 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content/Box */
-  .modal-content {
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -69,20 +69,75 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     width: 80%; /* Could be more or less, depending on screen size */
   }
   
-  /* The Close Button */
-  .close {
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
+
+.stage {
+    width: 100%;
+  }
+  
+.curtain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+.curtain-panel {
+    display: flex;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+.curtain-panel .curtain {
+    width: 100%;
+    background: url('/media/sweets.jpeg') no-repeat center center fixed;
+    transition: transform 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+.curtain-panel .left-curtain:before {
+    left: 0;
+  }
+  
+.curtain-panel .right-curtain:before {
+    right: 0;
+  }
+  
+.curtain-trigger {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+.curtain-trigger:checked ~ .left-curtain {
+    transform: translateX(calc(-100% + 2em));
+  }
+  
+.curtain-trigger:checked ~ .right-curtain {
+    transform: translateX(calc(100% - 2em));
+  }
+
+.shop-button {
+    background: black;
+    color: white;
+    margin-left: 25%;
+}
 
 .shop-now-button {
     background: black;
