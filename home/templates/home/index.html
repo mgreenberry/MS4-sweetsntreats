@@ -10,41 +10,18 @@
 {% endblock %}
 
 {% block content %}
-    <div class='container h-100'>
-        <div class='row h-100'>
+    <div class='container'>
+        <div class='row'>
             <div class='col-12'>
-                <div class="stage">
-                    <div class="stage-content"></div>
-                    <label class="curtain-container">
-                        <div class="curtain-panel">
-                            <input type="checkbox" class="curtain-trigger"/>
-                            <div class="left-curtain curtain">
-                                <div>
-                                    <h3 class='display-4 logo-font text-black'>
-                                        Treat yourself 
-                                    </h3>
-                                    <h4 class="text-black"><i class="fas fa-angle-double-left text-black"></i> Check our our store</h4>
-                                </div>
-                            </div>
-                            <div class="right-curtain curtain">
-                                <div>
-                                    <h3 class='display-4 logo-font text-black'>
-                                        in 2022
-                                    </h3>
-                                    <h4 class="text-black">Check out our store <i class="fas fa-angle-double-right"></i></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </label>  
-
-                </div>
-                <h2 class='display-4 logo-font text-black'>
-                    <a href="{% url 'products' %}" class="center-me shop-button btn btn-lg rounder-0 text-uppercase py-3">
+                <div class="container center-me">
+                    <h3 class='display-4 logo-font text-black justify-content-center align-content-center'>
+                        Treat yourself in 2022
+                    </h3>
+                    <a href="{% url 'products' %}" class="center-me shop-button btn btn-lg rounder-0 text-uppercase py-3 row d-flex justify-content-center align-content-center">
                         ENTER OUR SHOP NOW!
                     </a>    
-                </h2>
+                </div>
             </div>
-
         </div>
     </div>
 {% endblock %}
