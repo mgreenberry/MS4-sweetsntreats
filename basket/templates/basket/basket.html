@@ -12,9 +12,9 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-2">
+    <div class="container text-black mb-2">
         <div class="row">
-            <div class="col">
+            <div class="col text-center mt-3">
                 <hr>
                 <h2 class="logo-font mb-4">Shopping basket</h2>
                 <hr>
@@ -41,7 +41,7 @@
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "basket/product-image.html" %}
                                 </div>
-                                <div class="col-12 col-sm-6 mb-2">
+                                <div class="text-black col-12 col-sm-6 mb-2">
                                     {% include "basket/product-info.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 order-sm-last">
@@ -104,18 +104,20 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your basket is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <div class="col text-center mt-3">
+                        <p>Your basket is empty.</p>
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                        </a>
+                    </div>
                 {% endif %}
             </div>
         </div>
     </div>
-    <div class="bg-warning btt-button text-black shadow-sm rounded-0 border border-black">
+    <div class="text-black bg-warning btt-button text-black shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100 text-black">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i></i>
         </a>
