@@ -65,6 +65,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
+    margin-top: 15rem;
     border: 1px solid #888;
     width: 80%;
   }
@@ -141,9 +142,20 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     border: 1px solid black;
 }
 
+.checkout-button {
+    color: white !important;
+    border: 1px solid black;
+    background-color: green;
+    width: 85%;
+}
+
 .card {
 margin-bottom: 1rem !important;
 margin-top: 1rem !important;
+}
+
+.form-group {
+    margin: 1rem !important;
 }
 
 .text-black {
@@ -192,13 +204,6 @@ input[name='q']::placeholder {
 }
 
 /* ------------------------------- bootstrap toasts */
-
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
 
 .custom-toast {
     overflow: visible;

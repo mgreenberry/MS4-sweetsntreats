@@ -60,7 +60,7 @@
                         </small>
                     {% endif %}
 
-                    <p class="mt-3">{{ product.description }}</p>
+                    <p class="mt-1">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
@@ -91,16 +91,21 @@
                                     </div>
                                 </div>
                             </div>
-                           
-                            <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Basket">
+                            <div class="row">
+                                <div class="col-12 mt-1">
+                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-3" value="Add to Basket">
+                                    <a href="{% url 'checkout' %}" class="btn checkout-button rounded-0 mt-1">
+                                        <span class="text-uppercase">Checkout</span>
+                                    </a>
+                                </div>
                             </div>
+
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
@@ -111,17 +116,17 @@
     <div class="product-details-container mb-5 mt-md-5 text-black">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <h3>Reviews</h3>
+                <h3 class="form-group">Reviews</h3>
                 {% if reviews %}
                     {% for review in product.reviews.all %}
-                        <div class="card">
+                        <div class="card form-group">
                             <h4>{{ review.review_title }}</h4>
                             <p>{{ review.review_body }}</p>
                             <p>{{ review.author }}</p>
                             <p>{{ review.date_added }}</p>
                         </div>
                         {% if user == review.author %}
-                        <div class="row">
+                        <div class="row form-group">
                             <div class="col-6">
                                 <button class="edit-button btn-sm"><a class="edit-button" href="{% url 'edit_review' product.id review.id %}">Edit Review</a></button>
                             </div>
@@ -144,9 +149,9 @@
                     </div>
                 {% endif %}
             </div>
-            {% if user.is_authenticated %}
+                {% if user.is_authenticated %}
             <div class="col-12 col-md-6 col-lg-4 offset-lg">
-                <h5>Add your review here</h5>
+                <h5 class="form-group">Add your review here</h5>
                 <form action="{% url 'add_review' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="row">
@@ -154,7 +159,7 @@
                             {{ form|crispy }}
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row form-group">
                         <div class="col-6">
                             <button type="reset" class="delete-button btn-sm bg-danger">
                                 Reset Form <i class="fas fa-undo ml-2"></i>
@@ -168,29 +173,40 @@
             </div>
         </div>
     
-            {% else %}
+                {% else %}
         <div class="rows">
             <div class="col-6">
                 <h6 class="">
                     Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
             </div>
         </div>
-        {% endif %}
+                {% endif %} 
     </div>
+    <div class="form-group bg-warning btt-button text-black shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100 text-black">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i></i>
+        </a>
+    </div>
+
     
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
 <script>
     // Get the modal
-    var modal = document.getElementById("myModal");
+    let modal = document.getElementById("myModal");
     
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    let btn = document.getElementById("myBtn");
     
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
     
     // When the user clicks the button, open the modal 
     btn.onclick = function() {

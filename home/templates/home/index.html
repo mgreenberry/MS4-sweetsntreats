@@ -10,18 +10,20 @@
 {% endblock %}
 
 {% block content %}
-    <div class='container'>
-        <div class='row'>
-            <div class='col-12'>
-                <div class="container center-me">
-                    <h3 class='display-4 logo-font text-black justify-content-center align-content-center'>
-                        Treat yourself in 2022
-                    </h3>
-                    <a href="{% url 'products' %}" class="center-me shop-button btn btn-lg rounder-0 text-uppercase py-3 row d-flex justify-content-center align-content-center">
-                        ENTER OUR SHOP NOW!
-                    </a>    
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font text-black">
+                    Come on in and treat yourself to something nice
+                </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="center-me shop-button btn btn-lg rounder-0 text-uppercase py-3 row d-flex justify-content-center align-content-center">Shop Now</a>
+                    </h4>
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}

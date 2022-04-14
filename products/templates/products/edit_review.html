@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
 <div class="container text-black">
     <form action="{% url 'edit_review' product.id review.id %}" enctype="multipart/form-data" method="POST">
         {% csrf_token %}
