@@ -13,6 +13,11 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
+            <div class="col text-center">
+                <h2 class="text-black">{{ product.name }}</h2>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -28,8 +33,7 @@
             </div>
             <div class="text-black col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                    <h4 class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</h4>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -91,20 +95,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 mt-1">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
-                                    </a>
-                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-3" value="Add to Basket">
-                                    <a href="{% url 'checkout' %}" class="btn checkout-button rounded-0 mt-1">
-                                        <span class="text-uppercase">Checkout</span>
-                                    </a>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-1">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-1">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Keep Shopping</span>
+                                </a>
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-1" value="Add to Basket">
+                                <a href="{% url 'view_basket' %}" class="btn checkout-button rounded-0 mt-1">
+                                    <span class="text-uppercase">View Basket</span>
+                                </a>
                             </div>
+                        </div>
 
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
