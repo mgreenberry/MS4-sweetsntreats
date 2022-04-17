@@ -20,8 +20,9 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
-    favourites_search = Favourite.objects.filter(user_profile=request.user)
-    favourites = [favourite.product.name for favourite in favourites_search]
+    if request.user.is_authenticated:
+        favourites_search = Favourite.objects.filter(user_profile=request.user)
+        favourites = [favourite.product.name for favourite in favourites_search]
 
     if request.GET:
         if 'sort' in request.GET:
@@ -58,15 +59,26 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
-    context = {
-        'products': products,
-        'search_term': query,
-        'current_categories': categories,
-        'current_sorting': current_sorting,
-        'favourites': favourites,
-    }
+    if request.user.is_authenticated:
+        context = {
+            'products': products,
+            'search_term': query,
+            'current_categories': categories,
+            'current_sorting': current_sorting,
+            'favourites': favourites,
+        }
 
-    return render(request, 'products/products.html', context)
+        return render(request, 'products/products.html', context)
+
+    if not request.user.is_authenticated:
+        context = {
+            'products': products,
+            'search_term': query,
+            'current_categories': categories,
+            'current_sorting': current_sorting,
+        }
+
+        return render(request, 'products/products.html', context)
 
 
 def product_detail(request, product_id):
