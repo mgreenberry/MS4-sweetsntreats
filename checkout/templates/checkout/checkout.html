@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4 text-centered">Checkout</h2>
+                <h2 class="logo-font text-black mb-4 text-center">Checkout</h2>
                 <hr>
             </div>
         </div>
@@ -48,7 +48,7 @@
                             </a>
                         </div>
                         <div class="col-7">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 text-black"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small text-black">Quantity: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
@@ -95,9 +95,9 @@
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
-								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+								<label class="form-check-label text-black" for="id-save-info">
+                                    <a class="text-black" href="{% url 'account_signup' %}">Create an account</a> or 
+                                    <a class="text-black" href="{% url 'account_login' %}">login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
@@ -130,7 +130,7 @@
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
+							<span class="text-black">Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>
                 </form>
