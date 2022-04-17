@@ -70,7 +70,7 @@ def all_products(request):
 
         return render(request, 'products/products.html', context)
 
-    if not request.user.is_authenticated:
+    else:
         context = {
             'products': products,
             'search_term': query,
