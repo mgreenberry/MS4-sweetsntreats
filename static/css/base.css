@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Open+Sans&display=swap');
+/* The following are created by the user unless stated */
 html {
     height: 100%;
 }
@@ -7,7 +9,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Akshar';
 }
 
 /* from Bulma - copied from Boutique Ado*/
@@ -96,12 +98,10 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     margin: 25%;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
+/* 
+The following is from the Boutique Ado css unless stated 
+With more time, more user created css would have been created and used!
+*/
 .btn-black {
     background: black;
     color: white;
@@ -129,7 +129,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     background: #222;
     color: white;
 }
-
+/* User created edit & delete buttons - to edit */
 .edit-button {
     color: white !important;
     background-color: blue;
@@ -156,7 +156,7 @@ margin-top: 1rem !important;
 .form-group {
     margin: 1rem !important;
 }
-
+/* user created */
 .text-black {
     color: #000 !important;
 }
@@ -168,7 +168,7 @@ margin-top: 1rem !important;
 .bg-black {
     background: #000 !important;
 }
-
+/* user edited from boutique ado */
 .overlay {
 	height: 100%;
 	width: 100%;
