@@ -23,7 +23,7 @@ The site is designed to be responsive and easy to navigate on a range of devices
 
 **Note for Assessors**
 
-If you would like to use Stripe to create a subscription, please use the following test card details:
+If you would like to use Stripe to create a purchase, please use the following test card details:
 
 * Card Number - 4242 4242 4242 4242
 * MM/YY - 0424
@@ -97,7 +97,7 @@ The fonts were chosen to complement one another and also give the aesthetic of a
 
 **Please note that the images used in the website were sourced from a Google search with the intention of replacing them from free sites such as pexels.com. However, individual sweet images were not found in pexels.com and due to time constraints I have now come to the point I need to submit the project and I was unable to find the source of the images included on the site. Obviously, I will aim to amend the images before submission if possible**
 
-At present all images used in this site are from [here](https://browns-sweets.com/)
+At present all images used in this site are from [Browns Sweets](https://browns-sweets.com/)
 
 ### **Wireframes**
 
@@ -324,12 +324,12 @@ Every page contains the following features at the top of the website as standard
 []() was used to create the database. This allows the following functionality: -
 * Registration
 * Log In/Sign Out
-* Add multiple food items to users collection
+* Add product items to store
 * CRUD:-
-  * Create: Create a new user. Create a new food item in grocery/shopping or wasted food list
+  * Create: Create a new user. Create a new product item if superuser logged in. Create a review if user logged in. Create a 'favourite' linked item.
   * Read: Collects information held within the database
-  * Update: Allows editing of items in database, such as food items in the grocery and shopping list
-  * Delete: Allows deleting of items in database, such as food items in the grocery, shopping and wasted list
+  * Update: Allows editing of items in database, such as a product or review
+  * Delete: Allows deleting of items in database, such as products, reviews or favourites
 
 [Back to content](#table-of-contents)
 ## **Database**
