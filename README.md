@@ -54,7 +54,8 @@ Or create a user from 'My Account'
      5. [Layout](#layout)
    * [Structure](#structure)
    * [Wireframes](#wireframes)
-2. [Features](#features)
+2. [Site Navigation](#site-navigation)
+3. [Features](#features)
    * [All Pages](#all-pages)
    * [All Products](#all-products)
    * [Individual Product](#individual-product)
@@ -69,31 +70,32 @@ Or create a user from 'My Account'
    * [Add a product](#add-product)
    * [Edit a product](#edit-product)
    * [Delete a product](#delete-product)
-3. [Structure](#structure)
+4. [Structure](#structure)
    * [Users](#users)
    * [Products](#products)
    * [Categories](#categories)
    * [Favourite](#favourite)
    * [Order](#orders)
-4. [Technologies Used](#technologies-used)
+5. [Technologies Used](#technologies-used)
    * [Languages](#languages)
    * [Framework Library](#framework-library)
    * [Tools](#tools)
    * [Testing Tools](#testing-tools)
-5. [Testing](TESTING.md)
-6. [Deployment](#deployment)
+6. [Testing](TESTING.md)
+7. [Bugs](#bugs)
+8. [Deployment](#deployment)
    * [Project creation](#project-creation)
    * [Linking Site to MongoDB](#linking-site-to-mongodb)
    * [Deployment on Heroku](#deploying-on-heroku)
    * [Forking](#forking)
    * [Cloning and Implementing Locally](#cloning-and-implementing-locally)
-7. [Credits](#credits)
+9. [Credits](#credits)
    * [Content](#content)
    * [Media](#media)
    * [Icons](#icons)
    * [Code](#code)
-8. [Acknowledgements](#acknowledgements)
-9. [Author Information](#author-information)
+10. [Acknowledgements](#acknowledgements)
+11. [Author Information](#author-information)
 
 ## UX (User Experience)
 
@@ -109,7 +111,7 @@ The fonts were chosen to complement one another and also give the aesthetic of a
 
 ### **Colours**
 
-- ![](static/docs/images/ms4-coolors.png) 
+- ![Colours](static/docs/images/ms4-coolors.png) 
 - This Coolors palette was used to put together a colour scheme to reflect a warm pastel colour scheme. A pastel blue was employed for the header and a pastel peach/pink for the overlay on each site.
 - These colours would be changed for better contrast and to give better scores on lighthouse and for better assessability
 
@@ -128,9 +130,9 @@ The icons were sourced from [Font Awesome](https://fontawesome.com/). The Favico
 ![Layout and Navigation of Site](docs/readme/navigation.png)
 
 ## **Structure**
-[]() was used to create the database. This allows the following functionality: -
+The database. This allows the following functionality: -
 * Registration
-* Log In/Sign Out
+* Login/Logout
 * Add product items to store
 * CRUD:-
   * Create: Create a new user. Create a new product item if superuser logged in. Create a review if user logged in. Create a 'favourite' linked item.
@@ -149,9 +151,7 @@ Tablet view would be very similar to mobile view and time didn't allow another w
 
 [Back to content](#table-of-contents)
 
-## **Features**
-
-### **Site Navigation**
+## **Site Navigation**
 
 The navigation bar displays different links depending on whether the user is logged in, logged out or a super user.
 
@@ -171,125 +171,8 @@ The navigation bar displays different links depending on whether the user is log
 | Like a product | &#10007; | &#10003; | &#10003; |
 | un like a product | &#10007; | &#10003; | &#10003; |
 
-### **Features Implemented**
-
-##### **Create Profile**
-- Users are able to:
-  - Create a profile to save their orders and personal information
-  - Confirm their details are correct via email verification
-  - Store details for faster checkout
-
-##### **Log in to Profile**
-- Users are able to:
-  - Log in to profile to see their orders and personal information
-  - Edit personal information if required
-
-##### **Products Page**
-- Users are able to:
-  - See the products for sale on the site
-  - Sort products by A-Z, Name, Category, Price.
-  - Price of product
-
-##### **Product Details Page**
-- Users are able to:
-  - Click the products to find out more information including
-  - Name, price, SKU, category
-  - Add products to basket to buy
-  - See reviews of products and also review the products if logged in
-- Users logged in are able to:
-  - Add a Review
-  - Edit a Review that they've created
-  - Delete a Review that they've created
-  - Make an item a 'favourite' by clicking the heart icon
-  - Deselect an item as a 'favourite' by clicking the heart icon
-
-- Super users are able to:
-  - Add, edit and delete products
-
-##### **Products Management**
-If the user is a super user they can:
-  - Add a product (inc adding image)
-  - Edit a product
-  - Delete a Product
-
-##### **Basket**
-- Users are able to:
-  - Adjust number of products in basket if they require
-  - Find out delivery costs
-  - Find out how much more they need to spend to get free delivery
-  - Clearly see the total of their items by quantity and grand total
-
-##### **Checkout**
-- Users can:
-  - Save time as personal details pulled from profile page if user is logged in
-  - Save their delivery information to their profile
-  - Clearly see how much they will be charged for their items and delivery
-
-##### **Navigation**
-
-**Header**
-
-- All users can:
-  - Navigate to home, products, basket and checkout pages
-
-- Users logged in can access:
-  - Profile pages and extra options in product pages
-
-- Users not logged in can:
-  - Access log in and register pages
-
-
-**Footer**
-
-- TO BE CREATED IF TIME 
-Aim: All users can access social media links, terms and conditions and privacy policy pages.
-
-[Back to content](#table-of-contents)
-
-### **Error Pages**
-
-#### *404.html*
-
- - 404 page created to redirect users back to the main site in case of an error - UNTESTED AT PRESENT
-
-#### *403.html*
-
- - 403 page created to redirect users back to the main site in case they try to access a page they are not authorised to - NOT TESTED AT PRESENT
-
-#### *500.html*
-
- - 500 error page created to redirect users to the main site after a server error - UNTESTED
-
-### **Future Features**
-
-- I would like to implement a feature where if users log out of the site with items in their basket the items would be there upon log in again. Currently this is not the case.
-- The ability to add many filters to their search criteria
-- The ability for users to change their username.
-- A gift message feature for users to add a message if buying items as a gift
-
-### **Defensive Design**
-- **Form Validation**
-  - Form validation has been added to every form to ensure all required information is included before submitting.
-  - If incorrect data is input a warning text appears to advise the user how to continue
-
-- **Default Image if none added**
-  - In the event that a product is added without an image a default image will be added however this is unlikely due to form validation.
-- **Unauthorised Attempts**
-  - An [error](static/docs/images/error.png) is launched if the user attempts to visit a part of the site where they are not authorised 
-- **@login_required**
-  - @login_required decorator added to restrict access to certain pages.
-      - If a logged-out user tries to access a restricted page, they will be redirected to the login page.
-      - Only authorised users may perform certain actions: Eg add, edit, delete product and edit, delete review posts.
-- **Basket**
-  - Validation ensures a minimum of 0 product and maximum of 99 products is added to the basket.
-  - Error message appears if user tries to add negative numbers of items "Value must be greater than or equal to 0"
-
-[Back to content](#table-of-contents)
-
 ## Features
-### Existing Features
-#### **All Pages**
-
+### **All Pages**
 Every page contains the following features at the top of the website as standard: -
 * Text as a header reading "Sweets 'N' Treats" which also acts as a clickable event to take to the home page
 * A responsive navigation bar, which reduces into a 'hamburger' navigation bar on mobiles. Allows all users to click on the page they want and access said page easily. Each navigation bar has the following links: -
@@ -315,12 +198,12 @@ Every page contains the following features at the top of the website as standard
 * Contact details (fake) - TO IMPLEMENT
 
 #### Profile Page
-  1. A log out button which removes user from current session
-  2. A set of instructions on how to use the site
-  3. Contact detail information 
+  1. Contact detail information 
+  2. Previous orders made by user
+  3. Button to update information if required
 
 #### **All Products**
-  1. All Products - displays all items currently available in the shop. Clicking on an item will open up the product detail page.
+  1. All Products - displays all items currently available in the shop. Clicking on an item will open up the individual product detail page.
 
   ```**IF USER LOGGED IN!**```
 
@@ -332,7 +215,7 @@ Every page contains the following features at the top of the website as standard
   2. Keep Shopping - Takes user back to the All Products page to choose more products
   3. My Basket - Allows users to see what products they currently have and to checkout if required
 
-  ```**IF USER LOGGED IN!**```
+  ```**IF USER AND/OR SUPERUSER LOGGED IN!**```
 
     1. Add a Review - Allows a user who has logged in to create a review on selected item
     2. Edit a Review - Allows the user who created a review to edit if required
@@ -353,13 +236,56 @@ Every page contains the following features at the top of the website as standard
   2. Checkout button submits the purchase
   3. Back to shopping button allows user to add more items to their basket
 
+  LOGGED IN USERS
+
+  4. Store checkout information to profile
+
 #### Error Pages
 * These pages are not linked to any other page in the website
 * These pages are only accessed if the user encounters an error within the navigation process
 * The error page displays a message to the user to notify them of the error
 * There is 1 call-out button in this section. This allows the user to return to the home page of the main website - [Home Page]()
 
+#### Footer Section
+- TO BE CREATED IF TIME 
+Aim: All users can access social media links, terms and conditions and privacy policy pages.
+
+### **Error Pages**
+#### *404.html*
+ - 404 page created to redirect users back to the main site in case of an error - UNTESTED AT PRESENT
+
+#### *403.html*
+ - 403 page created to redirect users back to the main site in case they try to access a page they are not authorised to - NOT TESTED AT PRESENT
+
+#### *500.html*
+ - 500 error page created to redirect users to the main site after a server error - UNTESTED
+
+### **Future Features**
+- I would like to implement a feature where if users log out of the site with items in their basket the items would be there upon log in again. Currently this is not the case.
+- The ability to add many filters to their search criteria
+- The ability for users to change their username.
+- A gift message feature for users to add a message if buying items as a gift
 [Back to content](#table-of-contents)
+
+### **Defensive Design**
+- **Form Validation**
+  - Form validation has been added to every form to ensure all required information is included before submitting.
+  - If incorrect data is input a warning text appears to advise the user how to continue
+
+- **Default Image if none added**
+  - In the event that a product is added without an image a default image will be added however this is unlikely due to form validation.
+- **Unauthorised Attempts**
+  - An [error](static/docs/images/error.png) is launched if the user attempts to visit a part of the site where they are not authorised 
+- **@login_required**
+  - @login_required decorator added to restrict access to certain pages.
+      - If a logged-out user tries to access a restricted page, they will be redirected to the login page.
+      - Only authorised users may perform certain actions: Eg add, edit, delete product and edit, delete review posts.
+- **Basket**
+  - Validation ensures a minimum of 0 product and maximum of 99 products is added to the basket.
+  - Error message appears if user tries to add negative numbers of items "Value must be greater than or equal to 0"
+
+[Back to content](#table-of-contents)
+
 ## **Database**
 - db.sqlite3
     - Cloud based database to hold the product, user, order fields, etc.
