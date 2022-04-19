@@ -3,7 +3,7 @@
 # Sweets 'N' Treats
 > ## Online Sweet and Treat Shop
 
-[View the website here]()
+[View the website here](https://sweetsntreats.herokuapp.com/)
 
 ## Author Note
 
@@ -29,6 +29,20 @@ If you would like to use Stripe to create a purchase, please use the following t
 * MM/YY - 0424
 * CVC - 242
 
+If using the Developer Server please use the following details for superuser login: -
+
+  * michaelg
+  * BS2208df
+
+Or create a user from 'My Account'
+
+If using the Heroku Server then please use the following details for superuser login: -
+
+  * michaelgreenberry
+  * BS2208df
+
+Or create a user from 'My Account'
+
 ## Table of contents
 1. [UX - User Experience](#ux-user-experience)
    * [User Stories](#user-stories)
@@ -42,15 +56,25 @@ If you would like to use Stripe to create a purchase, please use the following t
    * [Wireframes](#wireframes)
 2. [Features](#features)
    * [All Pages](#all-pages)
-   * [Food List](#food-list)
-   * [Shopping List](#shopping-list)
-   * [Wasted Food List](#wasted-food-list)
+   * [All Products](#all-products)
+   * [Individual Product](#individual-product)
+   * [Basket](#basket)
+   * [Checkout](#checkout)
    * [Error Pages](#error-pages)
+   * FOR LOGGED IN USER & SUPERUSER
+   * [Profile Page](#profile)
+   * [Add/Edit and Delete Review](#reviews)
+   * [Mark an item as favourite](#favourite)
+   * FOR LOGGED IN SUPERUSER
+   * [Add a product](#add-product)
+   * [Edit a product](#edit-product)
+   * [Delete a product](#delete-product)
 3. [Structure](#structure)
    * [Users](#users)
-   * [Food List](#food)
-   * [Shopping List](#shopping)
-   * [Wasted Food List](#wasted-food)
+   * [Products](#products)
+   * [Categories](#categories)
+   * [Favourite](#favourite)
+   * [Order](#orders)
 4. [Technologies Used](#technologies-used)
    * [Languages](#languages)
    * [Framework Library](#framework-library)
@@ -71,10 +95,6 @@ If you would like to use Stripe to create a purchase, please use the following t
 8. [Acknowledgements](#acknowledgements)
 9. [Author Information](#author-information)
 
-# Navigation of the website
-
-![Navigation](docs/readme/navigation.png)
-
 ## UX (User Experience)
 
 ### User Stories
@@ -83,7 +103,7 @@ A list of the user stories and goals can be found [here](docs/readme/user-story.
 
 ## **Design Choices**
 
-### **Fonts**
+### **Typography**
 
 The fonts were chosen to complement one another and also give the aesthetic of a fun, sweet store with ['Akshar']() and ['Open Sans']() as a contrasting font to help the cursive stand out 
 
@@ -99,7 +119,26 @@ The fonts were chosen to complement one another and also give the aesthetic of a
 
 At present all images used in this site are from [Browns Sweets](https://browns-sweets.com/)
 
-### **Wireframes**
+### **Icons**
+
+The icons were sourced from [Font Awesome](https://fontawesome.com/). The Favicom icon was created using [Favicon io](https://favicon.io/)
+
+### **Layout**
+
+![Layout and Navigation of Site](docs/readme/navigation.png)
+
+## **Structure**
+[]() was used to create the database. This allows the following functionality: -
+* Registration
+* Log In/Sign Out
+* Add product items to store
+* CRUD:-
+  * Create: Create a new user. Create a new product item if superuser logged in. Create a review if user logged in. Create a 'favourite' linked item.
+  * Read: Collects information held within the database
+  * Update: Allows editing of items in database, such as a product or review
+  * Delete: Allows deleting of items in database, such as products, reviews or favourites
+
+## **Wireframes**
 
 The wireframes were created using [Balsamiq](https://balsamiq.com) and can be found in pdf form. 
 
@@ -320,17 +359,6 @@ Every page contains the following features at the top of the website as standard
 * The error page displays a message to the user to notify them of the error
 * There is 1 call-out button in this section. This allows the user to return to the home page of the main website - [Home Page]()
 
-## Structure
-[]() was used to create the database. This allows the following functionality: -
-* Registration
-* Log In/Sign Out
-* Add product items to store
-* CRUD:-
-  * Create: Create a new user. Create a new product item if superuser logged in. Create a review if user logged in. Create a 'favourite' linked item.
-  * Read: Collects information held within the database
-  * Update: Allows editing of items in database, such as a product or review
-  * Delete: Allows deleting of items in database, such as products, reviews or favourites
-
 [Back to content](#table-of-contents)
 ## **Database**
 - db.sqlite3
@@ -339,7 +367,7 @@ Every page contains the following features at the top of the website as standard
 ### **Database Design**
 The Database design was based on the following ![](docs/readme/database.png)
 
-The MongoDB database holds the following information: -
+The sqlite database holds the following information: -
 
 ### Users
 Key      | Value
@@ -409,7 +437,7 @@ The User, Product, Review and Favourite sections all have unique ID's which link
 - [Python 3](https://www.python.org/)
     - Used to run the site and database
 
-### **Frameworks and Libraries**
+### **Framework Library**
 - [Django](https://www.djangoproject.com/)
     - High level framework used for rapid development of the site. 
 
@@ -453,9 +481,7 @@ The User, Product, Review and Favourite sections all have unique ID's which link
 Testing information can be found [here](TESTING.md)
 
 ## **Bugs**
-### Bugs Fixed 
-
-
+Please find a list of bugs [here]()
 
 ## **Version Control**
 **Version control** was managed within **GitHub** and **Gitpod** and regular commits pushed to **GitHub**. 
@@ -611,35 +637,35 @@ To find the values of each key:
 - Other students and tutors via Slack and Tutor Support from Code Institute.
 
 #### HTML
-HTML pages adapted from the Boutique Ado from Code Institute with additonal coding by myself. 
-index.html
-login/register.html
-profile.html
-products.html
-product-detail.html
-shopping-basket.html
-checkout.html
-add-product.html
-edit-product.html
-add-review - no html page
-edit-review.html
-delete-product - no html page
-delete-review - no html apge
-add-favourite - no html page
-delete-favourite - no html page
+HTML pages adapted from the Boutique Ado from Code Institute with additonal coding by myself (user). 
+* index.html - adapted from boutique ado
+* login/register.html - adapted from boutique ado
+* profile.html - adapted from boutique ado
+* products.html - mainly user created, adapted from boutique ado
+* product-detail.html - mainly user created, adapted from boutique ado
+* shopping-basket.html - adapted from boutique ado
+* checkout.html - adapted from boutique ado
+* add-product.html - adapted from boutique ado
+* edit-product.html - adapted from boutique ado
+* delete-product - no html page - adapted from boutique ado
+* add-review - no html page - created by user
+* edit-review.html - created by user
+* delete-review - no html apge - created by user
+* add-favourite - no html page - created by user
+* delete-favourite - no html page - created user
 
 #### CSS
-CSS code was written by the creator Michael Greenberry unless stated
+CSS code was written by the creator Michael Greenberry unless stated within the css file
 
 #### JavaScript/JQuery
-JQuery code was taken from Materalize or Boutique Ado project apart unless stated
+JQuery code was taken from bootstrap or Boutique Ado project apart unless stated
 
 #### Python
 Python, Flask and Jinga code adapted from the Boutique Ado project with extra code written by Michael Greenberry
-See TESTING.md for other code adopted and/or provided as options by tutor suppor
+See TESTING.md and Bugs document for other code adopted and/or provided as options by tutor support.
 
 ## Credits
-Coding is credited where necessary within code. Most of the python code was amended from the task mini project from Code Institute with additional help from tutors and mentor. 
+Coding is credited where necessary within code. Most of the python code was amended from the Boutique Ado project from Code Institute with additional help from tutors and fellow students.
 
 [Back to content](#table-of-contents)
 

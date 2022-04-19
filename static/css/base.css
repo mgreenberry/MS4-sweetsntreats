@@ -4,8 +4,8 @@ html {
     height: 100%;
 }
 
-body {
-    background: url('/media/sweets.jpeg') no-repeat center center fixed !important;
+image {
+    background: url('/media/sweets.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -40,11 +40,11 @@ ul {
 }
 
 .fa-heart {
-    color: red;
+color: red !important;
 }
 
 .far {
-    color: red;
+    color: red !important;
 }
 
 /* The Modal (background) 
