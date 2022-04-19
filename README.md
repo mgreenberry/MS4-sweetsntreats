@@ -86,7 +86,7 @@ Or create a user from 'My Account'
    * [Tools](#tools)
    * [Testing Tools](#testing-tools)
 6. [Testing](#testing)
-7. [Bugs](#bugs)
+7. [Bugs](docs/readme/bugs.pdf)
 8. [Version Control](#version-control)
 9. [Deployment](#deployment)
    * [Project creation](#project-creation)
@@ -439,7 +439,7 @@ The User, Product, Review and Favourite sections all have unique ID's which link
 Testing information can be found [here](TESTING.md)
 
 ## **Bugs**
-Please find a list of bugs [here]()
+Please find a list of bugs [here](docs/readme/bugs.pdf)
 
 ## **Version Control**
 **Version control** was managed within **GitHub** and **Gitpod** and regular commits pushed to **GitHub**. 
