@@ -63,42 +63,52 @@ Or create a user from 'My Account'
    * [Checkout](#checkout)
    * [Error Pages](#error-pages)
    * FOR LOGGED IN USER & SUPERUSER
-   * [Profile Page](#profile)
-   * [Add/Edit and Delete Review](#reviews)
-   * [Mark an item as favourite](#favourite)
+   * [Profile Page](#profile-page)
+   * [Reviewed Item](#reviewed-item)
+   * [Favourite](#favourite)
    * FOR LOGGED IN SUPERUSER
-   * [Add a product](#add-product)
-   * [Edit a product](#edit-product)
-   * [Delete a product](#delete-product)
-4. [Structure](#structure)
+   * [Add a product](#add-a-product)
+   * [Edit a product](#edit-a-product)
+   * [Delete a product](#delete-a-product)
+   * [Future Features](#future-features)
+   * [Defensive Design](#defensive-design)
+4. [Database](#database)
+   * [Database Design](#database-design)
    * [Users](#users)
    * [Products](#products)
    * [Categories](#categories)
-   * [Favourite](#favourite)
+   * [Reviews](#reviews)
+   * [Favourite Item](#favourite-item)
    * [Order](#orders)
 5. [Technologies Used](#technologies-used)
    * [Languages](#languages)
    * [Framework Library](#framework-library)
    * [Tools](#tools)
    * [Testing Tools](#testing-tools)
-6. [Testing](TESTING.md)
+6. [Testing](#testing)
 7. [Bugs](#bugs)
-8. [Deployment](#deployment)
+8. [Version Control](#version-control)
+9. [Deployment](#deployment)
    * [Project creation](#project-creation)
-   * [Linking Site to MongoDB](#linking-site-to-mongodb)
-   * [Deployment on Heroku](#deploying-on-heroku)
+   * [Heroku](#heroku)
+      * [Amazon](#amazon-aws)
+      * [GMail Client](#gmail-client)
+      * [Convig Vars](#config-vars)
    * [Forking](#forking)
    * [Cloning and Implementing Locally](#cloning-and-implementing-locally)
-9. [Credits](#credits)
+10. [Code](#code)
+      * [HTML](#html)
+      * [CSS](#css)
+      * [Javascript/JQuery](#javascriptjquery)
+      * [Python](#python)
+11. [Credits](#credits)
    * [Content](#content)
    * [Media](#media)
    * [Icons](#icons)
-   * [Code](#code)
-10. [Acknowledgements](#acknowledgements)
-11. [Author Information](#author-information)
+   * [Acknowledgements](#acknowledgements)
+12. [Author Information](#author-information)
 
 ## UX (User Experience)
-
 ### User Stories
 
 A list of the user stories and goals can be found [here](docs/readme/user-story.pdf)
@@ -111,9 +121,9 @@ The fonts were chosen to complement one another and also give the aesthetic of a
 
 ### **Colours**
 
-- ![Colours](static/docs/images/ms4-coolors.png) 
-- This Coolors palette was used to put together a colour scheme to reflect a warm pastel colour scheme. A pastel blue was employed for the header and a pastel peach/pink for the overlay on each site.
+- A pastel blue was employed for the header and a pastel peach/pink for the overlay on each site.
 - These colours would be changed for better contrast and to give better scores on lighthouse and for better assessability
+- A suitable palette would be sourced from [Coolors](https://coolors.co/) and will be implemented if time.
 
 ### **Imagery**
 
@@ -168,9 +178,11 @@ The navigation bar displays different links depending on whether the user is log
 | Delete Review | &#10007;  | &#10003; | &#10003; |
 | Add Product | &#10007; | &#10007;  |  &#10003; |
 | Edit Product | &#10007;  | &#10007; | &#10003; |
-| Like a product | &#10007; | &#10003; | &#10003; |
-| un like a product | &#10007; | &#10003; | &#10003; |
+| Favourite | &#10007; | &#10003; | &#10003; |
+| Not Favourite| &#10007; | &#10003; | &#10003; |
 
+
+[Back to content](#table-of-contents)
 ## Features
 ### **All Pages**
 Every page contains the following features at the top of the website as standard: -
@@ -197,11 +209,6 @@ Every page contains the following features at the top of the website as standard
 * Site header and strapline - TO IMPLEMENT
 * Contact details (fake) - TO IMPLEMENT
 
-#### Profile Page
-  1. Contact detail information 
-  2. Previous orders made by user
-  3. Button to update information if required
-
 #### **All Products**
   1. All Products - displays all items currently available in the shop. Clicking on an item will open up the individual product detail page.
 
@@ -210,7 +217,7 @@ Every page contains the following features at the top of the website as standard
     2. Add an item as a favourite
     3. Remove an item as a favourite
 
-#### Product Detail (individual product)
+#### Individual Product
   1. Add to Basket - Allows user to add product to basket
   2. Keep Shopping - Takes user back to the All Products page to choose more products
   3. My Basket - Allows users to see what products they currently have and to checkout if required
@@ -246,10 +253,6 @@ Every page contains the following features at the top of the website as standard
 * The error page displays a message to the user to notify them of the error
 * There is 1 call-out button in this section. This allows the user to return to the home page of the main website - [Home Page]()
 
-#### Footer Section
-- TO BE CREATED IF TIME 
-Aim: All users can access social media links, terms and conditions and privacy policy pages.
-
 ### **Error Pages**
 #### *404.html*
  - 404 page created to redirect users back to the main site in case of an error - UNTESTED AT PRESENT
@@ -259,6 +262,33 @@ Aim: All users can access social media links, terms and conditions and privacy p
 
 #### *500.html*
  - 500 error page created to redirect users to the main site after a server error - UNTESTED
+
+
+FOR LOGGED ON USER OR SUPERUSER
+#### Profile Page
+  1. Contact detail information 
+  2. Previous orders made by user
+  3. Button to update information if required
+
+#### Reviewed Item
+- Allows a logged in user to create a review
+- Allows a logged in user to edit reviews they have created
+- Allows a logged in user to delete a review they have created
+
+#### Favourite
+- Allows a logged in user to mark an item as a favourite
+- Allows a logged in user to unmark an item as a favourite
+
+
+FOR LOGGED IN SUPERUSER
+#### Add a Product
+- Allows a superusre to add a product to the store
+
+#### Edit a Product
+- Allows a superuser to edit a product in the store
+
+#### Delete a Product
+- Allows a superuser to delete a product from the store
 
 ### **Future Features**
 - I would like to implement a feature where if users log out of the site with items in their basket the items would be there upon log in again. Currently this is not the case.
@@ -332,7 +362,7 @@ review body | String
 author   | String
 product  | String
 
-### Favourite
+### Favourite Item
 Key      | Value
 ---------|-----------
 _id      | ObjectId
@@ -352,7 +382,9 @@ grand total  | String
 
 The User, Product, Review and Favourite sections all have unique ID's which link them to each other
 
-## **Technologies**
+[Back to content](#table-of-contents)
+
+## **Technologies Used**
 ### **Languages**
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - Used as the main markup language for the website content.
@@ -421,8 +453,21 @@ See below for how this was managed:
 [Back to content](#table-of-contents)
 
 ## **Deployment**
-### Heroku Deployment
+### Project creation
+* The website project was created by going to [Github](https://github.com/), a code hosting platform, using the following steps: -
+  1. Create an account using an email address and password or a google account
+  2. Log in to account and create a new repository!
+  3. Give this new repository a creative name. Then click the green Gitpod button which will take you to [Gitpod](https://gitpod.io/workspaces). Gitpod is an open source platform for code development
+  4. Then open this platform and start coding
+  5. To save the work I had to do the following: - Click 'File', click 'auto save'
+  6. To save the work to github I needed to do the following: -
+    * git add (either the name of the file, i.e. home.html or '-A', or '.' which adds everything that has been worked on that day)
+    * git commit (either the name of the file, i.e. index.html or '-m' and then add a comment in parenthesis "" and enter)
+    * It is recommended to commit daily. To complete the necessary steps to upload to github I needed to use the command - git push. This then 'pushed' all the saved work back to Github
 
+[Back to content](#table-of-contents)
+
+### Heroku
 This project was developed using [GitPod](https://gitpod.io) and pushed to [GitHub](https://github.com/) then was deployed using [Heroku](https://www.heroku.com/) using the following steps below:
 
 #### Connecting to Heroku
@@ -518,7 +563,7 @@ To find the values of each key:
 * `AWS_SECRET_ACCESS_KEY`: From the CSV file that you download having created a User in Amazon AWS S3.
 * `AWS_ACCESS_KEY_ID:` From the CSV file that you download having created a User in Amazon AWS S3.
 
-[Back To Top](#dinotopia)
+[Back to content](#table-of-contents)
 
 ### Forking  
 * If you wish to use this repository as a starting point for your own design, or to contribute to this project, you can fork it. Follow the steps below.
@@ -539,20 +584,6 @@ To find the values of each key:
   6. Navigate to your desired directory for the cloned project.
   7. Type 'git clone' followed by the URL copied in step 3.
   8. Press 'Enter' to create your local clone.
-
-[Back to content](#table-of-contents)
-
-### Project creation
-* The website project was created by going to [Github](https://github.com/), a code hosting platform, using the following steps: -
-  1. Create an account using an email address and password or a google account
-  2. Log in to account and create a new repository!
-  3. Give this new repository a creative name. Then click the green Gitpod button which will take you to [Gitpod](https://gitpod.io/workspaces). Gitpod is an open source platform for code development
-  4. Then open this platform and start coding
-  5. To save the work I had to do the following: - Click 'File', click 'auto save'
-  6. To save the work to github I needed to do the following: -
-    * git add (either the name of the file, i.e. home.html or '-A', or '.' which adds everything that has been worked on that day)
-    * git commit (either the name of the file, i.e. index.html or '-m' and then add a comment in parenthesis "" and enter)
-    * It is recommended to commit daily. To complete the necessary steps to upload to github I needed to use the command - git push. This then 'pushed' all the saved work back to Github
 
 [Back to content](#table-of-contents)
 
@@ -590,10 +621,10 @@ JQuery code was taken from bootstrap or Boutique Ado project apart unless stated
 Python, Flask and Jinga code adapted from the Boutique Ado project with extra code written by Michael Greenberry
 See TESTING.md and Bugs document for other code adopted and/or provided as options by tutor support.
 
+[Back to content](#table-of-contents)
+
 ## Credits
 Coding is credited where necessary within code. Most of the python code was amended from the Boutique Ado project from Code Institute with additional help from tutors and fellow students.
-
-[Back to content](#table-of-contents)
 
 ### **Content**
 Apart from images and some styling, all content is created by the user.

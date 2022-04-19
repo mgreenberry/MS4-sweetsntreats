@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/sweets.jpeg') no-repeat center center fixed;
+    background-image: url('media/sweets.jpeg') no-repeat center center fixed;
     overflow: hidden;
     -webkit-background-size: cover;
     -moz-background-size: cover;
