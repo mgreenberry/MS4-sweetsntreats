@@ -79,7 +79,7 @@ Or create a user from 'My Account'
    * [Categories](#categories)
    * [Reviews](#reviews)
    * [Favourite Item](#favourite-item)
-   * [Order](#orders)
+   * [Orders](#orders)
 5. [Technologies Used](#technologies-used)
    * [Languages](#languages)
    * [Framework Library](#framework-library)
@@ -587,7 +587,6 @@ To find the values of each key:
 
 [Back to content](#table-of-contents)
 
-## **Credits**
 ### **Code**
 - A large portion of the Django, Python and JavaScript code was developed following the Code Institute's Boutique Ado walkthrough. 
 - CodeInstitute Full Stack Developer Course
