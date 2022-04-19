@@ -1,31 +1,22 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
-{% block extra_meta %}
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- user meta tags -->
-<meta name="Sweets 'N' Treats" content="The Online Sweets and Treats Shop">
-<meta name="description"
-    content="Treat yourself in 2022 with our special range of confectionary. A variety of pic 'n' mix, chocolate and gift ideas">
-<meta name="keywords" content="sweets, treats, chocolate, hampers, special occasions">
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
 {% endblock %}
-
-{% block extra_js %}
-{% endblock %}
-
-{% block extra_title %} 404 {% endblock %}
 
 {% block content %}
-<div class="overlay">
-    <div class="container">
-        <div class="row text-centered">
-            <div class="col-12">
-                <h2 class="">404 ERROR!</h2>
-                <p>Looks like you're lost</p>
-                <h3>Click <a href="{% url 'products' %}">here</a> to go back to the shop</h3>
-            </div>
+<div class="overlay"></div>
+<div class="container">
+    <div class="row text-centered">
+        <div class="col-12">
+            <h2 class="">404 ERROR!</h2>
+            <p>Looks like you're lost</p>
+            <h3>Click <a href="{% url 'products' %}">here</a> to go back to the shop</h3>
         </div>
     </div>
 </div>
