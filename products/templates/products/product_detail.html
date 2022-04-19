@@ -150,7 +150,7 @@
                     </div>
                 {% endif %}
             </div>
-                {% if user.is_authenticated %}
+        {% if user.is_authenticated %}
             <div class="col-12 col-md-6 col-lg-4 offset-lg">
                 <h5 class="form-group">Add your review here</h5>
                 <form action="{% url 'add_review' product.id %}" method="POST">
@@ -173,15 +173,13 @@
                 </form>
             </div>
         </div>
-    
-                {% else %}
+        {% else %}
         <div class="rows">
             <div class="col-6">
-                <h6 class="">
-                    Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
+                <h6 class="">Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
             </div>
         </div>
-                {% endif %} 
+        {% endif %} 
     </div>
     <div class="form-group bg-warning btt-button text-black shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100 text-black">
