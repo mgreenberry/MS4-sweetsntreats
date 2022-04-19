@@ -63,7 +63,6 @@
                             <button class="edit-button"><a class="edit-button" href="{% url 'edit_product' product.id %}">Edit Product</a></button>
                         </small>
                     {% endif %}
-
                     <p class="mt-1">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
@@ -109,8 +108,6 @@
                                     <span class="text-uppercase">View Basket</span>
                                 </a>
                             </div>
-                        </div>
-
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
@@ -141,7 +138,6 @@
                                     <button class="delete-button btn-sm" type="submit">Delete Review</button>
                                 </form>
                             </div>
-
                         </div>
                         {% endif %}
                     {% endfor %}
@@ -193,7 +189,6 @@
         </a>
     </div>
 
-    
 {% endblock %}
 
 {% block postloadjs %}
