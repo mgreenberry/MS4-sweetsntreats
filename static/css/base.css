@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 /* The following are created by the user unless stated */
 html {
     height: 100%;
 }
 
 body {
-    background-image: url('media/sweets.jpeg') no-repeat center center fixed;
-    overflow: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('/media/sweets.jpeg') no-repeat center center fixed;
     background-size: cover;
-    background-size: 100%;
-    background-color: pink;
+    height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Akshar';
+    font-family: 'Lato';
 }
 
 /* from Bulma - copied from Boutique Ado*/
