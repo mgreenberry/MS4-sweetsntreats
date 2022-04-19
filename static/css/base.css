@@ -99,6 +99,11 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     margin: 25%;
 }
 
+.shop-button:hover {
+    background: white;
+    color: black;
+}
+
 /* 
 The following is from the Boutique Ado css unless stated 
 With more time, more user created css would have been created and used!
@@ -121,9 +126,6 @@ With more time, more user created css would have been created and used!
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -420,4 +422,8 @@ a.btt-link.d-flex.h-100.text-black {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+}
+
+#user-options2 {
+    color: white;
 }
