@@ -1,0 +1,849 @@
+Check results
+=============
+
+E225:1:2:missing whitespace around operator
+E225:1:27:missing whitespace around operator
+E225:2:2:missing whitespace around operator
+E225:2:17:missing whitespace around operator
+E225:4:2:missing whitespace around operator
+E225:4:23:missing whitespace around operator
+E113:5:5:unexpected indentation
+E225:5:15:missing whitespace around operator
+E225:5:44:missing whitespace around operator
+E113:6:9:unexpected indentation
+E225:6:19:missing whitespace around operator
+E225:6:25:missing whitespace around operator
+E113:7:13:unexpected indentation
+E225:7:23:missing whitespace around operator
+E225:7:29:missing whitespace around operator
+E225:7:30:missing whitespace around operator
+E225:7:35:missing whitespace around operator
+E225:8:14:missing whitespace around operator
+E225:9:10:missing whitespace around operator
+E225:10:2:missing whitespace around operator
+E225:10:14:missing whitespace around operator
+E225:12:2:missing whitespace around operator
+E225:12:19:missing whitespace around operator
+E113:13:5:unexpected indentation
+E225:13:15:missing whitespace around operator
+E225:13:25:missing whitespace around operator
+E225:13:26:missing whitespace around operator
+E225:13:31:missing whitespace around operator
+E225:14:15:missing whitespace around operator
+E225:14:33:missing whitespace around operator
+E113:15:9:unexpected indentation
+E225:15:19:missing whitespace around operator
+E225:15:25:missing whitespace around operator
+E113:16:13:unexpected indentation
+E225:16:23:missing whitespace around operator
+E225:16:41:missing whitespace around operator
+E113:17:17:unexpected indentation
+E225:17:26:missing whitespace around operator
+E225:17:39:missing whitespace around operator
+E201:17:42:whitespace after '{'
+E202:17:55:whitespace before '}'
+E225:17:58:missing whitespace around operator
+E225:17:62:missing whitespace around operator
+E225:18:18:missing whitespace around operator
+E225:19:14:missing whitespace around operator
+E225:20:19:missing whitespace around operator
+E225:20:25:missing whitespace around operator
+E113:21:13:unexpected indentation
+E225:21:23:missing whitespace around operator
+E225:21:62:missing whitespace around operator
+E113:22:17:unexpected indentation
+E225:22:27:missing whitespace around operator
+E225:22:50:missing whitespace around operator
+E113:23:21:unexpected indentation
+E225:23:22:missing whitespace around operator
+E225:23:42:missing whitespace around operator
+E113:24:25:unexpected indentation
+E225:24:32:missing whitespace around operator
+E225:24:65:missing whitespace around operator
+E225:24:74:missing whitespace around operator
+E113:25:29:unexpected indentation
+E225:25:39:missing whitespace around operator
+E225:26:32:missing whitespace around operator
+E225:27:32:missing whitespace around operator
+E225:27:53:missing whitespace around operator
+E225:28:28:missing whitespace around operator
+E225:29:26:missing whitespace around operator
+E225:29:34:missing whitespace around operator
+E225:30:32:missing whitespace around operator
+E225:30:35:missing whitespace around operator
+E113:31:29:unexpected indentation
+E225:31:39:missing whitespace around operator
+E225:32:32:missing whitespace around operator
+E225:33:32:missing whitespace around operator
+E225:33:53:missing whitespace around operator
+E225:34:28:missing whitespace around operator
+E225:35:22:missing whitespace around operator
+E225:35:31:missing whitespace around operator
+E225:36:22:missing whitespace around operator
+E225:37:18:missing whitespace around operator
+E225:38:23:missing whitespace around operator
+E225:38:61:missing whitespace around operator
+E113:39:17:unexpected indentation
+E225:39:27:missing whitespace around operator
+E225:39:68:missing whitespace around operator
+E113:40:21:unexpected indentation
+E225:40:30:missing whitespace around operator
+E225:40:69:missing whitespace around operator
+E113:41:25:unexpected indentation
+E201:41:29:whitespace after '{'
+E202:41:43:whitespace before '}'
+E225:42:25:missing whitespace around operator
+E225:43:22:missing whitespace around operator
+E225:43:45:missing whitespace around operator
+E225:44:29:missing whitespace around operator
+E225:44:47:missing whitespace around operator
+E113:45:25:unexpected indentation
+E225:45:33:missing whitespace around operator
+E113:46:29:unexpected indentation
+E225:46:33:missing whitespace around operator
+E501:46:80:line too long (93 > 79 characters)
+E225:46:93:missing whitespace around operator
+E225:47:37:missing whitespace around operator
+E225:47:55:missing whitespace around operator
+E225:47:56:missing whitespace around operator
+E225:47:59:missing whitespace around operator
+E201:48:31:whitespace after '{'
+E202:48:62:whitespace before '}'
+E225:49:28:missing whitespace around operator
+E225:50:24:missing whitespace around operator
+E225:51:22:missing whitespace around operator
+E225:51:31:missing whitespace around operator
+E225:52:22:missing whitespace around operator
+E225:52:54:missing whitespace around operator
+E113:53:25:unexpected indentation
+E225:53:54:missing whitespace around operator
+E225:53:55:missing whitespace around operator
+E225:54:31:missing whitespace around operator
+E113:55:29:unexpected indentation
+E225:55:42:missing whitespace around operator
+E225:56:31:missing whitespace around operator
+E225:56:39:missing whitespace around operator
+E113:57:33:unexpected indentation
+E225:58:37:missing whitespace around operator
+E225:59:32:missing whitespace around operator
+E225:60:41:missing whitespace around operator
+E225:60:42:missing whitespace around operator
+E225:61:32:missing whitespace around operator
+E225:61:48:missing whitespace around operator
+E225:61:56:missing whitespace around operator
+E113:62:29:unexpected indentation
+E225:62:49:missing whitespace around operator
+E225:62:50:missing whitespace around operator
+E225:63:39:missing whitespace around operator
+E225:63:55:missing whitespace around operator
+E113:64:33:unexpected indentation
+E225:64:44:missing whitespace around operator
+E225:64:52:missing whitespace around operator
+E227:64:53:missing whitespace around bitwise or shift operator
+E702:64:59:multiple statements on one line (semicolon)
+E225:64:62:missing whitespace around operator
+E225:64:67:missing whitespace around operator
+E225:65:35:missing whitespace around operator
+E113:66:37:unexpected indentation
+E225:67:36:missing whitespace around operator
+E225:68:37:missing whitespace around operator
+E113:69:37:unexpected indentation
+E225:69:45:missing whitespace around operator
+E225:70:41:missing whitespace around operator
+E501:70:80:line too long (81 > 79 characters)
+E225:70:81:missing whitespace around operator
+E113:71:41:unexpected indentation
+E225:71:54:missing whitespace around operator
+E501:71:80:line too long (82 > 79 characters)
+E225:71:82:missing whitespace around operator
+E113:72:45:unexpected indentation
+E225:73:49:missing whitespace around operator
+E225:74:40:missing whitespace around operator
+E225:75:45:missing whitespace around operator
+E113:76:41:unexpected indentation
+E225:76:45:missing whitespace around operator
+E501:76:80:line too long (85 > 79 characters)
+E225:76:85:missing whitespace around operator
+E225:77:54:missing whitespace around operator
+E225:77:78:missing whitespace around operator
+E113:78:45:unexpected indentation
+E225:79:49:missing whitespace around operator
+E225:80:40:missing whitespace around operator
+E225:81:38:missing whitespace around operator
+E225:82:34:missing whitespace around operator
+E225:83:30:missing whitespace around operator
+E225:84:37:missing whitespace around operator
+E225:84:44:missing whitespace around operator
+E113:85:29:unexpected indentation
+E225:85:42:missing whitespace around operator
+E225:85:56:missing whitespace around operator
+E113:86:33:unexpected indentation
+E225:86:41:missing whitespace around operator
+E113:87:37:unexpected indentation
+E225:87:41:missing whitespace around operator
+E225:87:79:missing whitespace around operator
+E225:89:36:missing whitespace around operator
+E225:90:37:missing whitespace around operator
+E225:91:32:missing whitespace around operator
+E225:92:22:missing whitespace around operator
+E225:92:31:missing whitespace around operator
+E225:93:29:missing whitespace around operator
+E225:93:36:missing whitespace around operator
+E201:93:39:whitespace after '{'
+E202:93:59:whitespace before '}'
+E225:93:62:missing whitespace around operator
+E225:93:65:missing whitespace around operator
+E225:94:32:missing whitespace around operator
+E113:95:25:unexpected indentation
+E225:95:31:missing whitespace around operator
+E225:96:31:missing whitespace around operator
+E225:96:38:missing whitespace around operator
+E225:97:26:missing whitespace around operator
+E225:97:40:missing whitespace around operator
+E225:98:35:missing whitespace around operator
+E225:98:46:missing whitespace around operator
+E113:99:29:unexpected indentation
+E225:99:39:missing whitespace around operator
+E225:99:48:missing whitespace around operator
+E113:100:33:unexpected indentation
+E225:100:41:missing whitespace around operator
+E225:100:48:missing whitespace around operator
+E225:100:49:missing whitespace around operator
+E225:100:56:missing whitespace around operator
+E231:100:65:missing whitespace after ':'
+E701:100:65:multiple statements on one line (colon)
+E225:100:66:missing whitespace around operator
+E225:100:74:missing whitespace around operator
+E225:100:75:missing whitespace around operator
+E225:100:78:missing whitespace around operator
+E225:101:43:missing whitespace around operator
+E225:101:61:missing whitespace around operator
+E113:102:37:unexpected indentation
+E225:102:47:missing whitespace around operator
+E225:102:61:missing whitespace around operator
+E113:103:41:unexpected indentation
+E225:103:51:missing whitespace around operator
+E225:103:73:missing whitespace around operator
+E113:104:45:unexpected indentation
+E113:105:49:unexpected indentation
+E225:105:54:missing whitespace around operator
+E501:105:80:line too long (93 > 79 characters)
+E225:106:61:missing whitespace around operator
+E225:107:51:missing whitespace around operator
+E501:107:80:line too long (84 > 79 characters)
+E225:107:84:missing whitespace around operator
+E225:108:60:missing whitespace around operator
+E225:108:67:missing whitespace around operator
+E113:109:53:unexpected indentation
+E225:109:61:missing whitespace around operator
+E225:109:76:missing whitespace around operator
+E225:109:77:missing whitespace around operator
+E225:109:80:missing whitespace around operator
+E501:109:80:line too long (80 > 79 characters)
+E225:110:55:missing whitespace around operator
+E225:111:53:missing whitespace around operator
+E225:112:46:missing whitespace around operator
+E225:113:53:missing whitespace around operator
+E113:114:45:unexpected indentation
+E225:114:49:missing whitespace around operator
+E225:115:49:missing whitespace around operator
+E225:115:66:missing whitespace around operator
+E225:116:48:missing whitespace around operator
+E225:116:56:missing whitespace around operator
+E225:117:57:missing whitespace around operator
+E225:118:47:missing whitespace around operator
+E225:118:73:missing whitespace around operator
+E225:119:51:missing whitespace around operator
+E225:119:72:missing whitespace around operator
+E113:120:45:unexpected indentation
+W291:120:52:trailing whitespace
+E113:121:49:unexpected indentation
+E225:121:54:missing whitespace around operator
+E501:121:80:line too long (93 > 79 characters)
+E225:122:61:missing whitespace around operator
+E225:123:51:missing whitespace around operator
+E501:123:80:line too long (84 > 79 characters)
+E225:123:84:missing whitespace around operator
+E225:124:60:missing whitespace around operator
+E225:124:67:missing whitespace around operator
+E113:125:53:unexpected indentation
+E225:125:61:missing whitespace around operator
+E225:125:75:missing whitespace around operator
+E225:125:76:missing whitespace around operator
+E225:125:79:missing whitespace around operator
+E225:126:55:missing whitespace around operator
+E225:127:53:missing whitespace around operator
+E225:128:46:missing whitespace around operator
+E225:129:42:missing whitespace around operator
+E225:130:38:missing whitespace around operator
+E225:131:34:missing whitespace around operator
+E225:132:30:missing whitespace around operator
+E225:133:35:missing whitespace around operator
+E225:133:41:missing whitespace around operator
+E113:134:29:unexpected indentation
+E225:134:39:missing whitespace around operator
+E225:134:53:missing whitespace around operator
+E113:135:33:unexpected indentation
+E225:135:40:missing whitespace around operator
+E225:136:38:missing whitespace around operator
+E225:136:77:missing whitespace around operator
+E113:137:37:unexpected indentation
+E225:137:48:missing whitespace around operator
+E225:137:55:missing whitespace around operator
+E113:138:41:unexpected indentation
+E225:138:49:missing whitespace around operator
+E225:138:71:missing whitespace around operator
+E225:138:72:missing whitespace around operator
+E225:138:75:missing whitespace around operator
+E225:139:43:missing whitespace around operator
+E225:140:48:missing whitespace around operator
+E225:140:65:missing whitespace around operator
+E113:141:41:unexpected indentation
+E225:142:43:missing whitespace around operator
+E225:143:36:missing whitespace around operator
+E225:144:44:missing whitespace around operator
+E225:144:59:missing whitespace around operator
+E225:146:38:missing whitespace around operator
+E225:146:54:missing whitespace around operator
+E225:147:40:missing whitespace around operator
+E225:148:38:missing whitespace around operator
+E225:148:75:missing whitespace around operator
+E113:149:37:unexpected indentation
+E225:149:48:missing whitespace around operator
+E225:149:65:missing whitespace around operator
+E113:150:41:unexpected indentation
+E225:151:43:missing whitespace around operator
+E225:152:36:missing whitespace around operator
+E225:153:34:missing whitespace around operator
+E225:154:40:missing whitespace around operator
+E225:154:54:missing whitespace around operator
+E225:155:34:missing whitespace around operator
+E225:155:55:missing whitespace around operator
+E225:156:30:missing whitespace around operator
+E225:157:27:missing whitespace around operator
+E225:158:22:missing whitespace around operator
+E225:159:18:missing whitespace around operator
+E225:160:14:missing whitespace around operator
+E225:161:10:missing whitespace around operator
+E225:162:15:missing whitespace around operator
+E225:162:67:missing whitespace around operator
+E113:163:9:unexpected indentation
+E225:163:19:missing whitespace around operator
+E225:163:25:missing whitespace around operator
+E113:164:13:unexpected indentation
+E225:164:23:missing whitespace around operator
+E225:164:62:missing whitespace around operator
+E113:165:17:unexpected indentation
+E225:165:26:missing whitespace around operator
+E225:165:39:missing whitespace around operator
+E225:165:47:missing whitespace around operator
+E225:165:51:missing whitespace around operator
+E225:166:18:missing whitespace around operator
+E225:166:32:missing whitespace around operator
+E113:167:21:unexpected indentation
+E225:167:22:missing whitespace around operator
+E225:167:59:missing whitespace around operator
+E113:168:25:unexpected indentation
+E225:168:35:missing whitespace around operator
+E225:168:53:missing whitespace around operator
+E113:169:29:unexpected indentation
+E225:169:32:missing whitespace around operator
+E201:169:35:whitespace after '{'
+E202:169:55:whitespace before '}'
+E225:169:58:missing whitespace around operator
+E225:169:62:missing whitespace around operator
+E225:170:31:missing whitespace around operator
+E201:170:34:whitespace after '{'
+E202:170:53:whitespace before '}'
+E225:170:56:missing whitespace around operator
+E225:170:59:missing whitespace around operator
+E225:171:31:missing whitespace around operator
+E201:171:34:whitespace after '{'
+E202:171:48:whitespace before '}'
+E225:171:51:missing whitespace around operator
+E225:171:54:missing whitespace around operator
+E225:172:31:missing whitespace around operator
+E201:172:34:whitespace after '{'
+E202:172:52:whitespace before '}'
+E225:172:55:missing whitespace around operator
+E225:172:58:missing whitespace around operator
+E225:173:30:missing whitespace around operator
+E225:174:26:missing whitespace around operator
+E225:174:54:missing whitespace around operator
+E225:175:35:missing whitespace around operator
+E225:175:52:missing whitespace around operator
+E113:176:29:unexpected indentation
+E225:176:39:missing whitespace around operator
+E225:176:47:missing whitespace around operator
+E113:177:33:unexpected indentation
+E225:177:46:missing whitespace around operator
+E225:177:67:missing whitespace around operator
+E113:178:37:unexpected indentation
+E225:178:45:missing whitespace around operator
+E225:179:41:missing whitespace around operator
+E501:179:80:line too long (88 > 79 characters)
+E225:179:88:missing whitespace around operator
+E113:180:41:unexpected indentation
+E225:181:40:missing whitespace around operator
+E225:182:41:missing whitespace around operator
+E225:183:34:missing whitespace around operator
+E225:184:39:missing whitespace around operator
+E225:184:47:missing whitespace around operator
+E113:185:33:unexpected indentation
+E113:186:37:unexpected indentation
+E225:186:43:missing whitespace around operator
+E501:186:80:line too long (91 > 79 characters)
+E225:187:43:missing whitespace around operator
+E225:187:50:missing whitespace around operator
+E225:188:38:missing whitespace around operator
+E225:188:52:missing whitespace around operator
+E225:189:50:missing whitespace around operator
+E113:190:41:unexpected indentation
+E225:190:45:missing whitespace around operator
+E225:190:54:missing whitespace around operator
+E225:192:45:missing whitespace around operator
+E225:193:39:missing whitespace around operator
+E225:194:34:missing whitespace around operator
+E225:195:30:missing whitespace around operator
+E225:196:26:missing whitespace around operator
+E225:196:35:missing whitespace around operator
+E225:197:22:missing whitespace around operator
+E225:197:32:missing whitespace around operator
+E225:198:18:missing whitespace around operator
+E225:198:26:missing whitespace around operator
+E113:199:21:unexpected indentation
+E225:199:31:missing whitespace around operator
+E225:199:37:missing whitespace around operator
+E113:200:25:unexpected indentation
+E225:200:35:missing whitespace around operator
+E225:200:42:missing whitespace around operator
+E113:201:29:unexpected indentation
+E225:201:32:missing whitespace around operator
+E113:202:33:unexpected indentation
+E201:203:35:whitespace after '{'
+E202:203:48:whitespace before '}'
+E225:204:33:missing whitespace around operator
+E225:205:32:missing whitespace around operator
+E225:205:56:missing whitespace around operator
+E225:205:59:missing whitespace around operator
+E225:206:30:missing whitespace around operator
+E225:207:26:missing whitespace around operator
+E225:208:18:missing whitespace around operator
+E225:208:27:missing whitespace around operator
+E225:209:18:missing whitespace around operator
+E225:210:10:missing whitespace around operator
+E225:210:38:missing whitespace around operator
+E113:211:13:unexpected indentation
+E225:211:23:missing whitespace around operator
+E225:211:60:missing whitespace around operator
+E113:212:17:unexpected indentation
+E225:212:26:missing whitespace around operator
+E225:212:39:missing whitespace around operator
+E225:212:60:missing whitespace around operator
+E225:212:64:missing whitespace around operator
+E225:213:29:missing whitespace around operator
+E225:213:72:missing whitespace around operator
+E225:213:79:missing whitespace around operator
+E113:214:21:unexpected indentation
+E225:214:22:missing whitespace around operator
+E225:214:36:missing whitespace around operator
+E225:215:31:missing whitespace around operator
+E225:215:37:missing whitespace around operator
+E113:216:25:unexpected indentation
+E225:216:35:missing whitespace around operator
+E225:216:41:missing whitespace around operator
+E113:217:29:unexpected indentation
+E201:217:31:whitespace after '{'
+E227:217:36:missing whitespace around bitwise or shift operator
+E202:217:43:whitespace before '}'
+E225:218:30:missing whitespace around operator
+E225:219:26:missing whitespace around operator
+E225:220:31:missing whitespace around operator
+E225:220:48:missing whitespace around operator
+E113:221:25:unexpected indentation
+E225:221:35:missing whitespace around operator
+E225:221:43:missing whitespace around operator
+E113:222:29:unexpected indentation
+E225:222:41:missing whitespace around operator
+E113:223:33:unexpected indentation
+E225:223:38:missing whitespace around operator
+E225:223:71:missing whitespace around operator
+E225:225:41:missing whitespace around operator
+E225:225:60:missing whitespace around operator
+E225:225:61:missing whitespace around operator
+E225:225:64:missing whitespace around operator
+E225:226:37:missing whitespace around operator
+E225:227:30:missing whitespace around operator
+E225:228:35:missing whitespace around operator
+E225:228:43:missing whitespace around operator
+E113:229:29:unexpected indentation
+E225:229:42:missing whitespace around operator
+E225:230:33:missing whitespace around operator
+E225:230:42:missing whitespace around operator
+E113:231:33:unexpected indentation
+E225:232:41:missing whitespace around operator
+E225:232:60:missing whitespace around operator
+E225:232:61:missing whitespace around operator
+E225:232:64:missing whitespace around operator
+E225:233:37:missing whitespace around operator
+E225:234:30:missing whitespace around operator
+E225:235:26:missing whitespace around operator
+E225:236:23:missing whitespace around operator
+E225:237:18:missing whitespace around operator
+E225:238:10:missing whitespace around operator
+E225:238:18:missing whitespace around operator
+E225:239:19:missing whitespace around operator
+E225:239:26:missing whitespace around operator
+E113:240:13:unexpected indentation
+E225:240:23:missing whitespace around operator
+E225:240:31:missing whitespace around operator
+E113:241:17:unexpected indentation
+E225:241:26:missing whitespace around operator
+E225:241:29:missing whitespace around operator
+E113:242:21:unexpected indentation
+E225:242:28:missing whitespace around operator
+E225:242:56:missing whitespace around operator
+E113:243:25:unexpected indentation
+E225:244:24:missing whitespace around operator
+E225:246:21:missing whitespace around operator
+E225:247:18:missing whitespace around operator
+E225:248:14:missing whitespace around operator
+E225:249:10:missing whitespace around operator
+E225:249:19:missing whitespace around operator
+E225:250:14:missing whitespace around operator
+E225:251:10:missing whitespace around operator
+E225:252:15:missing whitespace around operator
+E113:255:9:unexpected indentation
+E225:255:17:missing whitespace around operator
+E225:255:52:missing whitespace around operator
+E113:256:13:unexpected indentation
+E225:256:21:missing whitespace around operator
+E225:256:66:missing whitespace around operator
+E225:256:67:missing whitespace around operator
+E225:256:70:missing whitespace around operator
+E225:257:12:missing whitespace around operator
+E225:258:10:missing whitespace around operator
+E225:259:2:missing whitespace around operator
+E225:259:14:missing whitespace around operator
+E225:261:2:missing whitespace around operator
+E225:261:22:missing whitespace around operator
+E201:262:3:whitespace after '{'
+E202:262:15:whitespace before '}'
+E225:263:8:missing whitespace around operator
+E231:265:22:missing whitespace after ','
+E225:267:9:missing whitespace around operator
+E225:268:8:missing whitespace around operator
+E113:269:5:unexpected indentation
+E703:270:51:statement ends with a semicolon
+E703:272:47:statement ends with a semicolon
+E225:273:17:missing whitespace around operator
+E225:273:21:missing whitespace around operator
+E703:274:59:statement ends with a semicolon
+E231:277:36:missing whitespace after ';'
+E702:277:36:multiple statements on one line (semicolon)
+E225:279:33:missing whitespace around operator
+E225:279:37:missing whitespace around operator
+E231:281:35:missing whitespace after ';'
+E702:281:35:multiple statements on one line (semicolon)
+E231:286:37:missing whitespace after ';'
+E702:286:37:multiple statements on one line (semicolon)
+E225:289:9:missing whitespace around operator
+E225:291:2:missing whitespace around operator
+E225:291:60:missing whitespace around operator
+E225:292:2:missing whitespace around operator
+E225:292:14:missing whitespace around operator
+
+Code
+=============
+{% extends " base.html " %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="text-black">{{ product.name }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid"
+                            src="{{ product.image.url }}"
+                            alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid"
+                            src="{{ MEDIA_URL }}noimage.png"
+                            alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="text-black col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <h4 class="lead mb-0 text-left font-weight-bold">
+                        £{{ product.price }}
+                    </h4>
+                    {% if product.category %}
+                    <p class="small mt-1 mb-0">
+                        <a class="text-black"
+                            href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>
+                            {{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
+                    {% if request.user.is_superuser %}
+                        <!-- Trigger/Open The Modal -->
+                        <small>
+                            <button class="delete-button text-danger"
+                            id="myBtn">
+                                Delete Product
+                            </button>
+                        </small>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times; </span>
+                                <p>
+                                    Are you sure you want to delete this item?
+                                </p>
+                                <div>
+                                    <a class="text-danger"
+                                    href="{% url 'delete_product' product.id %}">
+                                        <button class="delete-button text-danger">
+                                            Delete Product
+                                        </button>
+                                    </a>
+                                    <a class="text-info"
+                                        href="{% url 'product_detail' product.id %}">
+                                        <button class="edit-button text-info">
+                                            Cancel
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="ml-3">
+                            <button class="edit-button">
+                                <a class="edit-button"
+                                    href="{% url 'edit_product' product.id %}">
+                                    Edit Product
+                                </a>
+                            </button>
+                        </small>
+                    {% endif %}
+                    <p class="mt-1">{{ product.description }}</p>
+                    <form class="form"
+                        action="{% url 'add_to_basket' product.id %}"
+                        method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="col-12">
+                                <p class="mt-3"><strong>Quantity:</strong></p>
+                                <div class="form-group w-50">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button
+                                                class="decrement-qty btn btn-black rounded-0"
+                                                data-item_id="{{ product.id }}"
+                                                id="decrement-qty_{{ product.id }}">
+                                                <span class="icon">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <input class="form-control qty_input"
+                                            type="number"
+                                            name="quantity" value="1"
+                                            min="1" max="99"
+                                            data-item_id="{{ product.id }}"
+                                            id="id_qty_{{ product.id }}">
+                                        <div class="input-group-append">
+                                            <button 
+                                                class="increment-qty btn btn-black rounded-0"
+                                                data-item_id="{{ product.id }}"
+                                                id="increment-qty_{{ product.id }}">
+                                                <span class="icon">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-1">
+                                <a href="{% url 'products' %}"
+                                class="btn btn-outline-black rounded-0 mt-1">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">
+                                        Keep Shopping
+                                    </span>
+                                </a>
+                                <input type="submit" class="btn btn-black
+                                rounded-0 text-uppercase mt-1"
+                                value="Add to Basket">
+                                <a href="{% url 'view_basket' %}"
+                                class="btn checkout-button rounded-0 mt-1">
+                                    <span class="text-uppercase">
+                                        View Basket
+                                    </span>
+                                </a>
+                            </div>
+                            <input type="hidden" name="redirect_url"
+                            value="{{ request.path }}">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-details-container mb-5 mt-md-5 text-black">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <h3 class="form-group">Reviews</h3>
+                {% if reviews %}
+                    {% for review in product.reviews.all %}
+                        <div class="card form-group">
+                            <h4>{{ review.review_title }}</h4>
+                            <p>{{ review.review_body }}</p>
+                            <p>{{ review.author }}</p>
+                            <p>{{ review.date_added }}</p>
+                        </div>
+                        {% if user == review.author %}
+                        <div class="row form-group">
+                            <div class="col-6">
+                                <button class="edit-button btn-sm">
+                                    <a class="edit-button"
+                                    href="{% url 'edit_review' product.id review.id %}">
+                                        Edit Review
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <form
+                                    action="{% url 'delete_review' product.id review.id %}"
+                                    method="POST">
+                                    {% csrf_token %}
+                                    <button class="delete-button btn-sm"
+                                        type="submit">
+                                        Delete Review
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <div class="col">
+                        <div class="card">
+                            <h4>
+                                There are no reviews for
+                                {{ product.name }} yet.
+                            </h4>
+                            <h5>Why don't you add one?</h5>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        {% if user.is_authenticated %}
+            <div class="col-12 col-md-6 col-lg-4 offset-lg">
+                <h5 class="form-group">Add your review here</h5>
+                <form action="{% url 'add_review' product.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col">
+                            {{ form|crispy }}
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-6">
+                            <button type="reset"
+                                class="delete-button btn-sm bg-danger">
+                                Reset Form
+                                <i class="fas fa-undo ml-2"></i>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button class="button edit-button btn-sm"
+                            type="submit">
+                                Add Review
+                                <i class="fas fa-plus ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        {% else %}
+        <div class="rows">
+            <div class="col-6">
+                <h6 class="">Please
+                    <a href="{% url 'account_login' %}">
+                        log in
+                    </a>
+                    to add a review of a product.
+                </h6>
+            </div>
+        </div>
+        {% endif %}
+        </div>
+    </div>
+    <div class="form-group bg-warning btt-button
+    text-black shadow-sm rounded-0
+    border border-black">
+        <a class="btt-link d-flex h-100 text-black">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+$('.btt-link').click(function(e) {
+    window.scrollTo(0,0)
+})
+</script>
+<script>
+    // Get the modal
+    let modal = document.getElementById("myModal");
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+{% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}

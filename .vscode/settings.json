@@ -23,5 +23,14 @@
    "files.autoSave": "afterDelay",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "python.testing.unittestArgs": [
+      "-v",
+      "-s",
+      "./basket",
+      "-p",
+      "*test*.py"
+   ],
+   "python.testing.pytestEnabled": false,
+   "python.testing.unittestEnabled": true
 }

@@ -1,0 +1,518 @@
+Check results
+=============
+
+E225:1:2:missing whitespace around operator
+E225:1:25:missing whitespace around operator
+E225:2:2:missing whitespace around operator
+E225:2:17:missing whitespace around operator
+E225:3:2:missing whitespace around operator
+E225:3:23:missing whitespace around operator
+E225:5:2:missing whitespace around operator
+E225:5:23:missing whitespace around operator
+E225:6:11:missing whitespace around operator
+E225:6:40:missing whitespace around operator
+E113:7:5:unexpected indentation
+E225:7:15:missing whitespace around operator
+E225:7:21:missing whitespace around operator
+E113:8:9:unexpected indentation
+E225:8:19:missing whitespace around operator
+E225:8:25:missing whitespace around operator
+E225:8:26:missing whitespace around operator
+E225:8:31:missing whitespace around operator
+E225:9:10:missing whitespace around operator
+E225:10:6:missing whitespace around operator
+E225:11:2:missing whitespace around operator
+E225:11:14:missing whitespace around operator
+E225:13:2:missing whitespace around operator
+E225:13:19:missing whitespace around operator
+E225:14:11:missing whitespace around operator
+E225:14:21:missing whitespace around operator
+E225:14:22:missing whitespace around operator
+E225:14:27:missing whitespace around operator
+E225:15:11:missing whitespace around operator
+E225:15:39:missing whitespace around operator
+E113:16:5:unexpected indentation
+E225:16:15:missing whitespace around operator
+E225:16:21:missing whitespace around operator
+E113:17:9:unexpected indentation
+E225:17:19:missing whitespace around operator
+E225:17:42:missing whitespace around operator
+E113:18:13:unexpected indentation
+E225:18:16:missing whitespace around operator
+E225:19:22:missing whitespace around operator
+E225:19:39:missing whitespace around operator
+E113:20:17:unexpected indentation
+E225:21:17:missing whitespace around operator
+E225:22:16:missing whitespace around operator
+E225:23:14:missing whitespace around operator
+E225:24:10:missing whitespace around operator
+E225:26:15:missing whitespace around operator
+E225:26:21:missing whitespace around operator
+E113:27:9:unexpected indentation
+E225:27:19:missing whitespace around operator
+E225:27:25:missing whitespace around operator
+E113:28:13:unexpected indentation
+E225:28:14:missing whitespace around operator
+E225:28:33:missing whitespace around operator
+E113:29:17:unexpected indentation
+E225:29:27:missing whitespace around operator
+E225:29:47:missing whitespace around operator
+E113:30:21:unexpected indentation
+E225:30:31:missing whitespace around operator
+E225:30:37:missing whitespace around operator
+E113:31:25:unexpected indentation
+E225:31:35:missing whitespace around operator
+E225:31:41:missing whitespace around operator
+E113:32:29:unexpected indentation
+E225:32:30:missing whitespace around operator
+E225:32:68:missing whitespace around operator
+E225:33:30:missing whitespace around operator
+E225:34:26:missing whitespace around operator
+E225:35:31:missing whitespace around operator
+E225:35:37:missing whitespace around operator
+E113:36:25:unexpected indentation
+E225:36:35:missing whitespace around operator
+E225:36:41:missing whitespace around operator
+E113:37:29:unexpected indentation
+E225:37:30:missing whitespace around operator
+E225:37:72:missing whitespace around operator
+E225:38:37:missing whitespace around operator
+E225:38:55:missing whitespace around operator
+E113:39:33:unexpected indentation
+E225:40:32:missing whitespace around operator
+E225:41:30:missing whitespace around operator
+E225:42:26:missing whitespace around operator
+E225:43:22:missing whitespace around operator
+E225:43:50:missing whitespace around operator
+E113:44:25:unexpected indentation
+E225:44:35:missing whitespace around operator
+E225:44:41:missing whitespace around operator
+E113:45:29:unexpected indentation
+E225:45:39:missing whitespace around operator
+E225:45:62:missing whitespace around operator
+E113:46:33:unexpected indentation
+E225:46:34:missing whitespace around operator
+E225:46:73:missing whitespace around operator
+E225:47:34:missing whitespace around operator
+E225:48:39:missing whitespace around operator
+E225:48:73:missing whitespace around operator
+E113:49:33:unexpected indentation
+E225:49:34:missing whitespace around operator
+E225:49:72:missing whitespace around operator
+E225:50:34:missing whitespace around operator
+E225:51:39:missing whitespace around operator
+E225:51:71:missing whitespace around operator
+E113:52:33:unexpected indentation
+E225:52:41:missing whitespace around operator
+E225:52:48:missing whitespace around operator
+E113:53:37:unexpected indentation
+E701:53:47:multiple statements on one line (colon)
+E201:53:53:whitespace after '{'
+E202:53:72:whitespace before '}'
+E225:54:36:missing whitespace around operator
+E225:55:35:missing whitespace around operator
+E225:55:36:missing whitespace around operator
+E225:55:43:missing whitespace around operator
+E701:55:52:multiple statements on one line (colon)
+E225:55:55:missing whitespace around operator
+E225:55:62:missing whitespace around operator
+E113:56:37:unexpected indentation
+E201:56:41:whitespace after '{'
+E231:56:76:missing whitespace after ':'
+E501:56:80:line too long (91 > 79 characters)
+E202:56:90:whitespace before '}'
+E225:57:36:missing whitespace around operator
+E225:58:34:missing whitespace around operator
+E225:59:39:missing whitespace around operator
+E225:59:57:missing whitespace around operator
+E113:60:33:unexpected indentation
+E225:60:34:missing whitespace around operator
+E225:60:73:missing whitespace around operator
+E225:61:34:missing whitespace around operator
+E225:62:30:missing whitespace around operator
+E225:63:35:missing whitespace around operator
+E225:63:41:missing whitespace around operator
+E113:64:29:unexpected indentation
+E225:64:39:missing whitespace around operator
+E225:64:45:missing whitespace around operator
+E113:65:33:unexpected indentation
+E225:65:36:missing whitespace around operator
+E225:66:34:missing whitespace around operator
+E225:67:30:missing whitespace around operator
+E225:68:22:missing whitespace around operator
+E225:68:32:missing whitespace around operator
+E225:69:31:missing whitespace around operator
+E113:70:25:unexpected indentation
+E225:71:33:missing whitespace around operator
+E225:71:57:missing whitespace around operator
+E113:72:29:unexpected indentation
+E225:72:37:missing whitespace around operator
+E225:73:57:missing whitespace around operator
+E225:73:60:missing whitespace around operator
+E225:74:28:missing whitespace around operator
+E225:75:26:missing whitespace around operator
+E225:76:22:missing whitespace around operator
+E225:77:27:missing whitespace around operator
+E113:78:21:unexpected indentation
+E225:79:33:missing whitespace around operator
+E225:79:67:missing whitespace around operator
+E113:80:25:unexpected indentation
+E225:80:37:missing whitespace around operator
+E225:80:50:missing whitespace around operator
+E113:81:29:unexpected indentation
+E225:81:32:missing whitespace around operator
+E113:82:33:unexpected indentation
+E225:82:42:missing whitespace around operator
+E225:82:48:missing whitespace around operator
+E225:82:61:missing whitespace around operator
+E225:82:65:missing whitespace around operator
+E225:83:42:missing whitespace around operator
+E225:83:48:missing whitespace around operator
+E225:83:49:missing whitespace around operator
+E225:83:53:missing whitespace around operator
+E225:84:42:missing whitespace around operator
+E225:84:48:missing whitespace around operator
+E225:84:54:missing whitespace around operator
+E225:84:58:missing whitespace around operator
+E225:85:42:missing whitespace around operator
+E225:85:48:missing whitespace around operator
+E225:85:52:missing whitespace around operator
+E225:85:56:missing whitespace around operator
+E225:86:42:missing whitespace around operator
+E225:86:48:missing whitespace around operator
+E225:86:57:missing whitespace around operator
+E225:86:61:missing whitespace around operator
+E225:87:33:missing whitespace around operator
+E225:88:32:missing whitespace around operator
+E225:90:26:missing whitespace around operator
+E225:90:54:missing whitespace around operator
+E113:91:29:unexpected indentation
+E225:91:32:missing whitespace around operator
+E113:92:33:unexpected indentation
+E225:92:42:missing whitespace around operator
+E225:92:53:missing whitespace around operator
+E113:93:37:unexpected indentation
+E225:93:38:missing whitespace around operator
+E225:93:77:missing whitespace around operator
+E225:94:37:missing whitespace around operator
+E225:95:42:missing whitespace around operator
+E225:95:49:missing whitespace around operator
+E113:96:37:unexpected indentation
+E225:96:38:missing whitespace around operator
+E225:96:76:missing whitespace around operator
+E225:97:37:missing whitespace around operator
+E225:98:42:missing whitespace around operator
+E225:98:49:missing whitespace around operator
+E113:99:37:unexpected indentation
+E225:99:45:missing whitespace around operator
+E225:99:52:missing whitespace around operator
+E113:100:41:unexpected indentation
+E201:100:45:whitespace after '{'
+E202:100:64:whitespace before '}'
+E225:101:40:missing whitespace around operator
+E225:102:37:missing whitespace around operator
+E225:103:42:missing whitespace around operator
+E225:103:54:missing whitespace around operator
+E113:104:37:unexpected indentation
+E225:104:38:missing whitespace around operator
+E225:104:77:missing whitespace around operator
+E225:105:37:missing whitespace around operator
+E225:106:42:missing whitespace around operator
+E225:106:49:missing whitespace around operator
+E113:107:37:unexpected indentation
+E225:107:45:missing whitespace around operator
+E225:107:52:missing whitespace around operator
+E113:108:41:unexpected indentation
+E201:108:45:whitespace after '{'
+E231:108:80:missing whitespace after ':'
+E501:108:80:line too long (95 > 79 characters)
+E202:108:94:whitespace before '}'
+E225:109:40:missing whitespace around operator
+E225:110:37:missing whitespace around operator
+E225:111:33:missing whitespace around operator
+E225:112:26:missing whitespace around operator
+E225:112:36:missing whitespace around operator
+E225:113:28:missing whitespace around operator
+E113:114:29:unexpected indentation
+E225:114:40:missing whitespace around operator
+E225:114:50:missing whitespace around operator
+E225:114:68:missing whitespace around operator
+E113:115:33:unexpected indentation
+E225:115:34:missing whitespace around operator
+E225:115:72:missing whitespace around operator
+E225:116:33:missing whitespace around operator
+E225:117:29:missing whitespace around operator
+E225:118:28:missing whitespace around operator
+E113:119:29:unexpected indentation
+E225:119:40:missing whitespace around operator
+E225:119:50:missing whitespace around operator
+E225:119:63:missing whitespace around operator
+E113:120:33:unexpected indentation
+E225:120:34:missing whitespace around operator
+E225:120:76:missing whitespace around operator
+E225:121:33:missing whitespace around operator
+E225:122:29:missing whitespace around operator
+E225:123:28:missing whitespace around operator
+E225:124:22:missing whitespace around operator
+E225:125:14:missing whitespace around operator
+E225:125:22:missing whitespace around operator
+E113:126:17:unexpected indentation
+E225:126:27:missing whitespace around operator
+E225:126:50:missing whitespace around operator
+E113:127:21:unexpected indentation
+E225:127:23:missing whitespace around operator
+E225:127:45:missing whitespace around operator
+E225:127:48:missing whitespace around operator
+E225:128:28:missing whitespace around operator
+E113:129:25:unexpected indentation
+E225:129:30:missing whitespace around operator
+E225:129:71:missing whitespace around operator
+E225:130:32:missing whitespace around operator
+E225:130:39:missing whitespace around operator
+E113:131:25:unexpected indentation
+E225:131:33:missing whitespace around operator
+E225:131:55:missing whitespace around operator
+E225:131:56:missing whitespace around operator
+E225:131:59:missing whitespace around operator
+E225:132:27:missing whitespace around operator
+E225:133:32:missing whitespace around operator
+E225:133:49:missing whitespace around operator
+E225:133:63:missing whitespace around operator
+E225:133:69:missing whitespace around operator
+E225:134:24:missing whitespace around operator
+E225:135:22:missing whitespace around operator
+E225:136:14:missing whitespace around operator
+E225:136:23:missing whitespace around operator
+E225:137:14:missing whitespace around operator
+E225:138:10:missing whitespace around operator
+E225:139:6:missing whitespace around operator
+E225:140:11:missing whitespace around operator
+E113:141:5:unexpected indentation
+E225:143:13:missing whitespace around operator
+E225:143:48:missing whitespace around operator
+E113:144:9:unexpected indentation
+E225:144:17:missing whitespace around operator
+E225:144:62:missing whitespace around operator
+E225:144:63:missing whitespace around operator
+E225:144:66:missing whitespace around operator
+E225:145:8:missing whitespace around operator
+E225:146:6:missing whitespace around operator
+E225:147:2:missing whitespace around operator
+E225:147:14:missing whitespace around operator
+E225:149:2:missing whitespace around operator
+E225:149:22:missing whitespace around operator
+E201:150:3:whitespace after '{'
+E202:150:15:whitespace before '}'
+E225:151:8:missing whitespace around operator
+E231:153:22:missing whitespace after ','
+E225:155:9:missing whitespace around operator
+E225:156:2:missing whitespace around operator
+E225:156:60:missing whitespace around operator
+E225:158:8:missing whitespace around operator
+E113:159:5:unexpected indentation
+E251:161:17:unexpected spaces around keyword / parameter equals
+E702:161:48:multiple statements on one line (semicolon)
+E231:162:22:missing whitespace after ';'
+E702:162:22:multiple statements on one line (semicolon)
+E251:166:22:unexpected spaces around keyword / parameter equals
+E251:166:24:unexpected spaces around keyword / parameter equals
+E702:166:43:multiple statements on one line (semicolon)
+E251:167:19:unexpected spaces around keyword / parameter equals
+E702:167:60:multiple statements on one line (semicolon)
+E251:168:17:unexpected spaces around keyword / parameter equals
+E702:168:48:multiple statements on one line (semicolon)
+E251:169:16:unexpected spaces around keyword / parameter equals
+E251:169:18:unexpected spaces around keyword / parameter equals
+W604:169:19:backticks are deprecated, use 'repr()'
+E225:169:34:missing whitespace around operator
+E702:169:46:multiple statements on one line (semicolon)
+E251:170:17:unexpected spaces around keyword / parameter equals
+E251:170:19:unexpected spaces around keyword / parameter equals
+E702:170:76:multiple statements on one line (semicolon)
+E231:173:31:missing whitespace after ';'
+E702:173:31:multiple statements on one line (semicolon)
+E231:174:12:missing whitespace after ';'
+E702:174:12:multiple statements on one line (semicolon)
+E225:176:9:missing whitespace around operator
+E225:177:2:missing whitespace around operator
+E225:177:14:missing whitespace around operator
+
+Code
+=============
+{% extends "base.html" %}
+{% load static %}
+{% load basket_tools %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container text-black mb-2">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <hr>
+            <h2 class="logo-font mb-4">
+                Shopping basket
+            </h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {% if basket_items %}
+                <div class="d-block d-md-none">
+                    <div class="row">
+                        <div class="col">
+                            {% include "basket/basket-total.html" %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {% include "basket/checkout-buttons.html" %}
+                            <p class="text-black mb-5">
+                                A summary of your basket contents is below
+                            </p>
+                        </div>
+                    </div>
+                    {% for item in basket_items %}
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-2">
+                                {% include "basket/product-image.html" %}
+                            </div>
+                            <div class="text-black col-12 col-sm-6 mb-2">
+                                {% include "basket/product-info.html" %}
+                            </div>
+                            <div class="col-12 col-sm-6 order-sm-last">
+                                <p class="my-0">
+                                    Price Each: £{{ item.product.price }}
+                                </p>
+                                <p><strong>Subtotal: </strong>
+                                    £{{ item.product.price | calc_subtotal:item.quantity }}
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                {% include "basket/quantity-form.html" %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="btt-button shadow-sm
+                        rounded-0 border border-black">
+                        <a class="btt-link d-flex h-100">
+                            <i class="fas fa-arrow-up
+                            text-black mx-auto my-auto"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-responsive
+                    rounded d-none d-md-block">
+                    <table class="table table-sm table-borderless">
+                        <thead class="text-black">
+                            <tr>
+                                <th scope="col">Product Info</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+
+                        {% for item in basket_items %}
+                            <tr>
+                                <td class="p-3 w-25">
+                                    {% include "basket/product-image.html" %}
+                                </td>
+                                <td class="py-3">
+                                    {% include "basket/product-info.html" %}
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0">
+                                        £{{ item.product.price }}
+                                    </p>
+                                </td>
+                                <td class="py-3 w-25">
+                                    {% include "basket/quantity-form.html" %}
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0">
+                                        £{{ item.product.price | calc_subtotal:item.quantity }}
+                                    </p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="5" class="pt-5 text-right">
+                                {% include "basket/basket-total.html" %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="text-right">
+                                {% include "basket/checkout-buttons.html" %}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            {% else %}
+                <div class="col text-center mt-3">
+                    <p>Your basket is empty.</p>
+                    <a href="{% url 'products' %}"
+                        class="btn btn-outline-black rounded-0 btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class="text-black bg-warning btt-button
+    text-black shadow-sm rounded-0
+    border border-black">
+    <a class="btt-link d-flex h-100 text-black">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+$('.btt-link').click(function(e) {
+    window.scrollTo(0,0)
+})
+</script>
+{% include 'products/includes/quantity_input_script.html' %}
+
+<script>
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        let form = $(this).prev('.update-form');
+        form.submit();
+    })
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        let csrfToken = "{{ csrf_token }}";
+        let itemId = $(this).attr('id').split('remove_')[1];
+        let size = $(this).data('product_size');
+        let url = `/basket/remove/${itemId}/`;
+        let data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
+{% endblock %}

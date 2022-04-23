@@ -1,0 +1,653 @@
+Check results
+=============
+
+E225:1:2:missing whitespace around operator
+E225:1:25:missing whitespace around operator
+E225:2:2:missing whitespace around operator
+E225:2:17:missing whitespace around operator
+E225:4:2:missing whitespace around operator
+E225:4:23:missing whitespace around operator
+E113:5:5:unexpected indentation
+E225:5:15:missing whitespace around operator
+E225:5:44:missing whitespace around operator
+E113:6:9:unexpected indentation
+E225:6:19:missing whitespace around operator
+E225:6:25:missing whitespace around operator
+E113:7:13:unexpected indentation
+E225:7:23:missing whitespace around operator
+E225:7:29:missing whitespace around operator
+E225:7:30:missing whitespace around operator
+E225:7:35:missing whitespace around operator
+E225:8:14:missing whitespace around operator
+E225:9:10:missing whitespace around operator
+E225:10:2:missing whitespace around operator
+E225:10:14:missing whitespace around operator
+E225:12:2:missing whitespace around operator
+E225:12:19:missing whitespace around operator
+E113:13:5:unexpected indentation
+E225:13:15:missing whitespace around operator
+E225:13:25:missing whitespace around operator
+E225:13:26:missing whitespace around operator
+E225:13:31:missing whitespace around operator
+E225:14:15:missing whitespace around operator
+E225:14:33:missing whitespace around operator
+E113:15:9:unexpected indentation
+E225:15:19:missing whitespace around operator
+E225:15:25:missing whitespace around operator
+E113:16:13:unexpected indentation
+E225:16:23:missing whitespace around operator
+E225:16:46:missing whitespace around operator
+E113:17:17:unexpected indentation
+E225:17:26:missing whitespace around operator
+E225:17:39:missing whitespace around operator
+E225:17:52:missing whitespace around operator
+E225:17:56:missing whitespace around operator
+E225:18:18:missing whitespace around operator
+E225:18:49:missing whitespace around operator
+E113:19:21:unexpected indentation
+E225:19:29:missing whitespace around operator
+E225:20:25:missing whitespace around operator
+E225:20:70:missing whitespace around operator
+E113:21:25:unexpected indentation
+E225:21:36:missing whitespace around operator
+E113:22:29:unexpected indentation
+E201:23:31:whitespace after '{'
+E202:23:47:whitespace before '}'
+E225:24:31:missing whitespace around operator
+E225:25:24:missing whitespace around operator
+E225:26:18:missing whitespace around operator
+E225:26:28:missing whitespace around operator
+E225:27:26:missing whitespace around operator
+E225:27:38:missing whitespace around operator
+E225:28:18:missing whitespace around operator
+E225:29:14:missing whitespace around operator
+E225:30:19:missing whitespace around operator
+E225:30:25:missing whitespace around operator
+E113:31:13:unexpected indentation
+E225:31:23:missing whitespace around operator
+E225:31:59:missing whitespace around operator
+E113:32:17:unexpected indentation
+E225:32:27:missing whitespace around operator
+E225:32:43:missing whitespace around operator
+E113:33:21:unexpected indentation
+E225:33:31:missing whitespace around operator
+E113:34:25:unexpected indentation
+E225:35:35:missing whitespace around operator
+E225:35:62:missing whitespace around operator
+E113:36:29:unexpected indentation
+E225:36:39:missing whitespace around operator
+E225:36:61:missing whitespace around operator
+E113:37:33:unexpected indentation
+E225:38:41:missing whitespace around operator
+E225:38:78:missing whitespace around operator
+E501:38:80:line too long (110 > 79 characters)
+E225:38:84:missing whitespace around operator
+E225:38:92:missing whitespace around operator
+E225:38:99:missing whitespace around operator
+E225:38:108:missing whitespace around operator
+E225:39:46:missing whitespace around operator
+E225:39:56:missing whitespace around operator
+E501:39:80:line too long (113 > 79 characters)
+E225:39:93:missing whitespace around operator
+E225:39:103:missing whitespace around operator
+E225:39:112:missing whitespace around operator
+E225:39:113:missing whitespace around operator
+E113:40:37:unexpected indentation
+E225:41:41:missing whitespace around operator
+E225:42:46:missing whitespace around operator
+E225:42:59:missing whitespace around operator
+E501:42:80:line too long (115 > 79 characters)
+E225:42:95:missing whitespace around operator
+E225:42:105:missing whitespace around operator
+E225:42:114:missing whitespace around operator
+E225:42:115:missing whitespace around operator
+E113:43:37:unexpected indentation
+E211:43:41:whitespace before '('
+E225:44:41:missing whitespace around operator
+E225:45:46:missing whitespace around operator
+E225:45:60:missing whitespace around operator
+E501:45:80:line too long (117 > 79 characters)
+E225:45:97:missing whitespace around operator
+E225:45:107:missing whitespace around operator
+E225:45:116:missing whitespace around operator
+E225:45:117:missing whitespace around operator
+E113:46:37:unexpected indentation
+E211:46:41:whitespace before '('
+E225:47:41:missing whitespace around operator
+E225:48:46:missing whitespace around operator
+E225:48:60:missing whitespace around operator
+E501:48:80:line too long (117 > 79 characters)
+E225:48:97:missing whitespace around operator
+E225:48:107:missing whitespace around operator
+E225:48:116:missing whitespace around operator
+E225:48:117:missing whitespace around operator
+E113:49:37:unexpected indentation
+E211:49:42:whitespace before '('
+E225:50:41:missing whitespace around operator
+E225:51:46:missing whitespace around operator
+E225:51:61:missing whitespace around operator
+E501:51:80:line too long (119 > 79 characters)
+E225:51:99:missing whitespace around operator
+E225:51:109:missing whitespace around operator
+E225:51:118:missing whitespace around operator
+E225:51:119:missing whitespace around operator
+E113:52:37:unexpected indentation
+E211:52:42:whitespace before '('
+E225:53:41:missing whitespace around operator
+E225:54:46:missing whitespace around operator
+E225:54:63:missing whitespace around operator
+E501:54:80:line too long (123 > 79 characters)
+E225:54:103:missing whitespace around operator
+E225:54:113:missing whitespace around operator
+E225:54:122:missing whitespace around operator
+E225:54:123:missing whitespace around operator
+E113:55:37:unexpected indentation
+E211:55:45:whitespace before '('
+E225:56:41:missing whitespace around operator
+E225:57:46:missing whitespace around operator
+E225:57:64:missing whitespace around operator
+E501:57:80:line too long (125 > 79 characters)
+E225:57:105:missing whitespace around operator
+E225:57:115:missing whitespace around operator
+E225:57:124:missing whitespace around operator
+E225:57:125:missing whitespace around operator
+E113:58:37:unexpected indentation
+E211:58:45:whitespace before '('
+E225:59:41:missing whitespace around operator
+E225:60:37:missing whitespace around operator
+E225:61:30:missing whitespace around operator
+E225:62:26:missing whitespace around operator
+E225:63:31:missing whitespace around operator
+E225:63:64:missing whitespace around operator
+E113:64:25:unexpected indentation
+E225:64:33:missing whitespace around operator
+E225:64:76:missing whitespace around operator
+E113:65:29:unexpected indentation
+E225:65:30:missing whitespace around operator
+E501:65:80:line too long (104 > 79 characters)
+E225:65:104:missing whitespace around operator
+E113:66:33:unexpected indentation
+E225:66:44:missing whitespace around operator
+E225:66:52:missing whitespace around operator
+E225:66:53:missing whitespace around operator
+E225:66:60:missing whitespace around operator
+E501:66:80:line too long (110 > 79 characters)
+E225:66:83:missing whitespace around operator
+E225:66:97:missing whitespace around operator
+E225:66:100:missing whitespace around operator
+E225:66:110:missing whitespace around operator
+E225:67:30:missing whitespace around operator
+E225:67:39:missing whitespace around operator
+E201:68:31:whitespace after '{'
+E227:68:40:missing whitespace around bitwise or shift operator
+E202:68:47:whitespace before '}'
+E225:68:61:missing whitespace around operator
+E225:68:79:missing whitespace around operator
+E501:68:80:line too long (137 > 79 characters)
+E225:68:92:missing whitespace around operator
+E225:68:98:missing whitespace around operator
+E225:68:118:missing whitespace around operator
+E225:68:126:missing whitespace around operator
+E225:68:128:missing whitespace around operator
+E225:68:137:missing whitespace around operator
+E225:69:28:missing whitespace around operator
+E225:70:26:missing whitespace around operator
+E225:71:22:missing whitespace around operator
+E225:72:27:missing whitespace around operator
+E225:72:33:missing whitespace around operator
+E113:73:21:unexpected indentation
+E225:73:22:missing whitespace around operator
+E225:73:49:missing whitespace around operator
+E113:74:25:unexpected indentation
+E225:74:35:missing whitespace around operator
+E225:74:73:missing whitespace around operator
+E113:75:29:unexpected indentation
+E225:75:39:missing whitespace around operator
+E225:75:61:missing whitespace around operator
+E113:76:33:unexpected indentation
+E225:76:34:missing whitespace around operator
+E225:76:54:missing whitespace around operator
+E113:77:37:unexpected indentation
+E225:77:44:missing whitespace around operator
+E501:77:80:line too long (84 > 79 characters)
+E225:77:84:missing whitespace around operator
+E113:78:41:unexpected indentation
+E225:78:51:missing whitespace around operator
+E113:79:45:unexpected indentation
+E225:79:48:missing whitespace around operator
+E225:79:78:missing whitespace around operator
+E501:79:80:line too long (99 > 79 characters)
+E225:79:99:missing whitespace around operator
+E225:80:40:missing whitespace around operator
+E225:81:34:missing whitespace around operator
+E225:81:42:missing whitespace around operator
+E113:82:37:unexpected indentation
+E225:82:44:missing whitespace around operator
+E501:82:80:line too long (84 > 79 characters)
+E225:82:84:missing whitespace around operator
+E113:83:41:unexpected indentation
+E225:83:51:missing whitespace around operator
+E113:84:45:unexpected indentation
+E225:84:48:missing whitespace around operator
+E501:84:80:line too long (102 > 79 characters)
+E225:84:81:missing whitespace around operator
+E225:84:102:missing whitespace around operator
+E225:85:40:missing whitespace around operator
+E225:86:34:missing whitespace around operator
+E225:86:43:missing whitespace around operator
+E225:87:43:missing whitespace around operator
+E225:87:60:missing whitespace around operator
+E113:88:37:unexpected indentation
+E225:88:45:missing whitespace around operator
+E225:88:52:missing whitespace around operator
+E201:88:55:whitespace after '{'
+E202:88:68:whitespace before '}'
+E113:89:41:unexpected indentation
+E225:89:52:missing whitespace around operator
+E225:89:70:missing whitespace around operator
+E113:90:45:unexpected indentation
+E225:90:46:missing whitespace around operator
+E225:90:74:missing whitespace around operator
+E113:91:49:unexpected indentation
+E225:91:50:missing whitespace around operator
+E501:91:80:line too long (83 > 79 characters)
+E225:91:83:missing whitespace around operator
+E113:92:53:unexpected indentation
+E225:92:60:missing whitespace around operator
+E501:92:80:line too long (110 > 79 characters)
+E225:92:110:missing whitespace around operator
+E113:93:57:unexpected indentation
+E225:93:65:missing whitespace around operator
+E501:93:80:line too long (90 > 79 characters)
+E225:93:86:missing whitespace around operator
+E225:93:87:missing whitespace around operator
+E225:93:90:missing whitespace around operator
+E225:94:56:missing whitespace around operator
+E225:95:50:missing whitespace around operator
+E225:95:58:missing whitespace around operator
+E113:96:53:unexpected indentation
+E225:96:60:missing whitespace around operator
+E501:96:80:line too long (107 > 79 characters)
+E225:96:107:missing whitespace around operator
+E113:97:57:unexpected indentation
+E225:97:65:missing whitespace around operator
+E501:97:80:line too long (90 > 79 characters)
+E225:97:86:missing whitespace around operator
+E225:97:87:missing whitespace around operator
+E225:97:90:missing whitespace around operator
+E225:98:56:missing whitespace around operator
+E225:99:50:missing whitespace around operator
+E225:99:59:missing whitespace around operator
+E225:100:46:missing whitespace around operator
+E225:100:55:missing whitespace around operator
+E225:101:47:missing whitespace around operator
+E225:102:40:missing whitespace around operator
+E225:103:45:missing whitespace around operator
+E501:103:80:line too long (108 > 79 characters)
+E225:103:84:missing whitespace around operator
+E201:103:89:whitespace after '{'
+E202:103:103:whitespace before '}'
+E225:103:106:missing whitespace around operator
+E225:103:109:missing whitespace around operator
+E225:104:38:missing whitespace around operator
+E225:105:43:missing whitespace around operator
+E501:105:80:line too long (90 > 79 characters)
+E225:105:90:missing whitespace around operator
+E113:106:37:unexpected indentation
+E225:106:47:missing whitespace around operator
+E225:106:53:missing whitespace around operator
+E113:107:41:unexpected indentation
+E225:107:51:missing whitespace around operator
+E225:107:57:missing whitespace around operator
+E113:108:45:unexpected indentation
+E225:108:46:missing whitespace around operator
+E225:108:69:missing whitespace around operator
+E113:109:49:unexpected indentation
+E225:109:57:missing whitespace around operator
+E225:109:75:missing whitespace around operator
+E113:110:53:unexpected indentation
+E225:110:61:missing whitespace around operator
+E225:110:79:missing whitespace around operator
+E501:110:80:line too long (139 > 79 characters)
+E225:110:139:missing whitespace around operator
+E113:111:57:unexpected indentation
+E225:111:65:missing whitespace around operator
+E501:111:80:line too long (123 > 79 characters)
+E225:111:83:missing whitespace around operator
+E225:111:84:missing whitespace around operator
+E225:111:87:missing whitespace around operator
+E201:111:90:whitespace after '{'
+E202:111:121:whitespace before '}'
+E225:112:56:missing whitespace around operator
+E225:113:52:missing whitespace around operator
+E225:114:46:missing whitespace around operator
+E225:114:55:missing whitespace around operator
+E225:115:46:missing whitespace around operator
+E225:116:42:missing whitespace around operator
+E225:117:38:missing whitespace around operator
+E225:118:34:missing whitespace around operator
+E225:119:30:missing whitespace around operator
+E225:120:26:missing whitespace around operator
+E227:120:46:missing whitespace around bitwise or shift operator
+E231:120:58:missing whitespace after ':'
+E225:120:62:missing whitespace around operator
+E113:121:29:unexpected indentation
+E225:121:39:missing whitespace around operator
+E225:121:63:missing whitespace around operator
+E113:122:33:unexpected indentation
+E225:122:36:missing whitespace around operator
+E225:123:34:missing whitespace around operator
+E225:124:26:missing whitespace around operator
+E225:124:35:missing whitespace around operator
+E225:125:26:missing whitespace around operator
+E227:125:46:missing whitespace around bitwise or shift operator
+E231:125:58:missing whitespace after ':'
+E225:125:62:missing whitespace around operator
+E113:126:29:unexpected indentation
+E225:126:39:missing whitespace around operator
+E501:126:80:line too long (92 > 79 characters)
+E225:126:92:missing whitespace around operator
+E113:127:33:unexpected indentation
+E225:127:36:missing whitespace around operator
+E225:128:34:missing whitespace around operator
+E225:129:26:missing whitespace around operator
+E225:129:35:missing whitespace around operator
+E225:130:26:missing whitespace around operator
+E227:130:46:missing whitespace around bitwise or shift operator
+E231:130:58:missing whitespace after ':'
+E225:130:62:missing whitespace around operator
+E113:131:29:unexpected indentation
+E225:131:39:missing whitespace around operator
+E501:131:80:line too long (81 > 79 characters)
+E225:131:81:missing whitespace around operator
+E113:132:33:unexpected indentation
+E225:132:36:missing whitespace around operator
+E225:133:34:missing whitespace around operator
+E225:134:26:missing whitespace around operator
+E225:134:35:missing whitespace around operator
+E225:135:26:missing whitespace around operator
+E227:135:46:missing whitespace around bitwise or shift operator
+E231:135:58:missing whitespace after ':'
+E225:135:62:missing whitespace around operator
+E113:136:29:unexpected indentation
+E225:136:39:missing whitespace around operator
+E225:136:71:missing whitespace around operator
+E113:137:33:unexpected indentation
+E225:137:36:missing whitespace around operator
+E225:138:34:missing whitespace around operator
+E225:139:26:missing whitespace around operator
+E225:139:35:missing whitespace around operator
+E225:140:22:missing whitespace around operator
+E225:140:32:missing whitespace around operator
+E225:141:22:missing whitespace around operator
+E225:142:18:missing whitespace around operator
+E225:143:14:missing whitespace around operator
+E225:144:10:missing whitespace around operator
+E225:145:15:missing whitespace around operator
+E113:146:9:unexpected indentation
+E225:147:17:missing whitespace around operator
+E225:147:52:missing whitespace around operator
+E113:148:13:unexpected indentation
+E225:148:21:missing whitespace around operator
+E225:148:66:missing whitespace around operator
+E225:148:67:missing whitespace around operator
+E225:148:70:missing whitespace around operator
+E225:149:12:missing whitespace around operator
+E225:150:10:missing whitespace around operator
+E225:151:2:missing whitespace around operator
+E225:151:14:missing whitespace around operator
+E225:153:2:missing whitespace around operator
+E225:153:22:missing whitespace around operator
+E113:154:5:unexpected indentation
+E201:154:7:whitespace after '{'
+E202:154:19:whitespace before '}'
+E225:155:12:missing whitespace around operator
+E113:156:9:unexpected indentation
+E703:157:55:statement ends with a semicolon
+E703:159:51:statement ends with a semicolon
+E225:160:21:missing whitespace around operator
+E225:160:25:missing whitespace around operator
+E703:161:63:statement ends with a semicolon
+E231:164:42:missing whitespace after ';'
+E702:164:42:multiple statements on one line (semicolon)
+E225:166:37:missing whitespace around operator
+E225:166:41:missing whitespace around operator
+E501:167:80:line too long (86 > 79 characters)
+E231:169:41:missing whitespace after ';'
+E702:169:41:multiple statements on one line (semicolon)
+E231:174:43:missing whitespace after ';'
+E702:174:43:multiple statements on one line (semicolon)
+E225:177:13:missing whitespace around operator
+E225:178:12:missing whitespace around operator
+E231:180:26:missing whitespace after ','
+E225:182:13:missing whitespace around operator
+E225:183:12:missing whitespace around operator
+E251:185:21:unexpected spaces around keyword / parameter equals
+E702:185:31:multiple statements on one line (semicolon)
+E251:186:23:unexpected spaces around keyword / parameter equals
+E251:186:25:unexpected spaces around keyword / parameter equals
+E702:186:50:multiple statements on one line (semicolon)
+E251:187:24:unexpected spaces around keyword / parameter equals
+E251:187:26:unexpected spaces around keyword / parameter equals
+E702:187:41:multiple statements on one line (semicolon)
+E251:189:21:unexpected spaces around keyword / parameter equals
+E251:189:23:unexpected spaces around keyword / parameter equals
+E702:189:49:multiple statements on one line (semicolon)
+E251:190:26:unexpected spaces around keyword / parameter equals
+E251:190:28:unexpected spaces around keyword / parameter equals
+E702:190:54:multiple statements on one line (semicolon)
+E702:191:54:multiple statements on one line (semicolon)
+E702:192:64:multiple statements on one line (semicolon)
+E231:193:48:missing whitespace after ';'
+E702:193:48:multiple statements on one line (semicolon)
+E702:195:51:multiple statements on one line (semicolon)
+E702:196:56:multiple statements on one line (semicolon)
+E231:197:48:missing whitespace after ';'
+E702:197:48:multiple statements on one line (semicolon)
+E225:200:13:missing whitespace around operator
+E225:201:2:missing whitespace around operator
+E225:201:14:missing whitespace around operator
+
+Code
+=============
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="text-black">All Products</h2>
+                {% for c in current_categories %}
+                    <a class="category-badge text-decoration-none"
+                    href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge badge-white
+                            text-black rounded-0 border border-dark">
+                            {{ c.friendly_name }}
+                        </span>
+                    </a>
+                {% endfor %}
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <div class="row mt-1 mb-2">
+                    <div class="col-12 col-md-6 my-auto order-md-last
+                        d-flex justify-content-center justify-content-md-end">
+                        <div class="sort-select-wrapper w-50">
+                            <select id="sort-selector" class="custom-select
+                                custom-select-sm rounded-0 border
+                                border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>
+                                    Sort by...
+                                </option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>
+                                    Name (A-Z)
+                                </option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
+                                    Name (Z-A)
+                                </option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
+                                    Price (low to high)
+                                </option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>
+                                    Price (high to low)
+                                </option>
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                                    Category (A-Z)
+                                </option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>
+                                    Category (Z-A)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-first">
+                        <p class="text-black mt-3 text-center text-md-left">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            {% endif %}
+                            {{ products|length }} Product/s{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                {% if product.image %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid"
+                                            src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid"
+                                            src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
+                                <div class="card-body pb-0">
+                                    <p class="mb-0">{{ product.name }}
+                                        <span class="favourite-heart">
+                                            {% if user.is_authenticated %}
+                                                {% if product.name in favourites %}
+                                                    <a href="{% url 'remove_favourite' product.id user.id %}">
+                                                        <i class="fas fa-heart fa-2x"></i>
+                                                    </a>
+                                                {% else %}
+                                                    <a href="{% url 'add_favourite' product.id user.id %}">
+                                                        <i class="far fa-heart fa-2x"></i>
+                                                    </a>
+                                                {% endif %}
+                                            {% endif %}
+                                        </span>
+                                    </p>
+                                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                            {% if product.category %}
+                                                <p class="small mt-1 mb-0">
+                                                    <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                    </a>
+                                                </p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-warning btt-button text-black
+        shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100 text-black">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+        // Get the modal
+        let modal = document.getElementById("myModal");
+        // Get the button that opens the modal
+        let btn = document.getElementById("myBtn");
+        // Get the <span> element that closes the modal
+        let span = document.getElementsByClassName("close")[0];
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        // displays an error when inspecting via console but removing breaks the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+        }
+    </script>
+    <script>
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0)
+    })
+    </script>
+    <script>
+    $('#sort-selector').change(function() {
+        let selector = $(this);
+        let currentUrl = new URL(window.location);
+        let selectedVal = selector.val();
+        if(selectedVal != "reset"){
+            let sort = selectedVal.split("_")[0];
+            let direction = selectedVal.split("_")[1];
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+            window.location.replace(currentUrl);
+        }
+    })
+    </script>
+{% endblock %}

@@ -22,7 +22,8 @@ def all_products(request):
     direction = None
     if request.user.is_authenticated:
         favourites_search = Favourite.objects.filter(user_profile=request.user)
-        favourites = [favourite.product.name for favourite in favourites_search]
+        favourites = [
+            favourite.product.name for favourite in favourites_search]
 
     if request.GET:
         if 'sort' in request.GET:

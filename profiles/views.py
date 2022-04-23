@@ -50,4 +50,3 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
-

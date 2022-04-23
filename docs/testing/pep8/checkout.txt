@@ -1,0 +1,567 @@
+Check results
+=============
+
+E225:1:2:missing whitespace around operator
+E225:1:25:missing whitespace around operator
+E225:2:2:missing whitespace around operator
+E225:2:17:missing whitespace around operator
+E225:3:2:missing whitespace around operator
+E225:3:23:missing whitespace around operator
+E225:5:2:missing whitespace around operator
+E225:5:21:missing whitespace around operator
+E113:6:9:unexpected indentation
+E225:6:18:missing whitespace around operator
+E113:7:13:unexpected indentation
+E225:7:17:missing whitespace around operator
+E225:7:60:missing whitespace around operator
+E225:8:2:missing whitespace around operator
+E225:8:14:missing whitespace around operator
+E225:10:2:missing whitespace around operator
+E225:10:23:missing whitespace around operator
+E113:11:5:unexpected indentation
+E225:11:15:missing whitespace around operator
+E225:11:44:missing whitespace around operator
+E113:12:9:unexpected indentation
+E225:12:19:missing whitespace around operator
+E225:12:25:missing whitespace around operator
+E113:13:13:unexpected indentation
+E225:13:23:missing whitespace around operator
+E225:13:29:missing whitespace around operator
+E225:13:30:missing whitespace around operator
+E225:13:35:missing whitespace around operator
+E225:14:14:missing whitespace around operator
+E225:15:10:missing whitespace around operator
+E225:16:2:missing whitespace around operator
+E225:16:14:missing whitespace around operator
+E225:18:2:missing whitespace around operator
+E225:18:19:missing whitespace around operator
+E113:19:5:unexpected indentation
+E225:19:15:missing whitespace around operator
+E225:19:25:missing whitespace around operator
+E225:19:26:missing whitespace around operator
+E225:19:31:missing whitespace around operator
+E225:20:15:missing whitespace around operator
+E225:20:27:missing whitespace around operator
+E113:21:9:unexpected indentation
+E225:21:19:missing whitespace around operator
+E225:21:25:missing whitespace around operator
+E113:22:13:unexpected indentation
+E225:22:23:missing whitespace around operator
+E225:22:29:missing whitespace around operator
+E113:23:17:unexpected indentation
+E225:23:20:missing whitespace around operator
+E225:24:26:missing whitespace around operator
+E113:25:21:unexpected indentation
+E225:27:21:missing whitespace around operator
+E225:28:20:missing whitespace around operator
+E225:29:18:missing whitespace around operator
+E225:30:14:missing whitespace around operator
+E225:32:19:missing whitespace around operator
+E225:32:25:missing whitespace around operator
+E113:33:13:unexpected indentation
+E225:33:23:missing whitespace around operator
+E225:33:60:missing whitespace around operator
+E113:34:17:unexpected indentation
+E225:34:25:missing whitespace around operator
+E225:34:38:missing whitespace around operator
+E113:35:21:unexpected indentation
+E211:35:34:whitespace before '('
+E201:35:38:whitespace after '{'
+E202:35:52:whitespace before '}'
+E225:36:20:missing whitespace around operator
+E225:37:27:missing whitespace around operator
+E225:37:33:missing whitespace around operator
+E113:38:21:unexpected indentation
+E225:38:31:missing whitespace around operator
+E225:38:48:missing whitespace around operator
+E113:39:25:unexpected indentation
+E225:39:33:missing whitespace around operator
+E225:39:62:missing whitespace around operator
+E113:40:29:unexpected indentation
+E225:41:28:missing whitespace around operator
+E225:42:26:missing whitespace around operator
+E225:43:31:missing whitespace around operator
+E225:43:50:missing whitespace around operator
+E113:44:25:unexpected indentation
+E225:44:33:missing whitespace around operator
+E225:44:62:missing whitespace around operator
+E113:45:29:unexpected indentation
+E225:46:28:missing whitespace around operator
+E225:47:26:missing whitespace around operator
+E225:48:22:missing whitespace around operator
+E225:49:18:missing whitespace around operator
+E225:49:46:missing whitespace around operator
+E113:50:21:unexpected indentation
+E225:50:31:missing whitespace around operator
+E225:50:37:missing whitespace around operator
+E113:51:25:unexpected indentation
+E225:51:35:missing whitespace around operator
+E225:51:48:missing whitespace around operator
+E113:52:29:unexpected indentation
+E225:52:36:missing whitespace around operator
+E501:52:80:line too long (81 > 79 characters)
+E225:52:81:missing whitespace around operator
+E113:53:33:unexpected indentation
+E225:53:34:missing whitespace around operator
+E225:53:59:missing whitespace around operator
+E113:54:37:unexpected indentation
+E225:54:47:missing whitespace around operator
+E113:55:41:unexpected indentation
+E225:55:44:missing whitespace around operator
+E225:56:44:missing whitespace around operator
+E225:56:65:missing whitespace around operator
+E225:57:34:missing whitespace around operator
+E225:57:42:missing whitespace around operator
+E113:58:37:unexpected indentation
+E225:58:47:missing whitespace around operator
+E113:59:41:unexpected indentation
+E225:59:44:missing whitespace around operator
+E225:60:44:missing whitespace around operator
+E225:60:65:missing whitespace around operator
+E225:61:34:missing whitespace around operator
+E225:61:43:missing whitespace around operator
+E225:62:32:missing whitespace around operator
+E225:63:30:missing whitespace around operator
+E225:64:35:missing whitespace around operator
+E225:64:43:missing whitespace around operator
+E113:65:29:unexpected indentation
+E225:65:37:missing whitespace around operator
+E225:65:55:missing whitespace around operator
+E113:66:33:unexpected indentation
+E225:66:40:missing whitespace around operator
+E113:67:37:unexpected indentation
+E201:67:39:whitespace after '{'
+E202:67:57:whitespace before '}'
+E225:68:41:missing whitespace around operator
+E225:69:32:missing whitespace around operator
+E225:70:37:missing whitespace around operator
+E225:70:61:missing whitespace around operator
+E113:71:33:unexpected indentation
+E701:71:41:multiple statements on one line (colon)
+E201:71:45:whitespace after '{'
+E202:71:59:whitespace before '}'
+E225:72:32:missing whitespace around operator
+E225:73:30:missing whitespace around operator
+E225:74:35:missing whitespace around operator
+E225:74:54:missing whitespace around operator
+E113:75:29:unexpected indentation
+E225:75:37:missing whitespace around operator
+E225:75:61:missing whitespace around operator
+E113:76:33:unexpected indentation
+E201:76:37:whitespace after '{'
+E231:76:72:missing whitespace after ':'
+E501:76:80:line too long (87 > 79 characters)
+E202:76:86:whitespace before '}'
+E225:77:32:missing whitespace around operator
+E225:78:30:missing whitespace around operator
+E225:79:26:missing whitespace around operator
+E225:80:18:missing whitespace around operator
+E225:80:28:missing whitespace around operator
+E225:81:26:missing whitespace around operator
+E225:81:33:missing whitespace around operator
+E225:82:27:missing whitespace around operator
+E225:82:55:missing whitespace around operator
+E113:83:21:unexpected indentation
+E225:83:31:missing whitespace around operator
+E225:83:48:missing whitespace around operator
+E113:84:25:unexpected indentation
+E225:84:33:missing whitespace around operator
+E225:84:40:missing whitespace around operator
+E231:84:52:missing whitespace after ':'
+E701:84:52:multiple statements on one line (colon)
+E225:84:53:missing whitespace around operator
+E225:84:56:missing whitespace around operator
+E225:85:33:missing whitespace around operator
+E225:85:40:missing whitespace around operator
+E231:85:49:missing whitespace after ':'
+E701:85:49:multiple statements on one line (colon)
+E225:85:50:missing whitespace around operator
+E225:85:53:missing whitespace around operator
+E225:86:33:missing whitespace around operator
+E225:86:40:missing whitespace around operator
+E231:86:52:missing whitespace after ':'
+E701:86:52:multiple statements on one line (colon)
+E225:86:53:missing whitespace around operator
+E225:86:56:missing whitespace around operator
+E225:87:26:missing whitespace around operator
+E225:88:31:missing whitespace around operator
+E225:88:39:missing whitespace around operator
+E113:89:25:unexpected indentation
+E225:89:33:missing whitespace around operator
+E225:89:40:missing whitespace around operator
+E201:89:45:whitespace after '{'
+E231:89:65:missing whitespace after ':'
+E202:89:67:whitespace before '}'
+E225:89:70:missing whitespace around operator
+E225:89:73:missing whitespace around operator
+E225:90:33:missing whitespace around operator
+E225:90:40:missing whitespace around operator
+E201:90:45:whitespace after '{'
+E231:90:68:missing whitespace after ':'
+E202:90:70:whitespace before '}'
+E225:90:73:missing whitespace around operator
+E225:90:76:missing whitespace around operator
+E225:91:33:missing whitespace around operator
+E225:91:40:missing whitespace around operator
+E113:92:29:unexpected indentation
+E225:92:36:missing whitespace around operator
+E113:93:33:unexpected indentation
+E201:93:37:whitespace after '{'
+E231:93:63:missing whitespace after ':'
+E202:93:65:whitespace before '}'
+E225:94:37:missing whitespace around operator
+E225:95:28:missing whitespace around operator
+E225:96:26:missing whitespace around operator
+E225:97:22:missing whitespace around operator
+E225:98:18:missing whitespace around operator
+E225:99:23:missing whitespace around operator
+E225:99:41:missing whitespace around operator
+E113:100:17:unexpected indentation
+E225:100:25:missing whitespace around operator
+E225:100:38:missing whitespace around operator
+E113:101:21:unexpected indentation
+E225:102:20:missing whitespace around operator
+E225:103:29:missing whitespace around operator
+E113:104:21:unexpected indentation
+E225:104:27:missing whitespace around operator
+E225:104:37:missing whitespace around operator
+E225:104:52:missing whitespace around operator
+E225:105:22:missing whitespace around operator
+E225:105:36:missing whitespace around operator
+E225:106:36:missing whitespace around operator
+E225:106:56:missing whitespace around operator
+E113:107:25:unexpected indentation
+E225:107:38:missing whitespace around operator
+E113:108:29:unexpected indentation
+E225:110:33:missing whitespace around operator
+E201:111:27:whitespace after '{'
+E202:111:66:whitespace before '}'
+E201:112:27:whitespace after '{'
+E202:112:62:whitespace before '}'
+E201:113:27:whitespace after '{'
+E202:113:69:whitespace before '}'
+E225:114:31:missing whitespace around operator
+E225:115:36:missing whitespace around operator
+E225:115:56:missing whitespace around operator
+E113:116:25:unexpected indentation
+E225:116:38:missing whitespace around operator
+E113:117:29:unexpected indentation
+E225:119:33:missing whitespace around operator
+E201:120:27:whitespace after '{'
+E202:120:72:whitespace before '}'
+E201:121:27:whitespace after '{'
+E202:121:72:whitespace before '}'
+E201:122:27:whitespace after '{'
+E202:122:69:whitespace before '}'
+E201:123:27:whitespace after '{'
+E202:123:63:whitespace before '}'
+E201:124:27:whitespace after '{'
+E202:124:65:whitespace before '}'
+E201:125:27:whitespace after '{'
+E202:125:64:whitespace before '}'
+E225:126:35:missing whitespace around operator
+E113:127:29:unexpected indentation
+E225:128:30:missing whitespace around operator
+E225:128:58:missing whitespace around operator
+E225:129:41:missing whitespace around operator
+E225:129:64:missing whitespace around operator
+E225:129:79:missing whitespace around operator
+E113:130:33:unexpected indentation
+E225:131:36:missing whitespace around operator
+E225:132:41:missing whitespace around operator
+E113:133:33:unexpected indentation
+E225:133:37:missing whitespace around operator
+E225:133:51:missing whitespace around operator
+E225:134:37:missing whitespace around operator
+E225:134:57:missing whitespace around operator
+E225:135:30:missing whitespace around operator
+E225:135:38:missing whitespace around operator
+E225:136:41:missing whitespace around operator
+E113:137:33:unexpected indentation
+E225:137:36:missing whitespace around operator
+E225:137:51:missing whitespace around operator
+E225:138:41:missing whitespace around operator
+E113:139:37:unexpected indentation
+E225:139:41:missing whitespace around operator
+E225:139:70:missing whitespace around operator
+E225:141:36:missing whitespace around operator
+E225:143:41:missing whitespace around operator
+E113:144:37:unexpected indentation
+E225:144:41:missing whitespace around operator
+E225:144:69:missing whitespace around operator
+E225:146:36:missing whitespace around operator
+E225:148:36:missing whitespace around operator
+E225:149:30:missing whitespace around operator
+E225:149:39:missing whitespace around operator
+E225:150:30:missing whitespace around operator
+E225:151:31:missing whitespace around operator
+E225:152:36:missing whitespace around operator
+E225:152:43:missing whitespace around operator
+E113:153:25:unexpected indentation
+E225:153:38:missing whitespace around operator
+E113:154:29:unexpected indentation
+E225:156:33:missing whitespace around operator
+E225:157:66:missing whitespace around operator
+E225:157:67:missing whitespace around operator
+E225:158:35:missing whitespace around operator
+E225:158:45:missing whitespace around operator
+E225:158:60:missing whitespace around operator
+E225:158:61:missing whitespace around operator
+E225:158:66:missing whitespace around operator
+E225:159:59:missing whitespace around operator
+E225:159:60:missing whitespace around operator
+E225:160:35:missing whitespace around operator
+E113:161:29:unexpected indentation
+E225:161:31:missing whitespace around operator
+E225:161:50:missing whitespace around operator
+E225:161:58:missing whitespace around operator
+E225:161:59:missing whitespace around operator
+E225:161:64:missing whitespace around operator
+W291:162:64:trailing whitespace
+E113:163:29:unexpected indentation
+E225:163:66:missing whitespace around operator
+E225:163:67:missing whitespace around operator
+E225:164:36:missing whitespace around operator
+E225:164:51:missing whitespace around operator
+E113:165:29:unexpected indentation
+E225:165:33:missing whitespace around operator
+E225:165:49:missing whitespace around operator
+E225:166:31:missing whitespace around operator
+E225:167:31:missing whitespace around operator
+E225:167:68:missing whitespace around operator
+E113:168:25:unexpected indentation
+E225:168:32:missing whitespace around operator
+E113:169:29:unexpected indentation
+E225:169:34:missing whitespace around operator
+E225:169:68:missing whitespace around operator
+E225:170:40:missing whitespace around operator
+E225:170:47:missing whitespace around operator
+E113:171:33:unexpected indentation
+E225:171:41:missing whitespace around operator
+E225:171:63:missing whitespace around operator
+E225:171:64:missing whitespace around operator
+E225:171:67:missing whitespace around operator
+E225:172:35:missing whitespace around operator
+E101:173:5:indentation contains mixed spaces and tabs
+W191:173:5:indentation contains tabs
+E113:173:11:unexpected indentation
+E225:173:22:missing whitespace around operator
+E225:173:41:missing whitespace around operator
+E901:174:33:IndentationError: unindent does not match any outer indentation level
+
+Code
+=============
+{% extends "base.html" %}
+{% load static %}
+{% load basket_tools %}
+
+{% block extra_css %}
+        <link rel="stylesheet"
+            href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class='container header-container'>
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font text-black
+                    mb-4 text-center">
+                    Checkout
+                </h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-last mb-5">
+                <p class="text-black">
+                    Order Summary ({{ product_count }} items ordered)
+                </p>
+                <div class="row">
+                    <div class="col-7 offset-2">
+                        <p class="mb-1 mt-0 small text-black">
+                            Item
+                        </p>
+                    </div>
+                    <div class="col-3 text-right">
+                        <p class="mb-1 mt-0 small text-black">
+                            Subtotal
+                        </p>
+                    </div>
+                </div>
+                {% for item in basket_items %}
+                    <div class="row">
+                        <div class="col-2 mb-1">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                {% if item.product.image %}
+                                    <img class="w-100"
+                                        src="{{ item.product.image.url }}"
+                                        alt="{{ product.name }}">
+                                {% else %}
+                                    <img class="w-100"
+                                        src="{{ MEDIA_URL }}noimage.png"
+                                        alt="{{ product.name }}">
+                                {% endif %}
+                            </a>
+                        </div>
+                        <div class="col-7">
+                            <p class="my-0 text-black">
+                                <strong>
+                                    {{ item.product.name }}
+                                </strong>
+                            </p>
+                            <p class="my-0 small text-black">
+                                Quantity: {{ item.quantity }}
+                            </p>
+                        </div>
+                        <div class="col-3 text-right">
+                            <p class="my-0 small text-black">
+                                £{{ item.product.price | calc_subtotal:item.quantity }}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <hr class="my-0">
+                <div class="row text-black text-right">
+                    <div class="col-7 offset-2">
+                        <p class="my-0">Order Total:</p>
+                        <p class="my-0">Delivery:</p>
+                        <p class="my-0">Grand Total:</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="my-0">£{{ total | floatformat:2 }}</p>
+                        <p class="my-0">£{{ delivery | floatformat:2 }}</p>
+                        <p class="my-0">
+                            <strong>
+                                £{{ grand_total | floatformat:2 }}
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="text-black">
+                    Please fill in the form below to complete your order
+                </p>
+                <form action="{% url 'checkout' %}"
+                    method="POST" id="payment-form">
+                    {% csrf_token %}
+                    <fieldset class="rounded px-3 mb-5">
+                        <legend class="fieldset-label
+                            small text-black px-2 w-auto">
+                            Your Details
+                        </legend>
+                        {{ order_form.full_name | as_crispy_field }}
+                        {{ order_form.email | as_crispy_field }}
+                        {{ order_form.phone_number | as_crispy_field }}
+                    </fieldset>
+                    <fieldset class="rounded px-3 mb-5">
+                        <legend class="fieldset-label small
+                            text-black px-2 w-auto">
+                            Delivery Details
+                        </legend>
+                        {{ order_form.street_address1 | as_crispy_field }}
+                        {{ order_form.street_address2 | as_crispy_field }}
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.county | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field }}
+                        {{ order_form.country | as_crispy_field }}
+                        <div class="form-check form-check-inline
+                            float-right mr-0">
+                            {% if user.is_authenticated %}
+                            <label class="form-check-label" for="id-save-info">
+                                Save this delivery information to my profile
+                            </label>
+                            <input class="form-check-input ml-2 mr-0"
+                                type="checkbox" id="id-save-info"
+                                name="save-info" checked>
+                            {% else %}
+                            <label class="form-check-label text-black"
+                                for="id-save-info">
+                                <a class="text-black"
+                                    href="{% url 'account_signup' %}">
+                                    Create an account
+                                </a>
+                                or
+                                <a class="text-black"
+                                    href="{% url 'account_login' %}">
+                                    login
+                                </a>
+                                to save this information
+                            </label>
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    <fieldset class="px-3">
+                        <legend class="fieldset-label small
+                            text-black px-2 w-auto">
+                            Payment
+                        </legend>
+                        <!-- A Stripe card element will go here -->
+                        <div class="mb-3" id="card-element"></div>
+                        <!-- Used to display form errors -->
+                        <div class="mb-3 text-danger"
+                            id="card-errors" role="alert"></div>
+                        <!-- Pass the client secret to the view 
+                            so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}"
+                            name="client_secret">
+                    </fieldset>
+                    <div class="submit-button text-right mt-5 mb-2">
+                        <a href="{% url 'view_basket' %}"
+                            class="btn btn-outline-black rounded-0">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+    						<span class="font-weight-bold">
+                                Adjust Basket
+                            </span>
+						</a>
+						<button id="submit-button"
+                            class="btn btn-black rounded-0">
+							<span class="font-weight-bold">
+                                Complete Order
+                            </span>
+							<span class="icon">
+								<i class="fas fa-lock"></i>
+							</span>
+						</button>
+						<p class="small text-danger my-0">
+							<span class="icon">
+								<i class="fas fa-exclamation-circle"></i>
+							</span>
+							<span class="text-black">
+                                Your card will be charged
+                                <strong>£{{ grand_total|floatformat:2 }}</strong>
+                            </span>
+						</p>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bg-warning btt-button text-black
+        shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100 text-black">
+            <i class="fas fa-arrow-up text-black
+                mx-auto my-auto"></i>
+        </a>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+{% endblock %}

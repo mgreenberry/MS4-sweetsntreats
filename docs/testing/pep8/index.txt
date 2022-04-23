@@ -1,0 +1,95 @@
+Check results
+=============
+
+E225:1:2:missing whitespace around operator
+E225:1:25:missing whitespace around operator
+E225:2:2:missing whitespace around operator
+E225:2:17:missing whitespace around operator
+E225:4:2:missing whitespace around operator
+E225:4:23:missing whitespace around operator
+E225:5:11:missing whitespace around operator
+E225:5:40:missing whitespace around operator
+E113:6:5:unexpected indentation
+E225:6:15:missing whitespace around operator
+E225:6:21:missing whitespace around operator
+E113:7:9:unexpected indentation
+E225:7:19:missing whitespace around operator
+E225:7:25:missing whitespace around operator
+E225:7:26:missing whitespace around operator
+E225:7:31:missing whitespace around operator
+E225:8:10:missing whitespace around operator
+E225:9:6:missing whitespace around operator
+E225:10:2:missing whitespace around operator
+E225:10:14:missing whitespace around operator
+E225:12:2:missing whitespace around operator
+E225:12:19:missing whitespace around operator
+E225:13:11:missing whitespace around operator
+E225:13:29:missing whitespace around operator
+E113:14:5:unexpected indentation
+E225:14:15:missing whitespace around operator
+E225:14:27:missing whitespace around operator
+E113:15:9:unexpected indentation
+E225:15:19:missing whitespace around operator
+E225:15:25:missing whitespace around operator
+E113:16:13:unexpected indentation
+E225:16:23:missing whitespace around operator
+E225:16:48:missing whitespace around operator
+E113:17:17:unexpected indentation
+E225:17:26:missing whitespace around operator
+E225:17:59:missing whitespace around operator
+E113:18:21:unexpected indentation
+E225:19:21:missing whitespace around operator
+E225:20:27:missing whitespace around operator
+E225:20:34:missing whitespace around operator
+E113:21:21:unexpected indentation
+E225:21:24:missing whitespace around operator
+E113:22:25:unexpected indentation
+E225:22:32:missing whitespace around operator
+E225:22:61:missing whitespace around operator
+E113:23:29:unexpected indentation
+E225:27:28:missing whitespace around operator
+E225:28:25:missing whitespace around operator
+E225:29:22:missing whitespace around operator
+E225:30:18:missing whitespace around operator
+E225:31:14:missing whitespace around operator
+E225:32:10:missing whitespace around operator
+E225:33:6:missing whitespace around operator
+E225:34:2:missing whitespace around operator
+E225:34:14:missing whitespace around operator
+
+Code
+=============
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class='container header-container'>
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font text-black">
+                    Come on in and treat yourself to something nice
+                </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="center-me
+                            shop-button btn btn-lg rounder-0
+                            text-uppercase py-3 row d-flex
+                            justify-content-center align-content-center">
+                            Shop Now
+                        </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

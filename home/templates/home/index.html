@@ -2,15 +2,14 @@
 {% load static %}
 
 {% block page_header %}
-    <div class='container header-container'>
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class='container header-container'>
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-
 <div class="container-fluid">
     <div class="container">
         <div class="row">
@@ -20,7 +19,12 @@
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="center-me shop-button btn btn-lg rounder-0 text-uppercase py-3 row d-flex justify-content-center align-content-center">Shop Now</a>
+                        <a href="{% url 'products' %}" class="center-me
+                            shop-button btn btn-lg rounder-0
+                            text-uppercase py-3 row d-flex
+                            justify-content-center align-content-center">
+                            Shop Now
+                        </a>
                     </h4>
                 </div>
             </div>
