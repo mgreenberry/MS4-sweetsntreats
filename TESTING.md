@@ -37,7 +37,7 @@ If you would like test Stripe to create a purchase, please use the following tes
 
 If using the Developer Server please use the following details for superuser login: -
 
-* michaelg
+* michaelgreenberry
 * BS2208df
 
 Or create a user with the 'My Account' link
