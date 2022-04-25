@@ -29,6 +29,8 @@
 
 FOR INFORMATION
 
+ALL IMAGES ARE NOW USER CREATED!
+
 If you would like test Stripe to create a purchase, please use the following test card details:
 
 * Card Number - 4242 4242 4242 4242
@@ -159,7 +161,15 @@ All the above have very good scores for all pages apart from the assessability s
 
 ## Assessability Testing
 
-Used Wave.
+Wave testing was used for all pages and produced the following results. Sadly time meant I was unable to implement the necessary changes to the site. [Wave](https://wave.webaim.org/)
+
+* [index.html](docs/testing/wave/old-index.png)
+* [products](docs/testing/wave/old-products.png)
+* [product-detail](docs/testing/wave/old-product-detail.png)
+* [basket](docs/testing/wave/old-basket.png)
+* [checkout](docs/testing/wave/old-checkout.png)
+
+Since testing these pages I have changed images as had been using test images from an existing sweet shop. All images are now the content creator.
 
 ## Layout
 
@@ -357,13 +367,13 @@ Login as SUPERUSER and add a product - correct information
 
 * Expectation: - Superuser is able to add a product to the store
 * Test: - A test product can be added to the store (please use the following picture and details): -
-   category - fizzy sweets
-   SKU - FIZZCOLA
-   Name - Fizza Cola Bottles
-   Description - Fizzy cola flavoured sweets in the shape of a bottle
+   category - Other Sweets
+   SKU - TESTING
+   Name - Chocolate Honeycomb
+   Description - Chocolate covered honeycomb
    Price - 1.49
    Image URL - leave blank
-   Select Image - [picture]()
+   Select Image - [picture](media/test-image.jpg)
 * Result: - Test product added correctly with relevant details and available to purchase
 * Verdict: - Working as intended
 * USER STORY - 25
@@ -699,6 +709,10 @@ For the above, when designing the website I did the following to resolve the Use
 The main bugs found during the creation of this site can be found [here](docs/readme/bugs.pdf)
 
 An extra bug was found when testing against user stories. The email confirmation was failing from the Stripe Webhook. With help from one of the tutors it was found that during a pep8 tidy I had broken a line in the code that was required to be on one line. This was fixed and is all working now.
+
+Another but was that I was unable to delete a product as a superuser that had a pre-existing review added to it by the superuser or other user. Deleting the superuser and other users and then recreating a superuser fixed this issue
+
+A final issue was that the update button, which hasn't been changed by css yet, was not working. This was just the wrong way round in the basket.html from the delete button
 
 ![screenshot](docs/testing/screenshot.png)
 
