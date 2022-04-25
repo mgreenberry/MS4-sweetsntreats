@@ -566,7 +566,7 @@ Please use the following details to login: -
 * Verdict: - Working as intended
 * USER STORY - 8, 22, 23 & 24
 
-TEST 37
+TEST 38
 Adjust Basket Button (all users)
 
 * Expectation: - User should be taken back to the basket page
@@ -585,7 +585,20 @@ For the above, when designing the website I did the following to resolve the Use
 3. Website has a basket icon in the navigation bar which displays shoppers current spending
 4. A Register page was created accessed from the 'My Account' link on the navigation bar which allows users to register for an account
 5. A login link is provided from the 'My Account' link on the navigation bar which allows registered users to login
-6. Eas
+6. Clicking the reset password link sends a password reset link for user login
+7. Created a new user and received an email confirmation
+8. Creating a new user and being logged in allows user to see a profile linked to their details and previous purchases where appropriate.
+9. Created a model which allows a user to leave a review for a product
+10. Allows a user to edit a review that they've created (this option is not available if a different user is logged in)
+11. Allows a user to delete a review that they've created (this option is not available if a different user is logged in)
+12. Allows a user to mark an item as a favourite
+13. Allows a user to unmark an item as a favourite
+14. Created a sorting section on the all products page and user can select a type of product from the navigation page
+15. User can select a certain type of product, such as fizzy sweets and then sort in name order
+16. User can sort products into categories such as fizzy sweets, etc
+17. Created a search bar which displays products to the user if there is a match but will display no results if no match
+18. User will see products that match their search if products found.
+19. 
 
 
 [Back to content](#table-of-contents)
