@@ -9,10 +9,29 @@
    * [Mobile Phone](#mobile-phone)
    * [Desktop](#desktop)
 3. [Manual Testing](#manual-testing)
-   * [All Pages](#all-pages)
    * [Forms](#forms)
-4. [User Story Testing](#user-story-testing)
+4. [User Stories](#user-stories)
 5. [Bugs](#bugs)
+
+ABOUT
+
+If you would like test Stripe to create a purchase, please use the following test card details:
+
+* Card Number - 4242 4242 4242 4242
+* MM/YY - 0424
+* CVC - 242
+
+If using the Developer Server please use the following details for superuser login: -
+
+  * michaelg
+  * BS2208df
+
+Or create a user with the 'My Account' link
+
+If using the Heroku Server then please use the following details for superuser login: -
+
+  * michaelgreenberry
+  * BS2208df
 
 ## Validation Testing
 
@@ -598,13 +617,24 @@ For the above, when designing the website I did the following to resolve the Use
 16. User can sort products into categories such as fizzy sweets, etc
 17. Created a search bar which displays products to the user if there is a match but will display no results if no match
 18. User will see products that match their search if products found.
-19. 
-
+19. On the navigation bar I created a basket icon that takes user to current items in their basket for amending or purchase. From the product detail page a user can access their basket too
+20. A user is able to adjust the quantity of items from either the product detail page or basket page
+21. Checkout page allows a user to enter their payment information securely
+22. Using inbuilt security from Stripe, allows a user to securely purchase products bought
+23. A summary of a users order can be seen on both the basket and checkout page.
+24. An email was sent when making a purchase from a webhook on stripe and within the checkout model
+25. A superuser is able to add a product to the store
+26. A superuser is able to edit an existing product in the store
+27. A superuser is able to delete an existing product from the store
 
 [Back to content](#table-of-contents)
 
 ## Bugs
 
 The main bugs found during the creation of this site can be found [here](docs/readme/bugs.pdf)
+
+An extra bug was found when testing against user stories. The email confirmation was failing from the Stripe Webhook. With help from one of the tutors it was found that during a pep8 tidy I had broken a line in the code that was required to be on one line. This was fixed and is all working now.
+
+![screenshot](docs/testing/screenshot.png)
 
 [Back to content](#table-of-contents)
