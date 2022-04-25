@@ -8,10 +8,23 @@
 2. [Lighthouse Testing](#lighthouse-testing)
    * [Mobile Phone](#mobile-phone)
    * [Desktop](#desktop)
-3. [Manual Testing](#manual-testing)
-   * [Forms](#forms)
-4. [User Stories](#user-stories)
-5. [Bugs](#bugs)
+3. [Assessability Testing](#assessability-testing)
+4. [Layout](#layout)
+5. [Forms](#forms)
+4. [Manual Testing](#manual-testing)
+   * [Header and Navigation](#header-and-navigation)
+   * [My Account Link](#my-account-link)
+   * [Add a Product](#product-management)
+   * [Basket Icon](#basket-icon)
+   * [index.html](#indexhtml)
+   * [Products](#products)
+   * [Product Detail](#product-detail)
+   * [Reviews](#reviews)
+   * [Edit/Delete Product](#product-management-1)
+   * [Basket Page](#basket-page)
+   * [Checkout](#checkout)
+6. [User Stories](#user-stories)
+7. [Bugs](#bugs)
 
 ABOUT
 
@@ -58,13 +71,16 @@ All errors and warnings listed
   * removed 'type=text/javascript' from script tags
 
 * [css testing using W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
 All CSS code was put through the W3C Validation Service. The following message was shown: -
 ![css testing results](docs/testing/css.png)
 
-* [JsQuery testing using jshint.com](https://jshint.com/).
+* [JsQuery testing using jshint.com](https://jshint.com/)
+
   At the time of writing this Testing document I have not had chance to check the jquery/javascript through jshint.
 
 * [Pep8 Testing](http://pep8online.com/)
+
 pep8 tests were done on all html and py files. All html pages had similar warnings about whitespace and identation. Where possible this was changed to remove warning. However, removing some warnings by adding/deleting whitespace or changing identation broke the code and some code wouldn't work as expected. This was especially true of the following example - £{{ item.product.price | calc_subtotal:item.quantity }}
 
 On the settings.py in the sweetsntreats folder the only errors were lines too lone. I was unable to change this and still get the page to site to work correctly. Changing back to the longer line worked fine.
@@ -76,7 +92,9 @@ Not all pages that were tested are included in the images attached.
 * [product detail](docs/testing/pep8/product-detail.txt)
 * [basket](docs/testing/pep8/basket.txt)
 * [checkout](docs/testing/pep8/checkout.txt)
-* [Example of settings.py](docs/testing/pep8/sweetsntreats-settingspy.txt) other py files were checked and no errors found
+* [Example of settings.py](docs/testing/pep8/sweetsntreats-settingspy.txt) 
+
+other py files were checked and no errors found
 
 All unused variables appeared to be called when required and code was seen to be functioning as intended.
 
@@ -107,6 +125,7 @@ I also noticed that running more than one lighthouse test on this page delivered
 The registration/login pages produced similar results
 
 * FINDINGS
+
 The main issue on the lighthouse test was assessability scores which on most pages was below 90%. This was mainly due to the contrast of colours chosen and the lack of tags on some buttons for screen readers. To fix this I would change the contrast and add the relevant text where required. Please see the WAVE testing for more details.
 
 The other issue I found was the performance on Mobiles was less than 90% which I'm not very happy about. If I get time I will reduce the size of the images which is the biggest issue affecting performance here.
@@ -131,6 +150,7 @@ LOGGED IN SUPERUSER
 * [edit a product](docs/testing/lighthouse-desktop/edit-product.png)
 
 * FINDINGS
+
 All the above have very good scores for all pages apart from the assessability scores which I need to address. I have used WAVE to highlight the changes needed - see later. I may not get the time to implement these changes as I desire.
 
 [Back to content](#table-of-contents)
@@ -139,11 +159,7 @@ All the above have very good scores for all pages apart from the assessability s
 
 Used Wave.
 
-## Manual Testing  
-
-All USER STORIES were tested during the Manual Testing of the website. Where a test links to a USER STORY this is noted under the TEST below. Please see attached pdf for USER STORY document [here](docs/readme/user-story.pdf).
-
-### Navigation
+## Layout
 
 The layout of the website is as follows: -
 [layout](docs/readme/navigation.png)
@@ -172,9 +188,9 @@ A superuser can do the above and the following: -
 * edit a product in the store
 * delete a product from the store
 
-The following tests were run manually and tested as many possible interactions with the site, action buttons, links and forms.
+[Back to content](#table-of-contents)
 
-### FORMS: -
+## Forms
 
 The forms in this site would be improved with better feedback to the user if fields are incorrectly filled in or are blank. At the moment all forms display standard default text alerts.
 
@@ -205,9 +221,14 @@ LOGGED IN SUPERUSER
 
 [Back to content](#table-of-contents)
 
-### Header and Navigation
+## Manual Testing  
 
-**Search Bar**
+All USER STORIES were tested during the Manual Testing of the website. Where a test links to a USER STORY this is noted under the TEST below. Please see attached pdf for USER STORY document [here](docs/readme/user-story.pdf).
+
+The following tests were run manually and tested as many possible interactions with the site, action buttons, links and forms.
+
+### Search Bar
+
 TEST 1
 Search Bar - (search for 'candy')
 
@@ -218,6 +239,7 @@ Search Bar - (search for 'candy')
 * USER STORY - 17 & 18
 
 TEST 2
+
 Search Bar - (search for unlisted product)
 
 * Expectation: - A user who searches for a product that isn't in the store will be shown a message with '0 results'
@@ -226,6 +248,7 @@ Search Bar - (search for unlisted product)
 * Verdict: - Working as intended
 
 TEST 3
+
 Search Bar - (no product entered into search)
 
 * Expectation: - A user not entering anything into search bar is directed to the all products page
@@ -234,8 +257,10 @@ Search Bar - (no product entered into search)
 * Verdict: - Working as intended
 * USER STORY - 17 & 18
 
-**Hero Text**
+### Hero Text
+
 TEST 4
+
 Hero Text on Navigation bar
 
 * Expectation: - The site name hero text should take a user back to the home (index.html) page
@@ -243,8 +268,10 @@ Hero Text on Navigation bar
 * Result: -  I then directed me back to the home (home.html) page, i.e - clicking the site name text on the basket page  (basket.html) directed me back to the Home (index.html) page
 * Verdict: - Working as intended
 
-**MY ACCOUNT LINK**
+### MY ACCOUNT LINK
+
 TEST 5
+
 Registering a new user (all fields correctly filled in)
 
 Email Address - beckygreen@gmail.com
@@ -258,6 +285,7 @@ Password (required) - Text entered - BS2208df
 * USER STORY - 4
 
 TEST 6
+
 Registering a new user (missing field)
 
 * Expectation: - Leaving a field blank and pressing 'Submit' button doesn't allow the form to be submitted
@@ -266,6 +294,7 @@ Registering a new user (missing field)
 * Verdict: - Working as intended
 
 TEST 7
+
 Trying to register a new user that already exists
 
 User name (required) - Entered the same username - BeckyGreen
@@ -277,6 +306,7 @@ Password (required) - Entered the same password - BS2208df
 * Verdict: - Working as intended
 
 TEST 8
+
 Login as an existing user
 
 User Name - Text entered - JohnnyMillard
@@ -289,6 +319,7 @@ Password - Text entered - BS2208DF
 * USER STORY - 5
 
 TEST 9
+
 Incorrect login details entered
 
 User Name - Text entered - Johnny
@@ -300,6 +331,7 @@ Password - Text entered - BS2208df
 * Verdict: - Working as intended
 
 TEST 10
+
 Profile - (Logged in user or superuser only)
 
 * Expectation: - A logged in user should be able to see link to their profile
@@ -312,11 +344,12 @@ Profile - (Logged in user or superuser only)
 
 [Back to content](#table-of-contents)
 
-#### Product Management
+### Add a Product
 
 Product Management - Only available for a superuser
 
 TEST 11
+
 Login as SUPERUSER and add a product - correct information
 
 * Expectation: - Superuser is able to add a product to the store
@@ -333,6 +366,7 @@ Login as SUPERUSER and add a product - correct information
 * USER STORY - 25
 
 TEST 12
+
 Login as SUPERUSER and add a product - missing information
 
 * Expectation: - Fields with an '*' must have information in for form to be submitted
@@ -342,6 +376,7 @@ Login as SUPERUSER and add a product - missing information
 Product Management Link - (SUPERUSER ONLY)
 
 TEST 13
+
 Log out
 
 * Expectation: - logged in user can log out of their account
@@ -350,9 +385,10 @@ Log out
 * Verdict - Working as intended
 * USER STORY - 5
 
-#### Basket Icon
+### Basket Icon
 
 TEST 14
+
 Clicking Basket icon takes user to current basket
 
 * Expectation: - clicking the basket link with products added to it will take the user to thier basket. If no products have been added then clicking the basket link will display a message to the user and provide them a link to the products page.
@@ -361,9 +397,10 @@ Clicking Basket icon takes user to current basket
 * Verdict: - Working as intended
 * USER STORY - 3
 
-#### index.html
+### index.html
 
 TEST 15
+
 Click the 'Shop Now' button on the home page
 
 * Expectation: - Clicking on the 'Shop Now' button will take user to all the products
@@ -372,9 +409,10 @@ Click the 'Shop Now' button on the home page
 * Verdict: - Working as intended
 * USER STORY - 1
 
-### products
+### Products
 
 TEST 16
+
 Visiting product detail page (User not logged in)
 
 * Expectation: - Clicking on any product will take user to the product detail page
@@ -384,6 +422,7 @@ Visiting product detail page (User not logged in)
 * USER STORY - 2
 
 TEST 17
+
 Marking an item as favourite (user logged in)
 
 * Expectation: - Clicking on the empty heart icon will add product as a favourite for logged on user. Heart will then go solid.
@@ -393,6 +432,7 @@ Marking an item as favourite (user logged in)
 * USER STORY - 12
 
 TEST 18
+
 Removing an item as favourite (same user logged in)
 
 * Expectation: - Clicking on a full/solid heart will remove a product as a favourite (This is not an option if a different user has logged in from TEST 2)
@@ -404,6 +444,7 @@ Removing an item as favourite (same user logged in)
 ### product detail
 
 TEST 19
+
 Add product to basket (User not logged on)
 
 * Expectation: - An item can be added to the basket
@@ -412,6 +453,7 @@ Add product to basket (User not logged on)
 * Verdict: - Working as intended
 
 TEST 20
+
 Add extra items to the product (User not logged in)
 
 * Expectation: - An individual product quantity can be increased and added to basket
@@ -421,6 +463,7 @@ Add extra items to the product (User not logged in)
 * USER STORY - 21
 
 TEST 21
+
 Keep Shopping button (User not logged in)
 
 * Expectation: - Clicking the 'Keep Shopping' button will take user back to the all product page
@@ -428,9 +471,10 @@ Keep Shopping button (User not logged in)
 * Result: - Clickign the 'Keep Shopping' button returned user to page displaying all the products
 * Verdict: - Working as intended
 
-#### **Reviews**
+### Reviews
 
 TEST 22
+
 Add a review - fields left blank (Logged in users)
 
 * Expectation: - On the Individual Product page click the Review Title and Review body and fill in a review
@@ -439,6 +483,7 @@ Add a review - fields left blank (Logged in users)
 * Verdict: - Working as intended
 
 TEST 23
+
 Add a review - all fields filled in (logged in user)
 
 * Expectation: - On the Individual Product page click the Review Title and Review body and fill in a review
@@ -448,6 +493,7 @@ Add a review - all fields filled in (logged in user)
 * USER STORY - 9
 
 TEST 24
+
 Edit a review - fields left blank (Same user logged in)
 
 * Expectation: - Clicking on 'Edit Review' without all fields filled in displays an error
@@ -456,6 +502,7 @@ Edit a review - fields left blank (Same user logged in)
 * Verdict: - Working as intended
 
 TEST 25
+
 Edit a Review - fields filled in correctly (same user logged in)
 
 * Expectation: - Clicking on 'Edit Review' allows logged in user to edit review written by them
@@ -465,6 +512,7 @@ Edit a Review - fields filled in correctly (same user logged in)
 * USER STORY - 10
 
 TEST 26
+
 Delete a Review (same user logged in)
 
 * Expectation: - A review can be deleted by the same user who created it
@@ -473,10 +521,13 @@ Delete a Review (same user logged in)
 * Verdict: - Working as intended
 * USER STORY - 11
 
-#### **Product Management**
+#### Edit/Delete Products
+
+PRODUCT MANAGEMENT - Logged in superuser only!
 
 TEST 27
-Edit Product - field left blank (SUPERUSER LOGIN ONLY!!)
+
+Edit Product - field left blank
 
 * Expectation: - Superuser should not be able to edit an existing product by clicking on 'Edit Review' button if a required field is left blank
 * Test: - Edit the test product added earlier, delete contents from a field and submit
@@ -484,7 +535,8 @@ Edit Product - field left blank (SUPERUSER LOGIN ONLY!!)
 * Verdict: - Working as intended
 
 TEST 28
-Edit Product - all fields filled in correctly (SUPERUSER LOGIN ONLY!!)
+
+Edit Product - all fields filled in correctly
 
 * Expectation: - Superuser should be able to edit an existing product by clicking on 'Edit Review' button
 * Test: - Edit the test product added earlier and submit
@@ -493,7 +545,8 @@ Edit Product - all fields filled in correctly (SUPERUSER LOGIN ONLY!!)
 * USER STORY - 26
 
 TEST 29
-Delete Product (SUPERUSER LOGIN ONLY!!)
+
+Delete Product
 
 * Expectation: - Superuser can delete an existing product. A modal should prevent accidental deletion (Use TEST PRODUCT Created)
 * Test: - Click the 'Delete Product' button. On modal choose 'Delete Product' confirmation
@@ -506,6 +559,7 @@ Delete Product (SUPERUSER LOGIN ONLY!!)
 ### Basket page
 
 TEST 30
+
 Changing the quantity of a product
 
 * Expectation: - User can increase or decrease the quantity of a product selected
@@ -515,6 +569,7 @@ Changing the quantity of a product
 * USER STORY - 21
 
 TEST 31
+
 Update the new quantity to the basket
 
 * Expectation: - User can increase or decrease the quantity and then click the 'update' button to amend the basket quantity
@@ -524,6 +579,7 @@ Update the new quantity to the basket
 * USER STORY - 21
 
 TEST 32
+
 Delete a product from the basket
 
 * Expectation: - user can remove an item from their shopping basket. If no other products in basket user to be taken a 'shopping basket empty' message and link to the products page
@@ -532,6 +588,7 @@ Delete a product from the basket
 * Verdict: - Working as intended
 
 TEST 33
+
 Secure Checkout Button
 
 * Expectation: - Clicking the Secure Checkout button should take user to a checkout page
@@ -540,6 +597,7 @@ Secure Checkout Button
 * Verdict: - Working as intended
 
 TEST 34
+
 Keep Shopping button
 
 * Expectation: - Clicking the 'Keep Shopping' button should take a user back to the all products page
@@ -552,6 +610,7 @@ Keep Shopping button
 ###  Checkout
 
 TEST 35
+
 Secure Checkout purchase (No user logged in and all fields filled in)
 
 * Expectation: - Filling out the form with the correct information and clicking the 'Complete Order' button will complete the purchase for the user and charge to card provided
@@ -565,6 +624,7 @@ Secure Checkout purchase (No user logged in and all fields filled in)
 * USER STORY - 22, 23 & 24
 
 TEST 36
+
 Empty fields on Secure Checkout (No user logged in)
 
 * Expectation: - Missing information on the form and clicking the 'Complete Order' button will display field messages for empty fields for the user and not allow purchase
@@ -573,6 +633,7 @@ Empty fields on Secure Checkout (No user logged in)
 * Verdict: - Working as intended
 
 TEST 37
+
 Secure Checkout purchase with delivery information recorded if required (Logged in user)
 
 Please use the following details to login: -
@@ -586,6 +647,7 @@ Please use the following details to login: -
 * USER STORY - 8, 22, 23 & 24
 
 TEST 38
+
 Adjust Basket Button (all users)
 
 * Expectation: - User should be taken back to the basket page
