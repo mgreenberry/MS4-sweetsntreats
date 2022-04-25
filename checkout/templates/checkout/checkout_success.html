@@ -21,7 +21,7 @@
                 <hr>
                 <h2 class="logo-font mb-4">Thank You</h2>
                 <hr>
-                <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                <p class="text-black">Your order information is below. Details of your order can be found in your profile.</p>
             </div>
         </div>
 
@@ -33,7 +33,6 @@
                             <small class="text-black">Order Info:</small>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Number</p>
@@ -200,12 +199,13 @@
                         <span class="text-uppercase">Back to Profile</span>
                     </a>
                 {% else %}
-                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+                    <a href="{% url 'products' %}" class="btn btn-white rounded-0 my-2">
                         <span class="icon mr-2">
                             <i class="fas fa-gifts"></i>
                         </span>
                         <span class="text-uppercase">Why not treat someone you love?</span>
                     </a>
+                    <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">My Profile</a>
                 {% endif %}
 			</div>
 		</div>
