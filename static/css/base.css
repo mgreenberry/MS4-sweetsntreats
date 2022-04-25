@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/sweets.jpeg') no-repeat center center fixed;
+    background: url('/media/sweetshop.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -24,6 +24,11 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+}
+
+.hero-text {
+    text-transform: uppercase;
+    background-color: white;
 }
 
 .center-me {
