@@ -29,6 +29,7 @@ body {
 .hero-text {
     text-transform: uppercase;
     background-color: white;
+    min-width: fit-content;
 }
 
 .center-me {
