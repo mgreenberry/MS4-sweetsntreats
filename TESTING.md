@@ -4,14 +4,15 @@
 
 ## Table of contents
 
-1. [Validation Testing](#validation-testing)
-2. [Lighthouse Testing](#lighthouse-testing)
+1. [Terminal Errors](#terminal-errors)
+2. [Validation Testing](#validation-testing)
+3. [Lighthouse Testing](#lighthouse-testing)
    * [Mobile Phone](#mobile-phone)
    * [Desktop](#desktop)
-3. [Assessability Testing](#assessability-testing)
-4. [Layout](#layout)
-5. [Forms](#forms)
-6. [Manual Testing](#manual-testing)
+4. [Assessability Testing](#assessability-testing)
+5. [Layout](#layout)
+6. [Forms](#forms)
+7. [Manual Testing](#manual-testing)
    * [Search Bar](#search-bar)
    * [Hero Text](#hero-text)
    * [My Account Link](#my-account-link)
@@ -24,8 +25,8 @@
    * [Edit/Delete Product](#editdelete-products)
    * [Basket Page](#basket)
    * [Checkout](#checkout)
-7. [User Stories](#user-stories)
-8. [Bugs](#bugs)
+8. [User Stories](#user-stories)
+9. [Bugs](#bugs)
 
 FOR INFORMATION
 
@@ -48,6 +49,23 @@ If using the Heroku Server then please use the following details for superuser l
 
 * michaelgreenberry
 * BS2208df
+
+## Terminal Errors
+
+All Products page
+
+(index):1146 Uncaught TypeError: Cannot set properties of null (setting 'onclick')
+    at (index):1146:21
+
+I deleted this onclick from the jquery that I had used to create the modal. However, when I did this the modal didn't work as intended so I have had to leave this as it is but am aware of the error.
+
+Search Bar
+
+The error here is still linked to the modal.
+
+Uncaught TypeError: Cannot set properties of null (setting 'onclick')
+    at ?q=aa:298:21
+(anonymous) @ ?q=aa:298
 
 ## Validation Testing
 
