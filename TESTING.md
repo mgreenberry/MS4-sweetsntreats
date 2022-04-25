@@ -11,22 +11,23 @@
 3. [Assessability Testing](#assessability-testing)
 4. [Layout](#layout)
 5. [Forms](#forms)
-4. [Manual Testing](#manual-testing)
-   * [Header and Navigation](#header-and-navigation)
+6. [Manual Testing](#manual-testing)
+   * [Search Bar](#search-bar)
+   * [Hero Text](#hero-text)
    * [My Account Link](#my-account-link)
-   * [Add a Product](#product-management)
+   * [Add a Product](#add-products)
    * [Basket Icon](#basket-icon)
    * [index.html](#indexhtml)
    * [Products](#products)
    * [Product Detail](#product-detail)
    * [Reviews](#reviews)
-   * [Edit/Delete Product](#product-management-1)
-   * [Basket Page](#basket-page)
+   * [Edit/Delete Product](#editdelete-products)
+   * [Basket Page](#basket)
    * [Checkout](#checkout)
-6. [User Stories](#user-stories)
-7. [Bugs](#bugs)
+7. [User Stories](#user-stories)
+8. [Bugs](#bugs)
 
-ABOUT
+FOR INFORMATION
 
 If you would like test Stripe to create a purchase, please use the following test card details:
 
@@ -36,19 +37,20 @@ If you would like test Stripe to create a purchase, please use the following tes
 
 If using the Developer Server please use the following details for superuser login: -
 
-  * michaelg
-  * BS2208df
+* michaelg
+* BS2208df
 
 Or create a user with the 'My Account' link
 
 If using the Heroku Server then please use the following details for superuser login: -
 
-  * michaelgreenberry
-  * BS2208df
+* michaelgreenberry
+* BS2208df
 
 ## Validation Testing
 
 * [html testing with W3C Markup Validation Service](https://validator.w3.org/)
+
 All errors and warnings listed
 
 * [index](docs/testing/html-validation/index.png)
@@ -77,7 +79,7 @@ All CSS code was put through the W3C Validation Service. The following message w
 
 * [JsQuery testing using jshint.com](https://jshint.com/)
 
-  At the time of writing this Testing document I have not had chance to check the jquery/javascript through jshint.
+At the time of writing this Testing document I have not had chance to check the jquery/javascript through jshint.
 
 * [Pep8 Testing](http://pep8online.com/)
 
@@ -92,7 +94,7 @@ Not all pages that were tested are included in the images attached.
 * [product detail](docs/testing/pep8/product-detail.txt)
 * [basket](docs/testing/pep8/basket.txt)
 * [checkout](docs/testing/pep8/checkout.txt)
-* [Example of settings.py](docs/testing/pep8/sweetsntreats-settingspy.txt) 
+* [Example of settings.py](docs/testing/pep8/sweetsntreats-settingspy.txt)
 
 other py files were checked and no errors found
 
@@ -230,6 +232,7 @@ The following tests were run manually and tested as many possible interactions w
 ### Search Bar
 
 TEST 1
+
 Search Bar - (search for 'candy')
 
 * Expectation: - A user can type in a name or part of a name of a product they hope to find. i.e searching for 'candy' will bring up a search result for any product with the word candy in it
@@ -338,13 +341,13 @@ Profile - (Logged in user or superuser only)
 * Test: - Log on with the following user details: -
    username - JohnnyMillard
    password - BS2208df
-* Result: - Profile information for this user was visable when clicking the profile link in the My Account 
+* Result: - Profile information for this user was visable when clicking the profile link in the My Account
 * Verdict: - Working as intended
 * USER STORY 8
 
 [Back to content](#table-of-contents)
 
-### Add a Product
+### Add Products
 
 Product Management - Only available for a superuser
 
@@ -392,12 +395,12 @@ TEST 14
 Clicking Basket icon takes user to current basket
 
 * Expectation: - clicking the basket link with products added to it will take the user to thier basket. If no products have been added then clicking the basket link will display a message to the user and provide them a link to the products page.
-* Test: - Without adding a product click basket and see message to state empty basket. Add a product and click basket link. 
+* Test: - Without adding a product click basket and see message to state empty basket. Add a product and click basket link.
 * Result: - Clicked basket without adding a product and saw the empty basket message with link to products. Added a product to the basket and clicked the basket to see items added
 * Verdict: - Working as intended
 * USER STORY - 3
 
-### index.html
+### Index.html
 
 TEST 15
 
@@ -441,7 +444,7 @@ Removing an item as favourite (same user logged in)
 * Verdict: - Working as intended
 * USER STORY - 13
 
-### product detail
+### Product Detail
 
 TEST 19
 
@@ -556,7 +559,7 @@ Delete Product
 
 [Back to content](#table-of-contents)
 
-### Basket page
+### Basket
 
 TEST 30
 
